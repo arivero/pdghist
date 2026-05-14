@@ -1,0 +1,89 @@
+edition: 2012
+source: PDG Review of Particle Physics database
+source_file: pdgall-2025-v0.2.2.sqlite
+source_api: https://pdgapi.lbl.gov/
+quantities:
+  c_quark_mass:
+    value: 1.275
+    error_positive: 0.025
+    error_negative: 0.025
+    unit: GeV
+    value_text: 1.275+-0.025
+    value_type: V
+  b_quark_mass:
+    value: 4.18
+    error_positive: 0.03
+    error_negative: 0.03
+    unit: GeV
+    value_text: 4.18+-0.03
+    value_type: V
+  t_quark_mass:
+    value: 173.5
+    error_positive: 0.6
+    error_negative: 0.6
+    unit: GeV
+    value_text: 173.5+-0.6+-0.8
+    value_type: V
+  electron_mass:
+    value: 0.510998928
+    error_positive: 1.1e-08
+    error_negative: 1.1e-08
+    unit: MeV
+    value_text: 0.510998928+-0.000000011
+    value_type: AC
+  muon_mass:
+    value: 105.6583715
+    error_positive: 3.5e-06
+    error_negative: 3.5e-06
+    unit: MeV
+    value_text: 105.6583715+-0.0000035
+    value_type: AC
+  tau_mass:
+    value: 1776.817566190253
+    error_positive: 0.166765180378446
+    error_negative: 0.1570031202889019
+    unit: MeV
+    value_text: 1776.82+-0.16
+    value_type: AC
+  W_mass:
+    value: 80.385
+    error_positive: 0.015
+    error_negative: 0.015
+    unit: GeV
+    value_text: 80.385 +-0.015
+    value_type: FC
+  Z_mass:
+    value: 91.1876
+    error_positive: 0.0021
+    error_negative: 0.0021
+    unit: GeV
+    value_text: 91.1876+-0.0021
+    value_type: FC
+  W_width:
+    value: 2.085
+    error_positive: 0.042
+    error_negative: 0.042
+    unit: GeV
+    value_text: 2.085 +- 0.042
+    value_type: FC
+  Z_width:
+    value: 2.4952
+    error_positive: 0.0023
+    error_negative: 0.0023
+    unit: GeV
+    value_text: 2.4952+-0.0023
+    value_type: FC
+  dm2_21:
+    value: 7.500000000000001e-05
+    error_positive: 1.9e-06
+    error_negative: 2.0e-06
+    unit: eV^2
+    value_text: (7.50+-0.20)E-5
+    value_type: AC
+  dm2_32:
+    value: 0.00232
+    error_positive: 0.00012
+    error_negative: 8.0e-05
+    unit: eV^2
+    value_text: 0.00232+0.00012-0.00008
+    value_type: AC

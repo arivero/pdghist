@@ -1,0 +1,2472 @@
+edition: 2012
+source: https://pdg.lbl.gov/2012/mcdata/mass_width_2012.mcd
+generated: 26-Jun-2012
+unit: GeV
+n_particles: 211
+particles:
+- mc_ids:
+  - 21
+  name: g
+  charge: '0'
+  mass:
+    value: 0.0
+    error_pos: 0.0
+    error_neg: -0.0
+  width:
+    value: 0.0
+    error_pos: 0.0
+    error_neg: -0.0
+- mc_ids:
+  - 22
+  name: gamma
+  charge: '0'
+  mass:
+    value: 0.0
+    error_pos: 0.0
+    error_neg: -0.0
+  width:
+    value: 0.0
+    error_pos: 0.0
+    error_neg: -0.0
+- mc_ids:
+  - 24
+  name: W
+  charge: +
+  mass:
+    value: 80.385
+    error_pos: 0.015
+    error_neg: -0.015
+  width:
+    value: 2.085
+    error_pos: 0.042
+    error_neg: -0.042
+- mc_ids:
+  - 23
+  name: Z
+  charge: '0'
+  mass:
+    value: 91.1876
+    error_pos: 0.0021
+    error_neg: -0.0021
+  width:
+    value: 2.4952
+    error_pos: 0.0023
+    error_neg: -0.0023
+- mc_ids:
+  - 11
+  name: e
+  charge: '-'
+  width:
+    value: 0.0
+    error_pos: 0.0
+    error_neg: -0.0
+  mass:
+    value: 0.000510998928
+    error_pos: 1.1e-11
+    error_neg: -1.1e-11
+- mc_ids:
+  - 13
+  name: mu
+  charge: '-'
+  mass:
+    value: 0.105658372
+    error_pos: 3.5e-09
+    error_neg: -3.5e-09
+  width:
+    value: 2.9959848e-19
+    error_pos: 3.0e-25
+    error_neg: -3.0e-25
+- mc_ids:
+  - 15
+  name: tau
+  charge: '-'
+  mass:
+    value: 1.77682
+    error_pos: 0.00016
+    error_neg: -0.00016
+  width:
+    value: 2.265e-12
+    error_pos: 8.0e-15
+    error_neg: -8.0e-15
+- mc_ids:
+  - 2
+  name: u
+  charge: +2/3
+  mass:
+    value: 0.0023
+    error_pos: 0.0007
+    error_neg: -0.0005
+- mc_ids:
+  - 1
+  name: d
+  charge: -1/3
+  mass:
+    value: 0.0048
+    error_pos: 0.0007
+    error_neg: -0.0003
+- mc_ids:
+  - 3
+  name: s
+  charge: -1/3
+  mass:
+    value: 0.095
+    error_pos: 0.005
+    error_neg: -0.005
+- mc_ids:
+  - 4
+  name: c
+  charge: +2/3
+  mass:
+    value: 1.275
+    error_pos: 0.025
+    error_neg: -0.025
+- mc_ids:
+  - 5
+  name: b
+  charge: -1/3
+  mass:
+    value: 4.18
+    error_pos: 0.03
+    error_neg: -0.03
+- mc_ids:
+  - 6
+  name: t
+  charge: +2/3
+  mass:
+    value: 173.5
+    error_pos: 1.0
+    error_neg: -1.0
+  width:
+    value: 2.0
+    error_pos: 0.7
+    error_neg: -0.6
+- mc_ids:
+  - 211
+  name: pi
+  charge: +
+  mass:
+    value: 0.13957018
+    error_pos: 3.5e-07
+    error_neg: -3.5e-07
+  width:
+    value: 2.5284e-17
+    error_pos: 5.0e-21
+    error_neg: -5.0e-21
+- mc_ids:
+  - 111
+  name: pi
+  charge: '0'
+  mass:
+    value: 0.1349766
+    error_pos: 6.0e-07
+    error_neg: -6.0e-07
+  width:
+    value: 7.73e-09
+    error_pos: 1.7e-10
+    error_neg: -1.7e-10
+- mc_ids:
+  - 221
+  name: eta
+  charge: '0'
+  mass:
+    value: 0.547853
+    error_pos: 2.4e-05
+    error_neg: -2.4e-05
+  width:
+    value: 1.3e-06
+    error_pos: 7.0e-08
+    error_neg: -7.0e-08
+- mc_ids:
+  - 9000221
+  name: f(0)(500)
+  charge: '0'
+  mass:
+    value: 0.475
+    error_pos: 0.075
+    error_neg: -0.075
+  width:
+    value: 0.55
+    error_pos: 0.15
+    error_neg: -0.15
+- mc_ids:
+  - 113
+  - 213
+  name: rho(770)
+  charge: 0,+
+  mass:
+    value: 0.77549
+    error_pos: 0.00034
+    error_neg: -0.00034
+  width:
+    value: 0.1491
+    error_pos: 0.0008
+    error_neg: -0.0008
+- mc_ids:
+  - 223
+  name: omega(782)
+  charge: '0'
+  mass:
+    value: 0.78265
+    error_pos: 0.00012
+    error_neg: -0.00012
+  width:
+    value: 0.00849
+    error_pos: 8.0e-05
+    error_neg: -8.0e-05
+- mc_ids:
+  - 331
+  name: eta'(958)
+  charge: '0'
+  mass:
+    value: 0.95778
+    error_pos: 6.0e-05
+    error_neg: -6.0e-05
+  width:
+    value: 0.000199
+    error_pos: 9.0e-06
+    error_neg: -9.0e-06
+- mc_ids:
+  - 9010221
+  name: f(0)(980)
+  charge: '0'
+  mass:
+    value: 0.99
+    error_pos: 0.02
+    error_neg: -0.02
+  width:
+    value: 0.07
+    error_pos: 0.03
+    error_neg: -0.03
+- mc_ids:
+  - 9000111
+  - 9000211
+  name: a(0)(980)
+  charge: 0,+
+  mass:
+    value: 0.98
+    error_pos: 0.02
+    error_neg: -0.02
+  width:
+    value: 0.075
+    error_pos: 0.025
+    error_neg: -0.025
+- mc_ids:
+  - 333
+  name: phi(1020)
+  charge: '0'
+  mass:
+    value: 1.019455
+    error_pos: 2.0e-05
+    error_neg: -2.0e-05
+  width:
+    value: 0.00426
+    error_pos: 4.0e-05
+    error_neg: -4.0e-05
+- mc_ids:
+  - 10223
+  name: h(1)(1170)
+  charge: '0'
+  mass:
+    value: 1.17
+    error_pos: 0.02
+    error_neg: -0.02
+  width:
+    value: 0.36
+    error_pos: 0.04
+    error_neg: -0.04
+- mc_ids:
+  - 10113
+  - 10213
+  name: b(1)(1235)
+  charge: 0,+
+  mass:
+    value: 1.2295
+    error_pos: 0.0032
+    error_neg: -0.0032
+  width:
+    value: 0.142
+    error_pos: 0.009
+    error_neg: -0.009
+- mc_ids:
+  - 20113
+  - 20213
+  name: a(1)(1260)
+  charge: 0,+
+  mass:
+    value: 1.23
+    error_pos: 0.04
+    error_neg: -0.04
+  width:
+    value: 0.42
+    error_pos: 0.18
+    error_neg: -0.18
+- mc_ids:
+  - 225
+  name: f(2)(1270)
+  charge: '0'
+  mass:
+    value: 1.2751
+    error_pos: 0.0012
+    error_neg: -0.0012
+  width:
+    value: 0.1851
+    error_pos: 0.0029
+    error_neg: -0.0024
+- mc_ids:
+  - 20223
+  name: f(1)(1285)
+  charge: '0'
+  mass:
+    value: 1.2821
+    error_pos: 0.0006
+    error_neg: -0.0006
+  width:
+    value: 0.0242
+    error_pos: 0.0011
+    error_neg: -0.0011
+- mc_ids:
+  - 100221
+  name: eta(1295)
+  charge: '0'
+  mass:
+    value: 1.294
+    error_pos: 0.004
+    error_neg: -0.004
+  width:
+    value: 0.055
+    error_pos: 0.005
+    error_neg: -0.005
+- mc_ids:
+  - 100111
+  - 100211
+  name: pi(1300)
+  charge: 0,+
+  mass:
+    value: 1.3
+    error_pos: 0.1
+    error_neg: -0.1
+  width:
+    value: 0.4
+    error_pos: 0.2
+    error_neg: -0.2
+- mc_ids:
+  - 115
+  - 215
+  name: a(2)(1320)
+  charge: 0,+
+  mass:
+    value: 1.3183
+    error_pos: 0.0005
+    error_neg: -0.0006
+  width:
+    value: 0.107
+    error_pos: 0.005
+    error_neg: -0.005
+- mc_ids:
+  - 30221
+  name: f(0)(1370)
+  charge: '0'
+  mass:
+    value: 1.35
+    error_pos: 0.15
+    error_neg: -0.15
+  width:
+    value: 0.35
+    error_pos: 0.15
+    error_neg: -0.15
+- mc_ids:
+  - 9000113
+  - 9000213
+  name: pi(1)(1400)
+  charge: 0,+
+  mass:
+    value: 1.354
+    error_pos: 0.025
+    error_neg: -0.025
+  width:
+    value: 0.33
+    error_pos: 0.035
+    error_neg: -0.035
+- mc_ids:
+  - 9020221
+  name: eta(1405)
+  charge: '0'
+  mass:
+    value: 1.4089
+    error_pos: 0.0024
+    error_neg: -0.0024
+  width:
+    value: 0.0511
+    error_pos: 0.0032
+    error_neg: -0.0032
+- mc_ids:
+  - 20333
+  name: f(1)(1420)
+  charge: '0'
+  mass:
+    value: 1.4264
+    error_pos: 0.0009
+    error_neg: -0.0009
+  width:
+    value: 0.0549
+    error_pos: 0.0026
+    error_neg: -0.0026
+- mc_ids:
+  - 100223
+  name: omega(1420)
+  charge: '0'
+  mass:
+    value: 1.425
+    error_pos: 0.025
+    error_neg: -0.025
+  width:
+    value: 0.215
+    error_pos: 0.035
+    error_neg: -0.035
+- mc_ids:
+  - 10111
+  - 10211
+  name: a(0)(1450)
+  charge: 0,+
+  mass:
+    value: 1.474
+    error_pos: 0.019
+    error_neg: -0.019
+  width:
+    value: 0.265
+    error_pos: 0.013
+    error_neg: -0.013
+- mc_ids:
+  - 100113
+  - 100213
+  name: rho(1450)
+  charge: 0,+
+  mass:
+    value: 1.465
+    error_pos: 0.025
+    error_neg: -0.025
+  width:
+    value: 0.4
+    error_pos: 0.06
+    error_neg: -0.06
+- mc_ids:
+  - 100331
+  name: eta(1475)
+  charge: '0'
+  mass:
+    value: 1.476
+    error_pos: 0.004
+    error_neg: -0.004
+  width:
+    value: 0.085
+    error_pos: 0.009
+    error_neg: -0.009
+- mc_ids:
+  - 9030221
+  name: f(0)(1500)
+  charge: '0'
+  mass:
+    value: 1.505
+    error_pos: 0.006
+    error_neg: -0.006
+  width:
+    value: 0.109
+    error_pos: 0.007
+    error_neg: -0.007
+- mc_ids:
+  - 335
+  name: f(2)'(1525)
+  charge: '0'
+  mass:
+    value: 1.525
+    error_pos: 0.005
+    error_neg: -0.005
+  width:
+    value: 0.073
+    error_pos: 0.006
+    error_neg: -0.005
+- mc_ids:
+  - 9010113
+  - 9010213
+  name: pi(1)(1600)
+  charge: 0,+
+  mass:
+    value: 1.662
+    error_pos: 0.008
+    error_neg: -0.009
+  width:
+    value: 0.24
+    error_pos: 0.04
+    error_neg: -0.04
+- mc_ids:
+  - 10225
+  name: eta(2)(1645)
+  charge: '0'
+  mass:
+    value: 1.617
+    error_pos: 0.005
+    error_neg: -0.005
+  width:
+    value: 0.181
+    error_pos: 0.011
+    error_neg: -0.011
+- mc_ids:
+  - 30223
+  name: omega(1650)
+  charge: '0'
+  mass:
+    value: 1.67
+    error_pos: 0.03
+    error_neg: -0.03
+  width:
+    value: 0.315
+    error_pos: 0.035
+    error_neg: -0.035
+- mc_ids:
+  - 227
+  name: omega(3)(1670)
+  charge: '0'
+  mass:
+    value: 1.667
+    error_pos: 0.004
+    error_neg: -0.004
+  width:
+    value: 0.168
+    error_pos: 0.01
+    error_neg: -0.01
+- mc_ids:
+  - 10115
+  - 10215
+  name: pi(2)(1670)
+  charge: 0,+
+  mass:
+    value: 1.6722
+    error_pos: 0.003
+    error_neg: -0.003
+  width:
+    value: 0.26
+    error_pos: 0.009
+    error_neg: -0.009
+- mc_ids:
+  - 100333
+  name: phi(1680)
+  charge: '0'
+  mass:
+    value: 1.68
+    error_pos: 0.02
+    error_neg: -0.02
+  width:
+    value: 0.15
+    error_pos: 0.05
+    error_neg: -0.05
+- mc_ids:
+  - 117
+  - 217
+  name: rho(3)(1690)
+  charge: 0,+
+  mass:
+    value: 1.6888
+    error_pos: 0.0021
+    error_neg: -0.0021
+  width:
+    value: 0.161
+    error_pos: 0.01
+    error_neg: -0.01
+- mc_ids:
+  - 30113
+  - 30213
+  name: rho(1700)
+  charge: 0,+
+  mass:
+    value: 1.72
+    error_pos: 0.02
+    error_neg: -0.02
+  width:
+    value: 0.25
+    error_pos: 0.1
+    error_neg: -0.1
+- mc_ids:
+  - 10331
+  name: f(0)(1710)
+  charge: '0'
+  mass:
+    value: 1.72
+    error_pos: 0.006
+    error_neg: -0.006
+  width:
+    value: 0.135
+    error_pos: 0.008
+    error_neg: -0.008
+- mc_ids:
+  - 9010111
+  - 9010211
+  name: pi(1800)
+  charge: 0,+
+  mass:
+    value: 1.812
+    error_pos: 0.012
+    error_neg: -0.012
+  width:
+    value: 0.208
+    error_pos: 0.012
+    error_neg: -0.012
+- mc_ids:
+  - 337
+  name: phi(3)(1850)
+  charge: '0'
+  mass:
+    value: 1.854
+    error_pos: 0.007
+    error_neg: -0.007
+  width:
+    value: 0.087
+    error_pos: 0.028
+    error_neg: -0.023
+- mc_ids:
+  - 9050225
+  name: f(2)(1950)
+  charge: '0'
+  mass:
+    value: 1.944
+    error_pos: 0.012
+    error_neg: -0.012
+  width:
+    value: 0.472
+    error_pos: 0.018
+    error_neg: -0.018
+- mc_ids:
+  - 9060225
+  name: f(2)(2010)
+  charge: '0'
+  mass:
+    value: 2.01
+    error_pos: 0.06
+    error_neg: -0.08
+  width:
+    value: 0.2
+    error_pos: 0.06
+    error_neg: -0.06
+- mc_ids:
+  - 119
+  - 219
+  name: a(4)(2040)
+  charge: 0,+
+  mass:
+    value: 1.996
+    error_pos: 0.01
+    error_neg: -0.009
+  width:
+    value: 0.255
+    error_pos: 0.028
+    error_neg: -0.024
+- mc_ids:
+  - 229
+  name: f(4)(2050)
+  charge: '0'
+  mass:
+    value: 2.018
+    error_pos: 0.011
+    error_neg: -0.011
+  width:
+    value: 0.237
+    error_pos: 0.018
+    error_neg: -0.018
+- mc_ids:
+  - 9080225
+  name: f(2)(2300)
+  charge: '0'
+  mass:
+    value: 2.297
+    error_pos: 0.028
+    error_neg: -0.028
+  width:
+    value: 0.15
+    error_pos: 0.04
+    error_neg: -0.04
+- mc_ids:
+  - 9090225
+  name: f(2)(2340)
+  charge: '0'
+  mass:
+    value: 2.34
+    error_pos: 0.06
+    error_neg: -0.06
+  width:
+    value: 0.32
+    error_pos: 0.08
+    error_neg: -0.07
+- mc_ids:
+  - 321
+  name: K
+  charge: +
+  mass:
+    value: 0.493677
+    error_pos: 1.6e-05
+    error_neg: -1.6e-05
+  width:
+    value: 5.317e-17
+    error_pos: 9.0e-20
+    error_neg: -9.0e-20
+- mc_ids:
+  - 311
+  name: K
+  charge: '0'
+  mass:
+    value: 0.497614
+    error_pos: 2.4e-05
+    error_neg: -2.4e-05
+- mc_ids:
+  - 310
+  name: K(S)
+  charge: '0'
+  mass:
+    value: 0.497614
+    error_pos: 2.4e-05
+    error_neg: -2.4e-05
+  width:
+    value: 7.3508e-15
+    error_pos: 2.9e-18
+    error_neg: -2.9e-18
+- mc_ids:
+  - 130
+  name: K(L)
+  charge: '0'
+  mass:
+    value: 0.497614
+    error_pos: 2.4e-05
+    error_neg: -2.4e-05
+  width:
+    value: 1.287e-17
+    error_pos: 5.0e-20
+    error_neg: -5.0e-20
+- mc_ids:
+  - 323
+  name: K*(892)
+  charge: +
+  mass:
+    value: 0.89166
+    error_pos: 0.00026
+    error_neg: -0.00026
+  width:
+    value: 0.0508
+    error_pos: 0.0009
+    error_neg: -0.0009
+- mc_ids:
+  - 313
+  name: K*(892)
+  charge: '0'
+  mass:
+    value: 0.89594
+    error_pos: 0.00022
+    error_neg: -0.00022
+  width:
+    value: 0.0487
+    error_pos: 0.0008
+    error_neg: -0.0008
+- mc_ids:
+  - 10313
+  - 10323
+  name: K(1)(1270)
+  charge: 0,+
+  mass:
+    value: 1.272
+    error_pos: 0.007
+    error_neg: -0.007
+  width:
+    value: 0.09
+    error_pos: 0.02
+    error_neg: -0.02
+- mc_ids:
+  - 20313
+  - 20323
+  name: K(1)(1400)
+  charge: 0,+
+  mass:
+    value: 1.403
+    error_pos: 0.007
+    error_neg: -0.007
+  width:
+    value: 0.174
+    error_pos: 0.013
+    error_neg: -0.013
+- mc_ids:
+  - 100313
+  - 100323
+  name: K*(1410)
+  charge: 0,+
+  mass:
+    value: 1.414
+    error_pos: 0.015
+    error_neg: -0.015
+  width:
+    value: 0.232
+    error_pos: 0.021
+    error_neg: -0.021
+- mc_ids:
+  - 10311
+  - 10321
+  name: K(0)*(1430)
+  charge: 0,+
+  mass:
+    value: 1.43
+    error_pos: 0.05
+    error_neg: -0.05
+  width:
+    value: 0.27
+    error_pos: 0.08
+    error_neg: -0.08
+- mc_ids:
+  - 325
+  name: K(2)*(1430)
+  charge: +
+  mass:
+    value: 1.4256
+    error_pos: 0.0015
+    error_neg: -0.0015
+  width:
+    value: 0.0985
+    error_pos: 0.0027
+    error_neg: -0.0027
+- mc_ids:
+  - 315
+  name: K(2)*(1430)
+  charge: '0'
+  mass:
+    value: 1.4324
+    error_pos: 0.0013
+    error_neg: -0.0013
+  width:
+    value: 0.109
+    error_pos: 0.005
+    error_neg: -0.005
+- mc_ids:
+  - 30313
+  - 30323
+  name: K*(1680)
+  charge: 0,+
+  mass:
+    value: 1.717
+    error_pos: 0.027
+    error_neg: -0.027
+  width:
+    value: 0.32
+    error_pos: 0.11
+    error_neg: -0.11
+- mc_ids:
+  - 10315
+  - 10325
+  name: K(2)(1770)
+  charge: 0,+
+  mass:
+    value: 1.773
+    error_pos: 0.008
+    error_neg: -0.008
+  width:
+    value: 0.186
+    error_pos: 0.014
+    error_neg: -0.014
+- mc_ids:
+  - 317
+  - 327
+  name: K(3)*(1780)
+  charge: 0,+
+  mass:
+    value: 1.776
+    error_pos: 0.007
+    error_neg: -0.007
+  width:
+    value: 0.159
+    error_pos: 0.021
+    error_neg: -0.021
+- mc_ids:
+  - 20315
+  - 20325
+  name: K(2)(1820)
+  charge: 0,+
+  mass:
+    value: 1.816
+    error_pos: 0.013
+    error_neg: -0.013
+  width:
+    value: 0.276
+    error_pos: 0.035
+    error_neg: -0.035
+- mc_ids:
+  - 319
+  - 329
+  name: K(4)*(2045)
+  charge: 0,+
+  mass:
+    value: 2.045
+    error_pos: 0.009
+    error_neg: -0.009
+  width:
+    value: 0.198
+    error_pos: 0.03
+    error_neg: -0.03
+- mc_ids:
+  - 411
+  name: D
+  charge: +
+  mass:
+    value: 1.86962
+    error_pos: 0.00015
+    error_neg: -0.00015
+  width:
+    value: 6.33e-13
+    error_pos: 4.0e-15
+    error_neg: -4.0e-15
+- mc_ids:
+  - 421
+  name: D
+  charge: '0'
+  mass:
+    value: 1.86486
+    error_pos: 0.00013
+    error_neg: -0.00013
+  width:
+    value: 1.605e-12
+    error_pos: 6.0e-15
+    error_neg: -6.0e-15
+- mc_ids:
+  - 423
+  name: D*(2007)
+  charge: '0'
+  mass:
+    value: 2.00698
+    error_pos: 0.00015
+    error_neg: -0.00015
+- mc_ids:
+  - 413
+  name: D*(2010)
+  charge: +
+  mass:
+    value: 2.01028
+    error_pos: 0.00013
+    error_neg: -0.00013
+  width:
+    value: 9.6e-05
+    error_pos: 2.2e-05
+    error_neg: -2.2e-05
+- mc_ids:
+  - 10421
+  - 10411
+  name: D(0)*(2400)
+  charge: 0,+
+  mass:
+    value: 2.318
+    error_pos: 0.029
+    error_neg: -0.029
+  width:
+    value: 0.27
+    error_pos: 0.04
+    error_neg: -0.04
+- mc_ids:
+  - 10423
+  name: D(1)(2420)
+  charge: '0'
+  mass:
+    value: 2.4213
+    error_pos: 0.0006
+    error_neg: -0.0006
+  width:
+    value: 0.0271
+    error_pos: 0.0027
+    error_neg: -0.0027
+- mc_ids:
+  - 425
+  name: D(2)*(2460)
+  charge: '0'
+  mass:
+    value: 2.4626
+    error_pos: 0.0007
+    error_neg: -0.0007
+  width:
+    value: 0.049
+    error_pos: 0.0014
+    error_neg: -0.0014
+- mc_ids:
+  - 415
+  name: D(2)*(2460)
+  charge: +
+  mass:
+    value: 2.4644
+    error_pos: 0.0019
+    error_neg: -0.0019
+  width:
+    value: 0.037
+    error_pos: 0.006
+    error_neg: -0.006
+- mc_ids:
+  - 431
+  name: D(s)
+  charge: +
+  mass:
+    value: 1.96849
+    error_pos: 0.00032
+    error_neg: -0.00032
+  width:
+    value: 1.317e-12
+    error_pos: 1.9e-14
+    error_neg: -1.9e-14
+- mc_ids:
+  - 433
+  name: D(s)*
+  charge: +
+  mass:
+    value: 2.1123
+    error_pos: 0.0005
+    error_neg: -0.0005
+- mc_ids:
+  - 10431
+  name: D(s0)*(2317)
+  charge: +
+  mass:
+    value: 2.3178
+    error_pos: 0.0006
+    error_neg: -0.0006
+- mc_ids:
+  - 20433
+  name: D(s1)(2460)
+  charge: +
+  mass:
+    value: 2.4596
+    error_pos: 0.0006
+    error_neg: -0.0006
+- mc_ids:
+  - 10433
+  name: D(s1)(2536)
+  charge: +
+  mass:
+    value: 2.53512
+    error_pos: 0.00013
+    error_neg: -0.00013
+  width:
+    value: 0.00092
+    error_pos: 5.0e-05
+    error_neg: -5.0e-05
+- mc_ids:
+  - 435
+  name: D(s2)*(2573)
+  charge: +
+  mass:
+    value: 2.5719
+    error_pos: 0.0008
+    error_neg: -0.0008
+  width:
+    value: 0.017
+    error_pos: 0.004
+    error_neg: -0.004
+- mc_ids:
+  - 521
+  name: B
+  charge: +
+  mass:
+    value: 5.27925
+    error_pos: 0.00017
+    error_neg: -0.00017
+  width:
+    value: 4.011e-13
+    error_pos: 2.0e-15
+    error_neg: -2.0e-15
+- mc_ids:
+  - 511
+  name: B
+  charge: '0'
+  mass:
+    value: 5.27958
+    error_pos: 0.00017
+    error_neg: -0.00017
+  width:
+    value: 4.333e-13
+    error_pos: 2.0e-15
+    error_neg: -2.0e-15
+- mc_ids:
+  - 513
+  - 523
+  name: B*
+  charge: 0,+
+  mass:
+    value: 5.3252
+    error_pos: 0.0004
+    error_neg: -0.0004
+- mc_ids:
+  - 515
+  - 525
+  name: B(2)*(5747)
+  charge: 0,+
+  mass:
+    value: 5.743
+    error_pos: 0.005
+    error_neg: -0.005
+  width:
+    value: 0.023
+    error_pos: 0.005
+    error_neg: -0.011
+- mc_ids:
+  - 531
+  name: B(s)
+  charge: '0'
+  mass:
+    value: 5.36677
+    error_pos: 0.00024
+    error_neg: -0.00024
+  width:
+    value: 4.4e-13
+    error_pos: 4.0e-15
+    error_neg: -4.0e-15
+- mc_ids:
+  - 533
+  name: B(s)*
+  charge: '0'
+  mass:
+    value: 5.4154
+    error_pos: 0.0024
+    error_neg: -0.0021
+- mc_ids:
+  - 535
+  name: B(s2)*(5840)
+  charge: '0'
+  mass:
+    value: 5.8397
+    error_pos: 0.0006
+    error_neg: -0.0006
+- mc_ids:
+  - 541
+  name: B(c)
+  charge: +
+  mass:
+    value: 6.277
+    error_pos: 0.006
+    error_neg: -0.006
+  width:
+    value: 1.45e-12
+    error_pos: 1.4e-13
+    error_neg: -1.2e-13
+- mc_ids:
+  - 441
+  name: eta(c)(1S)
+  charge: '0'
+  mass:
+    value: 2.981
+    error_pos: 0.0011
+    error_neg: -0.0011
+  width:
+    value: 0.0297
+    error_pos: 0.001
+    error_neg: -0.001
+- mc_ids:
+  - 443
+  name: J/psi(1S)
+  charge: '0'
+  mass:
+    value: 3.096916
+    error_pos: 1.1e-05
+    error_neg: -1.1e-05
+  width:
+    value: 9.29e-05
+    error_pos: 2.8e-06
+    error_neg: -2.8e-06
+- mc_ids:
+  - 10441
+  name: chi(c0)(1P)
+  charge: '0'
+  mass:
+    value: 3.41475
+    error_pos: 0.00031
+    error_neg: -0.00031
+  width:
+    value: 0.0104
+    error_pos: 0.0006
+    error_neg: -0.0006
+- mc_ids:
+  - 20443
+  name: chi(c1)(1P)
+  charge: '0'
+  mass:
+    value: 3.51066
+    error_pos: 7.0e-05
+    error_neg: -7.0e-05
+  width:
+    value: 0.00086
+    error_pos: 5.0e-05
+    error_neg: -5.0e-05
+- mc_ids:
+  - 10443
+  name: h(c)(1P)
+  charge: '0'
+  mass:
+    value: 3.52541
+    error_pos: 0.00016
+    error_neg: -0.00016
+- mc_ids:
+  - 445
+  name: chi(c2)(1P)
+  charge: '0'
+  mass:
+    value: 3.5562
+    error_pos: 9.0e-05
+    error_neg: -9.0e-05
+  width:
+    value: 0.00198
+    error_pos: 0.00011
+    error_neg: -0.00011
+- mc_ids:
+  - 100441
+  name: eta(c)(2S)
+  charge: '0'
+  mass:
+    value: 3.6389
+    error_pos: 0.0013
+    error_neg: -0.0013
+  width:
+    value: 0.01
+    error_pos: 0.004
+    error_neg: -0.004
+- mc_ids:
+  - 100443
+  name: psi(2S)
+  charge: '0'
+  mass:
+    value: 3.686109
+    error_pos: 1.2e-05
+    error_neg: -1.4e-05
+  width:
+    value: 0.000304
+    error_pos: 9.0e-06
+    error_neg: -9.0e-06
+- mc_ids:
+  - 30443
+  name: psi(3770)
+  charge: '0'
+  mass:
+    value: 3.77315
+    error_pos: 0.00033
+    error_neg: -0.00033
+  width:
+    value: 0.0272
+    error_pos: 0.001
+    error_neg: -0.001
+- mc_ids:
+  - 100445
+  name: chi(c2)(2P)
+  charge: '0'
+  mass:
+    value: 3.9272
+    error_pos: 0.0026
+    error_neg: -0.0026
+  width:
+    value: 0.024
+    error_pos: 0.006
+    error_neg: -0.006
+- mc_ids:
+  - 9000443
+  name: psi(4040)
+  charge: '0'
+  mass:
+    value: 4.039
+    error_pos: 0.001
+    error_neg: -0.001
+  width:
+    value: 0.08
+    error_pos: 0.01
+    error_neg: -0.01
+- mc_ids:
+  - 9010443
+  name: psi(4160)
+  charge: '0'
+  mass:
+    value: 4.153
+    error_pos: 0.003
+    error_neg: -0.003
+  width:
+    value: 0.103
+    error_pos: 0.008
+    error_neg: -0.008
+- mc_ids:
+  - 9020443
+  name: psi(4415)
+  charge: '0'
+  mass:
+    value: 4.421
+    error_pos: 0.004
+    error_neg: -0.004
+  width:
+    value: 0.062
+    error_pos: 0.02
+    error_neg: -0.02
+- mc_ids:
+  - 553
+  name: Upsilon(1S)
+  charge: '0'
+  mass:
+    value: 9.4603
+    error_pos: 0.00026
+    error_neg: -0.00026
+  width:
+    value: 5.4e-05
+    error_pos: 1.3e-06
+    error_neg: -1.3e-06
+- mc_ids:
+  - 10551
+  name: chi(b0)(1P)
+  charge: '0'
+  mass:
+    value: 9.8594
+    error_pos: 0.0005
+    error_neg: -0.0005
+- mc_ids:
+  - 20553
+  name: chi(b1)(1P)
+  charge: '0'
+  mass:
+    value: 9.8928
+    error_pos: 0.0004
+    error_neg: -0.0004
+- mc_ids:
+  - 10553
+  name: h(b)(1P)
+  charge: '0'
+  mass:
+    value: 9.8986
+    error_pos: 0.0014
+    error_neg: -0.0014
+- mc_ids:
+  - 555
+  name: chi(b2)(1P)
+  charge: '0'
+  mass:
+    value: 9.9122
+    error_pos: 0.0004
+    error_neg: -0.0004
+- mc_ids:
+  - 100553
+  name: Upsilon(2S)
+  charge: '0'
+  mass:
+    value: 10.02326
+    error_pos: 0.00031
+    error_neg: -0.00031
+  width:
+    value: 3.2e-05
+    error_pos: 2.6e-06
+    error_neg: -2.6e-06
+- mc_ids:
+  - 30553
+  name: Upsilon(1D)
+  charge: '0'
+  mass:
+    value: 10.1637
+    error_pos: 0.0014
+    error_neg: -0.0014
+- mc_ids:
+  - 110551
+  name: chi(b0)(2P)
+  charge: '0'
+  mass:
+    value: 10.2325
+    error_pos: 0.0006
+    error_neg: -0.0006
+- mc_ids:
+  - 120553
+  name: chi(b1)(2P)
+  charge: '0'
+  mass:
+    value: 10.2555
+    error_pos: 0.0005
+    error_neg: -0.0005
+- mc_ids:
+  - 100555
+  name: chi(b2)(2P)
+  charge: '0'
+  mass:
+    value: 10.2686
+    error_pos: 0.0005
+    error_neg: -0.0005
+- mc_ids:
+  - 200553
+  name: Upsilon(3S)
+  charge: '0'
+  mass:
+    value: 10.3552
+    error_pos: 0.0005
+    error_neg: -0.0005
+  width:
+    value: 2.03e-05
+    error_pos: 1.9e-06
+    error_neg: -1.9e-06
+- mc_ids:
+  - 300553
+  name: Upsilon(4S)
+  charge: '0'
+  mass:
+    value: 10.5794
+    error_pos: 0.0012
+    error_neg: -0.0012
+  width:
+    value: 0.0205
+    error_pos: 0.0025
+    error_neg: -0.0025
+- mc_ids:
+  - 9000553
+  name: Upsilon(10860)
+  charge: '0'
+  mass:
+    value: 10.876
+    error_pos: 0.011
+    error_neg: -0.011
+  width:
+    value: 0.055
+    error_pos: 0.028
+    error_neg: -0.028
+- mc_ids:
+  - 9010553
+  name: Upsilon(11020)
+  charge: '0'
+  mass:
+    value: 11.019
+    error_pos: 0.008
+    error_neg: -0.008
+  width:
+    value: 0.079
+    error_pos: 0.016
+    error_neg: -0.016
+- mc_ids:
+  - 2212
+  name: p
+  charge: +
+  mass:
+    value: 0.938272046
+    error_pos: 2.1e-08
+    error_neg: -2.1e-08
+  width:
+    value: 0.0
+    error_pos: 0.0
+    error_neg: -0.0
+- mc_ids:
+  - 2112
+  name: n
+  charge: '0'
+  mass:
+    value: 0.939565379
+    error_pos: 2.1e-08
+    error_neg: -2.1e-08
+  width:
+    value: 7.479e-28
+    error_pos: 9.0e-31
+    error_neg: -9.0e-31
+- mc_ids:
+  - 12112
+  - 12212
+  name: N(1440)
+  charge: 0,+
+  mass:
+    value: 1.44
+    error_pos: 0.03
+    error_neg: -0.02
+  width:
+    value: 0.3
+    error_pos: 0.15
+    error_neg: -0.1
+- mc_ids:
+  - 1214
+  - 2124
+  name: N(1520)
+  charge: 0,+
+  mass:
+    value: 1.52
+    error_pos: 0.005
+    error_neg: -0.005
+  width:
+    value: 0.115
+    error_pos: 0.01
+    error_neg: -0.015
+- mc_ids:
+  - 22112
+  - 22212
+  name: N(1535)
+  charge: 0,+
+  mass:
+    value: 1.535
+    error_pos: 0.01
+    error_neg: -0.01
+  width:
+    value: 0.15
+    error_pos: 0.025
+    error_neg: -0.025
+- mc_ids:
+  - 32112
+  - 32212
+  name: N(1650)
+  charge: 0,+
+  mass:
+    value: 1.655
+    error_pos: 0.015
+    error_neg: -0.01
+  width:
+    value: 0.15
+    error_pos: 0.03
+    error_neg: -0.03
+- mc_ids:
+  - 2116
+  - 2216
+  name: N(1675)
+  charge: 0,+
+  mass:
+    value: 1.675
+    error_pos: 0.005
+    error_neg: -0.005
+  width:
+    value: 0.15
+    error_pos: 0.015
+    error_neg: -0.02
+- mc_ids:
+  - 12116
+  - 12216
+  name: N(1680)
+  charge: 0,+
+  mass:
+    value: 1.685
+    error_pos: 0.005
+    error_neg: -0.005
+  width:
+    value: 0.13
+    error_pos: 0.01
+    error_neg: -0.01
+- mc_ids:
+  - 21214
+  - 22124
+  name: N(1700)
+  charge: 0,+
+  mass:
+    value: 1.7
+    error_pos: 0.05
+    error_neg: -0.05
+  width:
+    value: 0.15
+    error_pos: 0.1
+    error_neg: -0.05
+- mc_ids:
+  - 42112
+  - 42212
+  name: N(1710)
+  charge: 0,+
+  mass:
+    value: 1.71
+    error_pos: 0.03
+    error_neg: -0.03
+  width:
+    value: 0.1
+    error_pos: 0.15
+    error_neg: -0.05
+- mc_ids:
+  - 31214
+  - 32124
+  name: N(1720)
+  charge: 0,+
+  mass:
+    value: 1.72
+    error_pos: 0.03
+    error_neg: -0.02
+  width:
+    value: 0.25
+    error_pos: 0.15
+    error_neg: -0.1
+- mc_ids:
+  - 1218
+  - 2128
+  name: N(2190)
+  charge: 0,+
+  mass:
+    value: 2.19
+    error_pos: 0.01
+    error_neg: -0.09
+  width:
+    value: 0.5
+    error_pos: 0.2
+    error_neg: -0.2
+- mc_ids:
+  - 1114
+  - 2114
+  - 2214
+  - 2224
+  name: Delta(1232)
+  charge: -,0,+,++
+  mass:
+    value: 1.232
+    error_pos: 0.002
+    error_neg: -0.002
+  width:
+    value: 0.117
+    error_pos: 0.003
+    error_neg: -0.003
+- mc_ids:
+  - 31114
+  - 32114
+  - 32214
+  - 32224
+  name: Delta(1600)
+  charge: -,0,+,++
+  mass:
+    value: 1.6
+    error_pos: 0.1
+    error_neg: -0.1
+  width:
+    value: 0.32
+    error_pos: 0.1
+    error_neg: -0.1
+- mc_ids:
+  - 1112
+  - 1212
+  - 2122
+  - 2222
+  name: Delta(1620)
+  charge: -,0,+,++
+  mass:
+    value: 1.63
+    error_pos: 0.03
+    error_neg: -0.03
+  width:
+    value: 0.14
+    error_pos: 0.01
+    error_neg: -0.01
+- mc_ids:
+  - 11114
+  - 12114
+  - 12214
+  - 12224
+  name: Delta(1700)
+  charge: -,0,+,++
+  mass:
+    value: 1.7
+    error_pos: 0.05
+    error_neg: -0.03
+  width:
+    value: 0.3
+    error_pos: 0.1
+    error_neg: -0.1
+- mc_ids:
+  - 1116
+  - 1216
+  - 2126
+  - 2226
+  name: Delta(1905)
+  charge: -,0,+,++
+  mass:
+    value: 1.88
+    error_pos: 0.03
+    error_neg: -0.025
+  width:
+    value: 0.33
+    error_pos: 0.07
+    error_neg: -0.06
+- mc_ids:
+  - 21112
+  - 21212
+  - 22122
+  - 22222
+  name: Delta(1910)
+  charge: -,0,+,++
+  mass:
+    value: 1.89
+    error_pos: 0.02
+    error_neg: -0.03
+  width:
+    value: 0.28
+    error_pos: 0.06
+    error_neg: -0.06
+- mc_ids:
+  - 21114
+  - 22114
+  - 22214
+  - 22224
+  name: Delta(1920)
+  charge: -,0,+,++
+  mass:
+    value: 1.92
+    error_pos: 0.05
+    error_neg: -0.02
+  width:
+    value: 0.26
+    error_pos: 0.04
+    error_neg: -0.08
+- mc_ids:
+  - 11116
+  - 11216
+  - 12126
+  - 12226
+  name: Delta(1930)
+  charge: -,0,+,++
+  mass:
+    value: 1.95
+    error_pos: 0.05
+    error_neg: -0.05
+  width:
+    value: 0.36
+    error_pos: 0.14
+    error_neg: -0.14
+- mc_ids:
+  - 1118
+  - 2118
+  - 2218
+  - 2228
+  name: Delta(1950)
+  charge: -,0,+,++
+  mass:
+    value: 1.93
+    error_pos: 0.02
+    error_neg: -0.015
+  width:
+    value: 0.28
+    error_pos: 0.05
+    error_neg: -0.05
+- mc_ids:
+  - 3122
+  name: Lambda
+  charge: '0'
+  mass:
+    value: 1.115683
+    error_pos: 6.0e-06
+    error_neg: -6.0e-06
+  width:
+    value: 2.501e-15
+    error_pos: 1.9e-17
+    error_neg: -1.9e-17
+- mc_ids:
+  - 13122
+  name: Lambda(1405)
+  charge: '0'
+  mass:
+    value: 1.4051
+    error_pos: 0.0013
+    error_neg: -0.001
+  width:
+    value: 0.05
+    error_pos: 0.002
+    error_neg: -0.002
+- mc_ids:
+  - 3124
+  name: Lambda(1520)
+  charge: '0'
+  mass:
+    value: 1.5195
+    error_pos: 0.001
+    error_neg: -0.001
+  width:
+    value: 0.0156
+    error_pos: 0.001
+    error_neg: -0.001
+- mc_ids:
+  - 23122
+  name: Lambda(1600)
+  charge: '0'
+  mass:
+    value: 1.6
+    error_pos: 0.1
+    error_neg: -0.04
+  width:
+    value: 0.15
+    error_pos: 0.1
+    error_neg: -0.1
+- mc_ids:
+  - 33122
+  name: Lambda(1670)
+  charge: '0'
+  mass:
+    value: 1.67
+    error_pos: 0.01
+    error_neg: -0.01
+  width:
+    value: 0.035
+    error_pos: 0.015
+    error_neg: -0.01
+- mc_ids:
+  - 13124
+  name: Lambda(1690)
+  charge: '0'
+  mass:
+    value: 1.69
+    error_pos: 0.005
+    error_neg: -0.005
+  width:
+    value: 0.06
+    error_pos: 0.01
+    error_neg: -0.01
+- mc_ids:
+  - 43122
+  name: Lambda(1800)
+  charge: '0'
+  mass:
+    value: 1.8
+    error_pos: 0.05
+    error_neg: -0.08
+  width:
+    value: 0.3
+    error_pos: 0.1
+    error_neg: -0.1
+- mc_ids:
+  - 53122
+  name: Lambda(1810)
+  charge: '0'
+  mass:
+    value: 1.81
+    error_pos: 0.04
+    error_neg: -0.06
+  width:
+    value: 0.15
+    error_pos: 0.1
+    error_neg: -0.1
+- mc_ids:
+  - 3126
+  name: Lambda(1820)
+  charge: '0'
+  mass:
+    value: 1.82
+    error_pos: 0.005
+    error_neg: -0.005
+  width:
+    value: 0.08
+    error_pos: 0.01
+    error_neg: -0.01
+- mc_ids:
+  - 13126
+  name: Lambda(1830)
+  charge: '0'
+  mass:
+    value: 1.83
+    error_pos: 0.0
+    error_neg: -0.02
+  width:
+    value: 0.095
+    error_pos: 0.015
+    error_neg: -0.035
+- mc_ids:
+  - 23124
+  name: Lambda(1890)
+  charge: '0'
+  mass:
+    value: 1.89
+    error_pos: 0.02
+    error_neg: -0.04
+  width:
+    value: 0.1
+    error_pos: 0.1
+    error_neg: -0.04
+- mc_ids:
+  - 3128
+  name: Lambda(2100)
+  charge: '0'
+  mass:
+    value: 2.1
+    error_pos: 0.01
+    error_neg: -0.01
+  width:
+    value: 0.2
+    error_pos: 0.05
+    error_neg: -0.1
+- mc_ids:
+  - 23126
+  name: Lambda(2110)
+  charge: '0'
+  mass:
+    value: 2.11
+    error_pos: 0.03
+    error_neg: -0.02
+  width:
+    value: 0.2
+    error_pos: 0.05
+    error_neg: -0.05
+- mc_ids:
+  - 3222
+  name: Sigma
+  charge: +
+  mass:
+    value: 1.18937
+    error_pos: 7.0e-05
+    error_neg: -7.0e-05
+  width:
+    value: 8.209e-15
+    error_pos: 2.7e-17
+    error_neg: -2.7e-17
+- mc_ids:
+  - 3212
+  name: Sigma
+  charge: '0'
+  mass:
+    value: 1.192642
+    error_pos: 2.4e-05
+    error_neg: -2.4e-05
+  width:
+    value: 8.9e-06
+    error_pos: 9.0e-07
+    error_neg: -8.0e-07
+- mc_ids:
+  - 3112
+  name: Sigma
+  charge: '-'
+  mass:
+    value: 1.197449
+    error_pos: 3.0e-05
+    error_neg: -3.0e-05
+  width:
+    value: 4.45e-15
+    error_pos: 3.2e-17
+    error_neg: -3.2e-17
+- mc_ids:
+  - 3224
+  name: Sigma(1385)
+  charge: +
+  mass:
+    value: 1.3828
+    error_pos: 0.00035
+    error_neg: -0.00035
+  width:
+    value: 0.036
+    error_pos: 0.0007
+    error_neg: -0.0007
+- mc_ids:
+  - 3214
+  name: Sigma(1385)
+  charge: '0'
+  mass:
+    value: 1.3837
+    error_pos: 0.001
+    error_neg: -0.001
+  width:
+    value: 0.036
+    error_pos: 0.005
+    error_neg: -0.005
+- mc_ids:
+  - 3114
+  name: Sigma(1385)
+  charge: '-'
+  mass:
+    value: 1.3872
+    error_pos: 0.0005
+    error_neg: -0.0005
+  width:
+    value: 0.0394
+    error_pos: 0.0021
+    error_neg: -0.0021
+- mc_ids:
+  - 13112
+  - 13212
+  - 13222
+  name: Sigma(1660)
+  charge: -,0,+
+  mass:
+    value: 1.66
+    error_pos: 0.03
+    error_neg: -0.03
+  width:
+    value: 0.1
+    error_pos: 0.1
+    error_neg: -0.06
+- mc_ids:
+  - 13114
+  - 13214
+  - 13224
+  name: Sigma(1670)
+  charge: -,0,+
+  mass:
+    value: 1.67
+    error_pos: 0.015
+    error_neg: -0.005
+  width:
+    value: 0.06
+    error_pos: 0.02
+    error_neg: -0.02
+- mc_ids:
+  - 23112
+  - 23212
+  - 23222
+  name: Sigma(1750)
+  charge: -,0,+
+  mass:
+    value: 1.75
+    error_pos: 0.05
+    error_neg: -0.02
+  width:
+    value: 0.09
+    error_pos: 0.07
+    error_neg: -0.03
+- mc_ids:
+  - 3116
+  - 3216
+  - 3226
+  name: Sigma(1775)
+  charge: -,0,+
+  mass:
+    value: 1.775
+    error_pos: 0.005
+    error_neg: -0.005
+  width:
+    value: 0.12
+    error_pos: 0.015
+    error_neg: -0.015
+- mc_ids:
+  - 13116
+  - 13216
+  - 13226
+  name: Sigma(1915)
+  charge: -,0,+
+  mass:
+    value: 1.915
+    error_pos: 0.02
+    error_neg: -0.015
+  width:
+    value: 0.12
+    error_pos: 0.04
+    error_neg: -0.04
+- mc_ids:
+  - 23114
+  - 23214
+  - 23224
+  name: Sigma(1940)
+  charge: -,0,+
+  mass:
+    value: 1.94
+    error_pos: 0.01
+    error_neg: -0.04
+  width:
+    value: 0.22
+    error_pos: 0.08
+    error_neg: -0.07
+- mc_ids:
+  - 3118
+  - 3218
+  - 3228
+  name: Sigma(2030)
+  charge: -,0,+
+  mass:
+    value: 2.03
+    error_pos: 0.01
+    error_neg: -0.005
+  width:
+    value: 0.18
+    error_pos: 0.02
+    error_neg: -0.03
+- mc_ids:
+  - 3322
+  name: Xi
+  charge: '0'
+  mass:
+    value: 1.31486
+    error_pos: 0.0002
+    error_neg: -0.0002
+  width:
+    value: 2.27e-15
+    error_pos: 7.0e-17
+    error_neg: -7.0e-17
+- mc_ids:
+  - 3312
+  name: Xi
+  charge: '-'
+  mass:
+    value: 1.32171
+    error_pos: 7.0e-05
+    error_neg: -7.0e-05
+  width:
+    value: 4.02e-15
+    error_pos: 4.0e-17
+    error_neg: -4.0e-17
+- mc_ids:
+  - 3324
+  name: Xi(1530)
+  charge: '0'
+  mass:
+    value: 1.5318
+    error_pos: 0.00032
+    error_neg: -0.00032
+  width:
+    value: 0.0091
+    error_pos: 0.0005
+    error_neg: -0.0005
+- mc_ids:
+  - 3314
+  name: Xi(1530)
+  charge: '-'
+  mass:
+    value: 1.535
+    error_pos: 0.0006
+    error_neg: -0.0006
+  width:
+    value: 0.0099
+    error_pos: 0.0017
+    error_neg: -0.0019
+- mc_ids:
+  - 203312
+  - 203322
+  name: Xi(1690)
+  charge: -,0
+  mass:
+    value: 1.69
+    error_pos: 0.01
+    error_neg: -0.01
+- mc_ids:
+  - 13314
+  - 13324
+  name: Xi(1820)
+  charge: -,0
+  mass:
+    value: 1.823
+    error_pos: 0.005
+    error_neg: -0.005
+  width:
+    value: 0.024
+    error_pos: 0.015
+    error_neg: -0.01
+- mc_ids:
+  - 103316
+  - 103326
+  name: Xi(1950)
+  charge: -,0
+  mass:
+    value: 1.95
+    error_pos: 0.015
+    error_neg: -0.015
+  width:
+    value: 0.06
+    error_pos: 0.02
+    error_neg: -0.02
+- mc_ids:
+  - 203316
+  - 203326
+  name: Xi(2030)
+  charge: -,0
+  mass:
+    value: 2.025
+    error_pos: 0.005
+    error_neg: -0.005
+  width:
+    value: 0.02
+    error_pos: 0.015
+    error_neg: -0.005
+- mc_ids:
+  - 3334
+  name: Omega
+  charge: '-'
+  mass:
+    value: 1.67245
+    error_pos: 0.00029
+    error_neg: -0.00029
+  width:
+    value: 8.02e-12
+    error_pos: 1.1e-13
+    error_neg: -1.1e-13
+- mc_ids:
+  - 203338
+  name: Omega(2250)
+  charge: '-'
+  mass:
+    value: 2.252
+    error_pos: 0.009
+    error_neg: -0.009
+  width:
+    value: 0.055
+    error_pos: 0.018
+    error_neg: -0.018
+- mc_ids:
+  - 4122
+  name: Lambda(c)
+  charge: +
+  mass:
+    value: 2.28646
+    error_pos: 0.00014
+    error_neg: -0.00014
+  width:
+    value: 3.3e-12
+    error_pos: 9.0e-14
+    error_neg: -9.0e-14
+- mc_ids:
+  - 14122
+  name: Lambda(c)(2595)
+  charge: +
+  mass:
+    value: 2.59225
+    error_pos: 0.00028
+    error_neg: -0.00028
+  width:
+    value: 0.0026
+    error_pos: 0.0006
+    error_neg: -0.0006
+- mc_ids:
+  - 104122
+  name: Lambda(c)(2625)
+  charge: +
+  mass:
+    value: 2.62811
+    error_pos: 0.00019
+    error_neg: -0.00019
+- mc_ids:
+  - 204126
+  name: Lambda(c)(2880)
+  charge: +
+  mass:
+    value: 2.88153
+    error_pos: 0.00035
+    error_neg: -0.00035
+  width:
+    value: 0.0058
+    error_pos: 0.0011
+    error_neg: -0.0011
+- mc_ids:
+  - 4222
+  name: Sigma(c)(2455)
+  charge: ++
+  mass:
+    value: 2.45398
+    error_pos: 0.00016
+    error_neg: -0.00016
+  width:
+    value: 0.00226
+    error_pos: 0.00025
+    error_neg: -0.00025
+- mc_ids:
+  - 4212
+  name: Sigma(c)(2455)
+  charge: +
+  mass:
+    value: 2.4529
+    error_pos: 0.0004
+    error_neg: -0.0004
+- mc_ids:
+  - 4112
+  name: Sigma(c)(2455)
+  charge: '0'
+  mass:
+    value: 2.45374
+    error_pos: 0.00016
+    error_neg: -0.00016
+  width:
+    value: 0.00216
+    error_pos: 0.00026
+    error_neg: -0.00026
+- mc_ids:
+  - 4224
+  name: Sigma(c)(2520)
+  charge: ++
+  mass:
+    value: 2.5179
+    error_pos: 0.0006
+    error_neg: -0.0006
+  width:
+    value: 0.0149
+    error_pos: 0.0015
+    error_neg: -0.0015
+- mc_ids:
+  - 4214
+  name: Sigma(c)(2520)
+  charge: +
+  mass:
+    value: 2.5175
+    error_pos: 0.0023
+    error_neg: -0.0023
+- mc_ids:
+  - 4114
+  name: Sigma(c)(2520)
+  charge: '0'
+  mass:
+    value: 2.5188
+    error_pos: 0.0006
+    error_neg: -0.0006
+  width:
+    value: 0.0145
+    error_pos: 0.0015
+    error_neg: -0.0015
+- mc_ids:
+  - 4232
+  name: Xi(c)
+  charge: +
+  mass:
+    value: 2.4678
+    error_pos: 0.0004
+    error_neg: -0.0006
+  width:
+    value: 1.49e-12
+    error_pos: 9.0e-14
+    error_neg: -9.0e-14
+- mc_ids:
+  - 4132
+  name: Xi(c)
+  charge: '0'
+  mass:
+    value: 2.47088
+    error_pos: 0.00034
+    error_neg: -0.0008
+  width:
+    value: 5.9e-12
+    error_pos: 6.0e-13
+    error_neg: -6.0e-13
+- mc_ids:
+  - 4322
+  name: Xi(c)'
+  charge: +
+  mass:
+    value: 2.5756
+    error_pos: 0.0031
+    error_neg: -0.0031
+- mc_ids:
+  - 4312
+  name: Xi(c)'
+  charge: '0'
+  mass:
+    value: 2.5779
+    error_pos: 0.0029
+    error_neg: -0.0029
+- mc_ids:
+  - 4324
+  name: Xi(c)(2645)
+  charge: +
+  mass:
+    value: 2.6459
+    error_pos: 0.0005
+    error_neg: -0.0006
+- mc_ids:
+  - 4314
+  name: Xi(c)(2645)
+  charge: '0'
+  mass:
+    value: 2.6459
+    error_pos: 0.0005
+    error_neg: -0.0005
+- mc_ids:
+  - 104324
+  name: Xi(c)(2790)
+  charge: +
+  mass:
+    value: 2.7891
+    error_pos: 0.0032
+    error_neg: -0.0032
+- mc_ids:
+  - 104314
+  name: Xi(c)(2790)
+  charge: '0'
+  mass:
+    value: 2.7918
+    error_pos: 0.0033
+    error_neg: -0.0033
+- mc_ids:
+  - 104322
+  name: Xi(c)(2815)
+  charge: +
+  mass:
+    value: 2.8166
+    error_pos: 0.0009
+    error_neg: -0.0009
+- mc_ids:
+  - 104312
+  name: Xi(c)(2815)
+  charge: '0'
+  mass:
+    value: 2.8196
+    error_pos: 0.0012
+    error_neg: -0.0012
+- mc_ids:
+  - 4332
+  name: Omega(c)
+  charge: '0'
+  mass:
+    value: 2.6952
+    error_pos: 0.0017
+    error_neg: -0.0017
+  width:
+    value: 9.6e-12
+    error_pos: 2.1e-12
+    error_neg: -1.4e-12
+- mc_ids:
+  - 4334
+  name: Omega(c)(2770)
+  charge: '0'
+  mass:
+    value: 2.7659
+    error_pos: 0.002
+    error_neg: -0.002
+- mc_ids:
+  - 5122
+  name: Lambda(b)
+  charge: '0'
+  mass:
+    value: 5.6194
+    error_pos: 0.0007
+    error_neg: -0.0007
+  width:
+    value: 4.62e-13
+    error_pos: 1.0e-14
+    error_neg: -1.0e-14
+- mc_ids:
+  - 5222
+  name: Sigma(b)
+  charge: +
+  mass:
+    value: 5.8113
+    error_pos: 0.0019
+    error_neg: -0.0019
+  width:
+    value: 0.0097
+    error_pos: 0.004
+    error_neg: -0.003
+- mc_ids:
+  - 5112
+  name: Sigma(b)
+  charge: '-'
+  mass:
+    value: 5.8155
+    error_pos: 0.0018
+    error_neg: -0.0018
+  width:
+    value: 0.0049
+    error_pos: 0.0033
+    error_neg: -0.0024
+- mc_ids:
+  - 5224
+  name: Sigma(b)*
+  charge: +
+  mass:
+    value: 5.8321
+    error_pos: 0.0019
+    error_neg: -0.0019
+- mc_ids:
+  - 5114
+  name: Sigma(b)*
+  charge: '-'
+  mass:
+    value: 5.8351
+    error_pos: 0.0019
+    error_neg: -0.0019
+- mc_ids:
+  - 5132
+  name: Xi(b)
+  charge: '-'
+  mass:
+    value: 5.7911
+    error_pos: 0.0022
+    error_neg: -0.0022
+  width:
+    value: 4.2e-13
+    error_pos: 8.0e-14
+    error_neg: -6.0e-14
+- mc_ids:
+  - 5232
+  name: Xi(b)
+  charge: '0'
+  mass:
+    value: 5.788
+    error_pos: 0.005
+    error_neg: -0.005
+  width:
+    value: 4.4e-13
+    error_pos: 6.0e-14
+    error_neg: -5.0e-14
+- mc_ids:
+  - 5332
+  name: Omega(b)
+  charge: '-'
+  mass:
+    value: 6.07
+    error_pos: 0.04
+    error_neg: -0.04
+  width:
+    value: 5.8e-13
+    error_pos: 3.2e-13
+    error_neg: -1.9e-13

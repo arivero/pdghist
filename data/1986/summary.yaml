@@ -1,0 +1,33 @@
+edition: 1986
+source: PDG Review of Particle Physics database
+source_file: pdgall-2025-v0.2.2.sqlite
+source_api: https://pdgapi.lbl.gov/
+quantities:
+  muon_mass:
+    value: 105.65916
+    error_positive: 0.0003
+    error_negative: 0.0003
+    unit: MeV
+    value_text: 105.65916+-0.00030
+    value_type: V
+  tau_mass:
+    value: 1784.2
+    error_positive: 3.2
+    error_negative: 3.2
+    unit: MeV
+    value_text: 1784.2+-3.2
+    value_type: V
+  W_mass:
+    value: 81.8
+    error_positive: 1.5
+    error_negative: 1.5
+    unit: GeV
+    value_text: 81.8+-1.5
+    value_type: V
+  Z_mass:
+    value: 92.6
+    error_positive: 1.7
+    error_negative: 1.7
+    unit: GeV
+    value_text: 92.6+-1.7
+    value_type: V

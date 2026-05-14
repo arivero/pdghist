@@ -1,0 +1,125 @@
+edition: 2019
+source: PDG Review of Particle Physics database
+source_file: pdgall-2025-v0.2.2.sqlite
+source_api: https://pdgapi.lbl.gov/
+quantities:
+  c_quark_mass:
+    value: 1.27
+    error_positive: 0.02
+    error_negative: 0.02
+    unit: GeV
+    value_text: 1.27+-0.02
+    value_type: V
+  b_quark_mass:
+    value: 4.18
+    error_positive: 0.03
+    error_negative: 0.02
+    unit: GeV
+    value_text: 4.18+0.03-0.02
+    value_type: V
+  t_quark_mass:
+    value: 172.8742540967435
+    error_positive: 0.3756166849086566
+    error_negative: 0.375080561158106
+    unit: GeV
+    value_text: 172.9+-0.4
+    value_type: AC
+  electron_mass:
+    value: 0.5109989461
+    error_positive: 3.1e-09
+    error_negative: 3.1e-09
+    unit: MeV
+    value_text: 0.5109989461+-0.0000000031
+    value_type: AC
+  muon_mass:
+    value: 105.6583745
+    error_positive: 2.4e-06
+    error_negative: 2.4e-06
+    unit: MeV
+    value_text: 105.6583745+-0.0000024
+    value_type: AC
+  tau_mass:
+    value: 1776.861049071306
+    error_positive: 0.1140041978238036
+    error_negative: 0.1174303852077363
+    unit: MeV
+    value_text: 1776.86+-0.12
+    value_type: AC
+  W_mass:
+    value: 80.379
+    error_positive: 0.012
+    error_negative: 0.012
+    unit: GeV
+    value_text: 80.379 +-0.012
+    value_type: FC
+  Z_mass:
+    value: 91.1876
+    error_positive: 0.0021
+    error_negative: 0.0021
+    unit: GeV
+    value_text: 91.1876+-0.0021
+    value_type: FC
+  H_mass:
+    value: 125.0995883900619
+    error_positive: 0.1372793347140053
+    error_negative: 0.1372793347140053
+    unit: GeV
+    value_text: 125.10+-0.14
+    value_type: AC
+  W_width:
+    value: 2.085
+    error_positive: 0.042
+    error_negative: 0.042
+    unit: GeV
+    value_text: 2.085 +- 0.042
+    value_type: FC
+  Z_width:
+    value: 2.4952
+    error_positive: 0.0023
+    error_negative: 0.0023
+    unit: GeV
+    value_text: 2.4952+-0.0023
+    value_type: FC
+  H_width:
+    value: 0.013
+    error_positive: 0.0
+    error_negative: 0.0
+    unit: GeV
+    value_text: < 0.013
+    value_type: L
+    limit_type: U
+  sin2_theta_12:
+    value: 0.307
+    error_positive: 0.013
+    error_negative: 0.012
+    unit: ''
+    value_text: 0.307+-0.013
+    value_type: AC
+  sin2_theta_13:
+    value: 0.02182183126141179
+    error_positive: 0.0006805085338589724
+    error_negative: 0.0006804601282414235
+    unit: ''
+    value_text: 0.0218+-0.0007
+    value_type: AC
+  sin2_theta_23:
+    value: 0.536
+    error_positive: 0.023
+    error_negative: 0.028
+    unit: ''
+    value_text: 0.536+0.023-0.028
+    value_type: FC
+  dm2_21:
+    value: 7.530000000000001e-05
+    error_positive: 1.8e-06
+    error_negative: 1.8e-06
+    unit: eV^2
+    value_text: (7.53+-0.18)E-5
+    value_type: AC
+  dm2_32:
+    value: -0.002525129749459806
+    error_positive: 4.619684993154829e-05
+    error_negative: 4.874204815246215e-05
+    unit: eV^2
+    value_text: -0.00253+-0.00005
+    value_type: FC

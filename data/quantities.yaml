@@ -1,0 +1,644 @@
+description: Fundamental Standard Model parameters tracked by pdghist, with their
+  PDG Identifiers.
+source_file: pdgall-2025-v0.2.2.sqlite
+quantities:
+- key: d_quark_mass
+  pdgid: Q001M
+  name: Down quark mass
+  symbol: m_d
+  category: quark mass
+  editions:
+  - 1992
+  - 1994
+  - 1996
+  - 1997
+  - 1998
+  - 2000
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2024
+  - 2025
+  n_editions: 18
+- key: u_quark_mass
+  pdgid: Q002M
+  name: Up quark mass
+  symbol: m_u
+  category: quark mass
+  editions:
+  - 1992
+  - 1994
+  - 1996
+  - 1997
+  - 1998
+  - 2000
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2024
+  - 2025
+  n_editions: 18
+- key: s_quark_mass
+  pdgid: Q003M
+  name: Strange quark mass
+  symbol: m_s
+  category: quark mass
+  editions:
+  - 1992
+  - 1994
+  - 1996
+  - 1997
+  - 1998
+  - 2000
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2024
+  - 2025
+  n_editions: 18
+- key: c_quark_mass
+  pdgid: Q004M
+  name: Charm quark mass
+  symbol: m_c
+  category: quark mass
+  editions:
+  - 1992
+  - 1994
+  - 1996
+  - 1997
+  - 1998
+  - 2000
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+  n_editions: 30
+- key: b_quark_mass
+  pdgid: Q005M
+  name: Bottom quark mass
+  symbol: m_b
+  category: quark mass
+  editions:
+  - 1992
+  - 1994
+  - 1996
+  - 1997
+  - 1998
+  - 2000
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+  n_editions: 30
+- key: t_quark_mass
+  pdgid: Q007TP
+  name: Top quark mass
+  symbol: m_t
+  category: quark mass
+  editions:
+  - 1994
+  - 1996
+  - 1997
+  - 1998
+  - 2000
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+  n_editions: 29
+- key: electron_mass
+  pdgid: S003M
+  name: Electron mass
+  symbol: m_e
+  category: lepton mass
+  editions:
+  - 1961
+  - 1964
+  - 1970
+  - 1974
+  - 1988
+  - 1990
+  - 1992
+  - 1994
+  - 1996
+  - 1997
+  - 1998
+  - 2000
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+  n_editions: 36
+- key: muon_mass
+  pdgid: S004M
+  name: Muon mass
+  symbol: m_mu
+  category: lepton mass
+  editions:
+  - 1958
+  - 1961
+  - 1963
+  - 1964
+  - 1965
+  - 1967
+  - 1968
+  - 1969
+  - 1970
+  - 1971
+  - 1972
+  - 1973
+  - 1974
+  - 1976
+  - 1978
+  - 1980
+  - 1982
+  - 1984
+  - 1986
+  - 1988
+  - 1990
+  - 1992
+  - 1994
+  - 1996
+  - 1997
+  - 1998
+  - 2000
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+  n_editions: 51
+- key: tau_mass
+  pdgid: S035M
+  name: Tau mass
+  symbol: m_tau
+  category: lepton mass
+  editions:
+  - 1978
+  - 1980
+  - 1982
+  - 1984
+  - 1986
+  - 1988
+  - 1990
+  - 1992
+  - 1994
+  - 1996
+  - 1997
+  - 1998
+  - 2000
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+  n_editions: 37
+- key: W_mass
+  pdgid: S043M
+  name: W boson mass
+  symbol: m_W
+  category: boson mass
+  editions:
+  - 1984
+  - 1986
+  - 1988
+  - 1990
+  - 1992
+  - 1994
+  - 1996
+  - 1997
+  - 1998
+  - 2000
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+  n_editions: 34
+- key: Z_mass
+  pdgid: S044M
+  name: Z boson mass
+  symbol: m_Z
+  category: boson mass
+  editions:
+  - 1984
+  - 1986
+  - 1988
+  - 1990
+  - 1992
+  - 1994
+  - 1996
+  - 1997
+  - 1998
+  - 2000
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+  n_editions: 34
+- key: H_mass
+  pdgid: S126M
+  name: Higgs boson mass
+  symbol: m_H
+  category: boson mass
+  editions:
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+  n_editions: 12
+- key: W_width
+  pdgid: S043W
+  name: W boson width
+  symbol: Gamma_W
+  category: boson width
+  editions:
+  - 1990
+  - 1992
+  - 1994
+  - 1996
+  - 1997
+  - 1998
+  - 2000
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+  n_editions: 31
+- key: Z_width
+  pdgid: S044W
+  name: Z boson width
+  symbol: Gamma_Z
+  category: boson width
+  editions:
+  - 1990
+  - 1992
+  - 1994
+  - 1996
+  - 1997
+  - 1998
+  - 2000
+  - 2002
+  - 2003
+  - 2004
+  - 2005
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+  n_editions: 31
+- key: H_width
+  pdgid: S126W
+  name: Higgs boson width
+  symbol: Gamma_H
+  category: boson width
+  editions:
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+  n_editions: 10
+- key: sin2_theta_eff
+  pdgid: S044SEF
+  name: Effective weak mixing angle
+  symbol: sin^2(theta_eff)
+  category: electroweak mixing
+  editions:
+  - 2025
+  n_editions: 1
+- key: sin2_theta_12
+  pdgid: S067P12
+  name: Neutrino mixing sin^2(theta_12)
+  symbol: sin^2(theta_12)
+  category: neutrino mixing
+  editions:
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+  n_editions: 11
+- key: sin2_theta_13
+  pdgid: S067P13
+  name: Neutrino mixing sin^2(theta_13)
+  symbol: sin^2(theta_13)
+  category: neutrino mixing
+  editions:
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+  n_editions: 11
+- key: sin2_theta_23
+  pdgid: S067P23
+  name: Neutrino mixing sin^2(theta_23)
+  symbol: sin^2(theta_23)
+  category: neutrino mixing
+  editions:
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+  n_editions: 11
+- key: dm2_21
+  pdgid: S067DM3
+  name: Neutrino mass-squared difference Delta(m^2_21)
+  symbol: Delta(m^2_21)
+  category: neutrino mass-squared difference
+  editions:
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+  n_editions: 20
+- key: dm2_32
+  pdgid: S067DM1
+  name: Neutrino mass-squared difference Delta(m^2_32)
+  symbol: Delta(m^2_32)
+  category: neutrino mass-squared difference
+  editions:
+  - 2006
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+  - 2015
+  - 2016
+  - 2017
+  - 2018
+  - 2019
+  - 2020
+  - 2021
+  - 2022
+  - 2023
+  - 2024
+  - 2025
+  n_editions: 20

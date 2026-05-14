@@ -1,0 +1,6994 @@
+{
+ "generated": "2026-05-14 12:05:54",
+ "about": "History of PDG values for fundamental Standard Model parameters. x = PDG edition year, y = value with errors.",
+ "sources": {
+  "pdg_database": "PDG pdgall SQLite database (all editions)",
+  "mass_width_file": "PDG yearly mass_width machine-readable files"
+ },
+ "categories": [
+  "boson mass",
+  "boson width",
+  "electroweak mixing",
+  "lepton mass",
+  "neutrino mass-squared difference",
+  "neutrino mixing",
+  "quark mass"
+ ],
+ "quantities": [
+  {
+   "key": "d_quark_mass",
+   "name": "Down quark mass",
+   "symbol": "m_d",
+   "category": "quark mass",
+   "pdgid": "Q001M",
+   "unit": "MeV",
+   "series": {
+    "pdg_database": [
+     {
+      "year": 1992,
+      "value": 10.0,
+      "error_positive": 5.0,
+      "error_negative": 5.0,
+      "unit": "MeV",
+      "value_text": "5 to 15",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 1994,
+      "value": 10.0,
+      "error_positive": 5.0,
+      "error_negative": 5.0,
+      "unit": "MeV",
+      "value_text": "5 to 15",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 1996,
+      "value": 10.0,
+      "error_positive": 5.0,
+      "error_negative": 5.0,
+      "unit": "MeV",
+      "value_text": "5 to 15",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 1997,
+      "value": 10.0,
+      "error_positive": 5.0,
+      "error_negative": 5.0,
+      "unit": "MeV",
+      "value_text": "5 to 15",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 1998,
+      "value": 6.0,
+      "error_positive": 3.0,
+      "error_negative": 3.0,
+      "unit": "MeV",
+      "value_text": "3 to 9",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2000,
+      "value": 6.0,
+      "error_positive": 3.0,
+      "error_negative": 3.0,
+      "unit": "MeV",
+      "value_text": "3 to 9",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2002,
+      "value": 6.75,
+      "error_positive": 1.75,
+      "error_negative": 1.75,
+      "unit": "MeV",
+      "value_text": "5 to 8.5",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2003,
+      "value": 6.75,
+      "error_positive": 1.75,
+      "error_negative": 1.75,
+      "unit": "MeV",
+      "value_text": "5 to 8.5",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2004,
+      "value": 6.0,
+      "error_positive": 2.0,
+      "error_negative": 2.0,
+      "unit": "MeV",
+      "value_text": "4 to 8",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2005,
+      "value": 6.0,
+      "error_positive": 2.0,
+      "error_negative": 2.0,
+      "unit": "MeV",
+      "value_text": "4 to 8",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2006,
+      "value": 5.0,
+      "error_positive": 2.0,
+      "error_negative": 2.0,
+      "unit": "MeV",
+      "value_text": "3 to 7",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2007,
+      "value": 5.0,
+      "error_positive": 2.0,
+      "error_negative": 2.0,
+      "unit": "MeV",
+      "value_text": "3 to 7",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2008,
+      "value": 4.75,
+      "error_positive": 1.25,
+      "error_negative": 1.25,
+      "unit": "MeV",
+      "value_text": "3.5 to 6.0",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2009,
+      "value": 4.75,
+      "error_positive": 1.25,
+      "error_negative": 1.25,
+      "unit": "MeV",
+      "value_text": "3.5 to 6.0",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2010,
+      "value": 4.949999999999999,
+      "error_positive": 0.8500000000000005,
+      "error_negative": 0.8500000000000005,
+      "unit": "MeV",
+      "value_text": "4.1 -- 5.8",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2011,
+      "value": 4.9,
+      "error_positive": 0.7999999999999998,
+      "error_negative": 0.7999999999999998,
+      "unit": "MeV",
+      "value_text": "4.1 -- 5.7",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2024,
+      "value": 4.7,
+      "error_positive": 0.07,
+      "error_negative": 0.07,
+      "unit": "MeV",
+      "value_text": "4.70+-0.07",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2025,
+      "value": 4.7,
+      "error_positive": 0.07,
+      "error_negative": 0.07,
+      "unit": "MeV",
+      "value_text": "4.70+-0.07",
+      "value_type": "V",
+      "limit_type": null
+     }
+    ],
+    "mass_width_file": [
+     {
+      "year": 2006,
+      "value": 5.0,
+      "error_positive": 2.0,
+      "error_negative": 2.0,
+      "unit": "MeV"
+     },
+     {
+      "year": 2008,
+      "value": 4.8,
+      "error_positive": 1.2,
+      "error_negative": 1.2,
+      "unit": "MeV"
+     },
+     {
+      "year": 2010,
+      "value": 5.0,
+      "error_positive": 1.0,
+      "error_negative": 1.0,
+      "unit": "MeV"
+     },
+     {
+      "year": 2011,
+      "value": 4.8999999999999995,
+      "error_positive": 0.8,
+      "error_negative": 0.8,
+      "unit": "MeV"
+     },
+     {
+      "year": 2012,
+      "value": 4.8,
+      "error_positive": 0.7,
+      "error_negative": 0.3,
+      "unit": "MeV"
+     },
+     {
+      "year": 2013,
+      "value": 4.8,
+      "error_positive": 0.5,
+      "error_negative": 0.3,
+      "unit": "MeV"
+     },
+     {
+      "year": 2014,
+      "value": 4.8,
+      "error_positive": 0.5,
+      "error_negative": 0.3,
+      "unit": "MeV"
+     },
+     {
+      "year": 2015,
+      "value": 4.8,
+      "error_positive": 0.5,
+      "error_negative": 0.3,
+      "unit": "MeV"
+     },
+     {
+      "year": 2016,
+      "value": 4.7,
+      "error_positive": 0.5,
+      "error_negative": 0.4,
+      "unit": "MeV"
+     },
+     {
+      "year": 2017,
+      "value": 4.7,
+      "error_positive": 0.5,
+      "error_negative": 0.4,
+      "unit": "MeV"
+     },
+     {
+      "year": 2018,
+      "value": 4.7,
+      "error_positive": 0.5,
+      "error_negative": 0.3,
+      "unit": "MeV"
+     },
+     {
+      "year": 2019,
+      "value": 4.67,
+      "error_positive": 0.5,
+      "error_negative": 0.2,
+      "unit": "MeV"
+     },
+     {
+      "year": 2020,
+      "value": 4.67,
+      "error_positive": 0.5,
+      "error_negative": 0.2,
+      "unit": "MeV"
+     },
+     {
+      "year": 2021,
+      "value": 4.67,
+      "error_positive": 0.5,
+      "error_negative": 0.2,
+      "unit": "MeV"
+     },
+     {
+      "year": 2024,
+      "value": 4.7,
+      "error_positive": 0.06999999999999999,
+      "error_negative": 0.06999999999999999,
+      "unit": "MeV"
+     },
+     {
+      "year": 2025,
+      "value": 4.7,
+      "error_positive": 0.06999999999999999,
+      "error_negative": 0.06999999999999999,
+      "unit": "MeV"
+     }
+    ]
+   }
+  },
+  {
+   "key": "u_quark_mass",
+   "name": "Up quark mass",
+   "symbol": "m_u",
+   "category": "quark mass",
+   "pdgid": "Q002M",
+   "unit": "MeV",
+   "series": {
+    "pdg_database": [
+     {
+      "year": 1992,
+      "value": 5.0,
+      "error_positive": 3.0,
+      "error_negative": 3.0,
+      "unit": "MeV",
+      "value_text": "2 to 8",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 1994,
+      "value": 5.0,
+      "error_positive": 3.0,
+      "error_negative": 3.0,
+      "unit": "MeV",
+      "value_text": "2 to 8",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 1996,
+      "value": 5.0,
+      "error_positive": 3.0,
+      "error_negative": 3.0,
+      "unit": "MeV",
+      "value_text": "2 to 8",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 1997,
+      "value": 5.0,
+      "error_positive": 3.0,
+      "error_negative": 3.0,
+      "unit": "MeV",
+      "value_text": "2 to 8",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 1998,
+      "value": 3.25,
+      "error_positive": 1.75,
+      "error_negative": 1.75,
+      "unit": "MeV",
+      "value_text": "1.5 to 5",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2000,
+      "value": 3.0,
+      "error_positive": 2.0,
+      "error_negative": 2.0,
+      "unit": "MeV",
+      "value_text": "1 to 5",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2002,
+      "value": 3.0,
+      "error_positive": 1.5,
+      "error_negative": 1.5,
+      "unit": "MeV",
+      "value_text": "1.5 to 4.5",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2003,
+      "value": 3.0,
+      "error_positive": 1.5,
+      "error_negative": 1.5,
+      "unit": "MeV",
+      "value_text": "1.5 to 4.5",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2004,
+      "value": 2.75,
+      "error_positive": 1.25,
+      "error_negative": 1.25,
+      "unit": "MeV",
+      "value_text": "1.5 to 4",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2005,
+      "value": 2.75,
+      "error_positive": 1.25,
+      "error_negative": 1.25,
+      "unit": "MeV",
+      "value_text": "1.5 to 4",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2006,
+      "value": 2.25,
+      "error_positive": 0.75,
+      "error_negative": 0.75,
+      "unit": "MeV",
+      "value_text": "1.5 to 3.0",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2007,
+      "value": 2.25,
+      "error_positive": 0.75,
+      "error_negative": 0.75,
+      "unit": "MeV",
+      "value_text": "1.5 to 3.0",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2008,
+      "value": 2.4,
+      "error_positive": 0.8999999999999999,
+      "error_negative": 0.8999999999999999,
+      "unit": "MeV",
+      "value_text": "1.5 to 3.3",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2009,
+      "value": 2.4,
+      "error_positive": 0.8999999999999999,
+      "error_negative": 0.8999999999999999,
+      "unit": "MeV",
+      "value_text": "1.5 to 3.3",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2010,
+      "value": 2.5,
+      "error_positive": 0.7999999999999998,
+      "error_negative": 0.7999999999999998,
+      "unit": "MeV",
+      "value_text": "1.7 -- 3.3",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2011,
+      "value": 2.4,
+      "error_positive": 0.7000000000000002,
+      "error_negative": 0.7000000000000002,
+      "unit": "MeV",
+      "value_text": "1.7 -- 3.1",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2024,
+      "value": 2.16,
+      "error_positive": 0.07,
+      "error_negative": 0.07,
+      "unit": "MeV",
+      "value_text": "2.16+-0.07",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2025,
+      "value": 2.16,
+      "error_positive": 0.07,
+      "error_negative": 0.07,
+      "unit": "MeV",
+      "value_text": "2.16+-0.07",
+      "value_type": "V",
+      "limit_type": null
+     }
+    ],
+    "mass_width_file": [
+     {
+      "year": 2006,
+      "value": 2.3,
+      "error_positive": 0.8,
+      "error_negative": 0.8,
+      "unit": "MeV"
+     },
+     {
+      "year": 2008,
+      "value": 2.4,
+      "error_positive": 0.9,
+      "error_negative": 0.9,
+      "unit": "MeV"
+     },
+     {
+      "year": 2010,
+      "value": 2.5,
+      "error_positive": 0.8,
+      "error_negative": 0.8,
+      "unit": "MeV"
+     },
+     {
+      "year": 2011,
+      "value": 2.4,
+      "error_positive": 0.7,
+      "error_negative": 0.7,
+      "unit": "MeV"
+     },
+     {
+      "year": 2012,
+      "value": 2.3,
+      "error_positive": 0.7,
+      "error_negative": 0.5,
+      "unit": "MeV"
+     },
+     {
+      "year": 2013,
+      "value": 2.3,
+      "error_positive": 0.7,
+      "error_negative": 0.5,
+      "unit": "MeV"
+     },
+     {
+      "year": 2014,
+      "value": 2.3,
+      "error_positive": 0.7,
+      "error_negative": 0.5,
+      "unit": "MeV"
+     },
+     {
+      "year": 2015,
+      "value": 2.3,
+      "error_positive": 0.7,
+      "error_negative": 0.5,
+      "unit": "MeV"
+     },
+     {
+      "year": 2016,
+      "value": 2.2,
+      "error_positive": 0.6,
+      "error_negative": 0.4,
+      "unit": "MeV"
+     },
+     {
+      "year": 2017,
+      "value": 2.2,
+      "error_positive": 0.6,
+      "error_negative": 0.4,
+      "unit": "MeV"
+     },
+     {
+      "year": 2018,
+      "value": 2.2,
+      "error_positive": 0.5,
+      "error_negative": 0.4,
+      "unit": "MeV"
+     },
+     {
+      "year": 2019,
+      "value": 2.16,
+      "error_positive": 0.5,
+      "error_negative": 0.3,
+      "unit": "MeV"
+     },
+     {
+      "year": 2020,
+      "value": 2.16,
+      "error_positive": 0.5,
+      "error_negative": 0.3,
+      "unit": "MeV"
+     },
+     {
+      "year": 2021,
+      "value": 2.16,
+      "error_positive": 0.5,
+      "error_negative": 0.3,
+      "unit": "MeV"
+     },
+     {
+      "year": 2024,
+      "value": 2.16,
+      "error_positive": 0.06999999999999999,
+      "error_negative": 0.06999999999999999,
+      "unit": "MeV"
+     },
+     {
+      "year": 2025,
+      "value": 2.16,
+      "error_positive": 0.06999999999999999,
+      "error_negative": 0.06999999999999999,
+      "unit": "MeV"
+     }
+    ]
+   }
+  },
+  {
+   "key": "s_quark_mass",
+   "name": "Strange quark mass",
+   "symbol": "m_s",
+   "category": "quark mass",
+   "pdgid": "Q003M",
+   "unit": "MeV",
+   "series": {
+    "pdg_database": [
+     {
+      "year": 1992,
+      "value": 200.0,
+      "error_positive": 100.0,
+      "error_negative": 100.0,
+      "unit": "MeV",
+      "value_text": "100 to 300",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 1994,
+      "value": 200.0,
+      "error_positive": 100.0,
+      "error_negative": 100.0,
+      "unit": "MeV",
+      "value_text": "100 to 300",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 1996,
+      "value": 200.0,
+      "error_positive": 100.0,
+      "error_negative": 100.0,
+      "unit": "MeV",
+      "value_text": "100 to 300",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 1997,
+      "value": 200.0,
+      "error_positive": 100.0,
+      "error_negative": 100.0,
+      "unit": "MeV",
+      "value_text": "100 to 300",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 1998,
+      "value": 115.0,
+      "error_positive": 55.0,
+      "error_negative": 55.0,
+      "unit": "MeV",
+      "value_text": "60 to 170",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2000,
+      "value": 122.5,
+      "error_positive": 47.5,
+      "error_negative": 47.5,
+      "unit": "MeV",
+      "value_text": "75 to 170",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2002,
+      "value": 117.5,
+      "error_positive": 37.5,
+      "error_negative": 37.5,
+      "unit": "MeV",
+      "value_text": "80 to 155",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2003,
+      "value": 117.5,
+      "error_positive": 37.5,
+      "error_negative": 37.5,
+      "unit": "MeV",
+      "value_text": "80 to 155",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2004,
+      "value": 105.0,
+      "error_positive": 25.0,
+      "error_negative": 25.0,
+      "unit": "MeV",
+      "value_text": "80 to 130",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2005,
+      "value": 105.0,
+      "error_positive": 25.0,
+      "error_negative": 25.0,
+      "unit": "MeV",
+      "value_text": "80 to 130",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2006,
+      "value": 95.0,
+      "error_positive": 25.0,
+      "error_negative": 25.0,
+      "unit": "MeV",
+      "value_text": "95+-25",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2007,
+      "value": 95.0,
+      "error_positive": 25.0,
+      "error_negative": 25.0,
+      "unit": "MeV",
+      "value_text": "95+-25",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2008,
+      "value": 104.0,
+      "error_positive": 26.0,
+      "error_negative": 34.0,
+      "unit": "MeV",
+      "value_text": "104+26-34",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2009,
+      "value": 105.0,
+      "error_positive": 25.0,
+      "error_negative": 35.0,
+      "unit": "MeV",
+      "value_text": "105+25-35",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2010,
+      "value": 101.0,
+      "error_positive": 29.0,
+      "error_negative": 21.0,
+      "unit": "MeV",
+      "value_text": "101+29-21",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2011,
+      "value": 100.0,
+      "error_positive": 30.0,
+      "error_negative": 20.0,
+      "unit": "MeV",
+      "value_text": "100+30-20",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2024,
+      "value": 93.5,
+      "error_positive": 0.8,
+      "error_negative": 0.8,
+      "unit": "MeV",
+      "value_text": "93.5+-0.8",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2025,
+      "value": 93.5,
+      "error_positive": 0.8,
+      "error_negative": 0.8,
+      "unit": "MeV",
+      "value_text": "93.5+-0.8",
+      "value_type": "V",
+      "limit_type": null
+     }
+    ],
+    "mass_width_file": [
+     {
+      "year": 2006,
+      "value": 95.0,
+      "error_positive": 25.0,
+      "error_negative": 25.0,
+      "unit": "MeV"
+     },
+     {
+      "year": 2008,
+      "value": 104.0,
+      "error_positive": 26.0,
+      "error_negative": 34.0,
+      "unit": "MeV"
+     },
+     {
+      "year": 2010,
+      "value": 101.0,
+      "error_positive": 29.0,
+      "error_negative": 21.0,
+      "unit": "MeV"
+     },
+     {
+      "year": 2011,
+      "value": 100.0,
+      "error_positive": 30.0,
+      "error_negative": 20.0,
+      "unit": "MeV"
+     },
+     {
+      "year": 2012,
+      "value": 95.0,
+      "error_positive": 5.0,
+      "error_negative": 5.0,
+      "unit": "MeV"
+     },
+     {
+      "year": 2013,
+      "value": 95.0,
+      "error_positive": 5.0,
+      "error_negative": 5.0,
+      "unit": "MeV"
+     },
+     {
+      "year": 2014,
+      "value": 95.0,
+      "error_positive": 5.0,
+      "error_negative": 5.0,
+      "unit": "MeV"
+     },
+     {
+      "year": 2015,
+      "value": 95.0,
+      "error_positive": 5.0,
+      "error_negative": 5.0,
+      "unit": "MeV"
+     },
+     {
+      "year": 2016,
+      "value": 96.0,
+      "error_positive": 8.0,
+      "error_negative": 4.0,
+      "unit": "MeV"
+     },
+     {
+      "year": 2017,
+      "value": 96.0,
+      "error_positive": 8.0,
+      "error_negative": 4.0,
+      "unit": "MeV"
+     },
+     {
+      "year": 2018,
+      "value": 96.0,
+      "error_positive": 9.0,
+      "error_negative": 3.0,
+      "unit": "MeV"
+     },
+     {
+      "year": 2019,
+      "value": 93.0,
+      "error_positive": 11.0,
+      "error_negative": 5.0,
+      "unit": "MeV"
+     },
+     {
+      "year": 2020,
+      "value": 93.0,
+      "error_positive": 11.0,
+      "error_negative": 5.0,
+      "unit": "MeV"
+     },
+     {
+      "year": 2021,
+      "value": 93.0,
+      "error_positive": 11.0,
+      "error_negative": 5.0,
+      "unit": "MeV"
+     },
+     {
+      "year": 2024,
+      "value": 93.5,
+      "error_positive": 0.8,
+      "error_negative": 0.8,
+      "unit": "MeV"
+     },
+     {
+      "year": 2025,
+      "value": 93.5,
+      "error_positive": 0.8,
+      "error_negative": 0.8,
+      "unit": "MeV"
+     }
+    ]
+   }
+  },
+  {
+   "key": "c_quark_mass",
+   "name": "Charm quark mass",
+   "symbol": "m_c",
+   "category": "quark mass",
+   "pdgid": "Q004M",
+   "unit": "GeV",
+   "series": {
+    "pdg_database": [
+     {
+      "year": 1992,
+      "value": 1.5,
+      "error_positive": 0.19999999999999996,
+      "error_negative": 0.19999999999999996,
+      "unit": "GeV",
+      "value_text": "1.3 to 1.7",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 1994,
+      "value": 1.3,
+      "error_positive": 0.30000000000000004,
+      "error_negative": 0.30000000000000004,
+      "unit": "GeV",
+      "value_text": "1.0 to 1.6",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 1996,
+      "value": 1.3,
+      "error_positive": 0.30000000000000004,
+      "error_negative": 0.30000000000000004,
+      "unit": "GeV",
+      "value_text": "1.0 to 1.6",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 1997,
+      "value": 1.3,
+      "error_positive": 0.30000000000000004,
+      "error_negative": 0.30000000000000004,
+      "unit": "GeV",
+      "value_text": "1.0 to 1.6",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 1998,
+      "value": 1.25,
+      "error_positive": 0.1499999999999999,
+      "error_negative": 0.1499999999999999,
+      "unit": "GeV",
+      "value_text": "1.1 to 1.4",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2000,
+      "value": 1.25,
+      "error_positive": 0.10000000000000009,
+      "error_negative": 0.10000000000000009,
+      "unit": "GeV",
+      "value_text": "1.15 to 1.35",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2002,
+      "value": 1.2,
+      "error_positive": 0.19999999999999996,
+      "error_negative": 0.19999999999999996,
+      "unit": "GeV",
+      "value_text": "1.0 to 1.4",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2003,
+      "value": 1.2,
+      "error_positive": 0.19999999999999996,
+      "error_negative": 0.19999999999999996,
+      "unit": "GeV",
+      "value_text": "1.0 to 1.4",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2004,
+      "value": 1.25,
+      "error_positive": 0.10000000000000009,
+      "error_negative": 0.10000000000000009,
+      "unit": "GeV",
+      "value_text": "1.15 to 1.35",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2005,
+      "value": 1.25,
+      "error_positive": 0.10000000000000009,
+      "error_negative": 0.10000000000000009,
+      "unit": "GeV",
+      "value_text": "1.15 to 1.35",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2006,
+      "value": 1.25,
+      "error_positive": 0.09,
+      "error_negative": 0.09,
+      "unit": "GeV",
+      "value_text": "1.25+-0.09",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2007,
+      "value": 1.25,
+      "error_positive": 0.09,
+      "error_negative": 0.09,
+      "unit": "GeV",
+      "value_text": "1.25+-0.09",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2008,
+      "value": 1.27,
+      "error_positive": 0.07,
+      "error_negative": 0.11,
+      "unit": "GeV",
+      "value_text": "1.27+0.07-0.11",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2009,
+      "value": 1.27,
+      "error_positive": 0.07,
+      "error_negative": 0.11,
+      "unit": "GeV",
+      "value_text": "1.27+0.07-0.11",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2010,
+      "value": 1.27,
+      "error_positive": 0.07,
+      "error_negative": 0.09,
+      "unit": "GeV",
+      "value_text": "1.27+0.07-0.09 (1.18 -- 1.34)",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2011,
+      "value": 1.29,
+      "error_positive": 0.05,
+      "error_negative": 0.11,
+      "unit": "GeV",
+      "value_text": "1.29+0.05-0.11 (1.18 -- 1.34)",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2012,
+      "value": 1.275,
+      "error_positive": 0.025,
+      "error_negative": 0.025,
+      "unit": "GeV",
+      "value_text": "1.275+-0.025",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2013,
+      "value": 1.275,
+      "error_positive": 0.025,
+      "error_negative": 0.025,
+      "unit": "GeV",
+      "value_text": "1.275+-0.025",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2014,
+      "value": 1.275,
+      "error_positive": 0.025,
+      "error_negative": 0.025,
+      "unit": "GeV",
+      "value_text": "1.275+-0.025",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2015,
+      "value": 1.275,
+      "error_positive": 0.025,
+      "error_negative": 0.025,
+      "unit": "GeV",
+      "value_text": "1.275+-0.025",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2016,
+      "value": 1.27,
+      "error_positive": 0.03,
+      "error_negative": 0.03,
+      "unit": "GeV",
+      "value_text": "1.27+-0.03",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2017,
+      "value": 1.28,
+      "error_positive": 0.03,
+      "error_negative": 0.03,
+      "unit": "GeV",
+      "value_text": "1.28+-0.03",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2018,
+      "value": 1.275,
+      "error_positive": 0.025,
+      "error_negative": 0.035,
+      "unit": "GeV",
+      "value_text": "1.275+0.025-0.035",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2019,
+      "value": 1.27,
+      "error_positive": 0.02,
+      "error_negative": 0.02,
+      "unit": "GeV",
+      "value_text": "1.27+-0.02",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2020,
+      "value": 1.27,
+      "error_positive": 0.02,
+      "error_negative": 0.02,
+      "unit": "GeV",
+      "value_text": "1.27+-0.02",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2021,
+      "value": 1.27,
+      "error_positive": 0.02,
+      "error_negative": 0.02,
+      "unit": "GeV",
+      "value_text": "1.27+-0.02",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2022,
+      "value": 1.27,
+      "error_positive": 0.02,
+      "error_negative": 0.02,
+      "unit": "GeV",
+      "value_text": "1.27+-0.02",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2023,
+      "value": 1.27,
+      "error_positive": 0.02,
+      "error_negative": 0.02,
+      "unit": "GeV",
+      "value_text": "1.27+-0.02",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2024,
+      "value": 1.273,
+      "error_positive": 0.0046,
+      "error_negative": 0.0046,
+      "unit": "GeV",
+      "value_text": "1.2730+-0.0046",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2025,
+      "value": 1.273,
+      "error_positive": 0.0046,
+      "error_negative": 0.0046,
+      "unit": "GeV",
+      "value_text": "1.2730+-0.0046",
+      "value_type": "V",
+      "limit_type": null
+     }
+    ],
+    "mass_width_file": [
+     {
+      "year": 2006,
+      "value": 1.25,
+      "error_positive": 0.09,
+      "error_negative": 0.09,
+      "unit": "GeV"
+     },
+     {
+      "year": 2008,
+      "value": 1.27,
+      "error_positive": 0.07,
+      "error_negative": 0.11,
+      "unit": "GeV"
+     },
+     {
+      "year": 2010,
+      "value": 1.27,
+      "error_positive": 0.07,
+      "error_negative": 0.09,
+      "unit": "GeV"
+     },
+     {
+      "year": 2011,
+      "value": 1.29,
+      "error_positive": 0.05,
+      "error_negative": 0.11,
+      "unit": "GeV"
+     },
+     {
+      "year": 2012,
+      "value": 1.275,
+      "error_positive": 0.025,
+      "error_negative": 0.025,
+      "unit": "GeV"
+     },
+     {
+      "year": 2013,
+      "value": 1.275,
+      "error_positive": 0.025,
+      "error_negative": 0.025,
+      "unit": "GeV"
+     },
+     {
+      "year": 2014,
+      "value": 1.275,
+      "error_positive": 0.025,
+      "error_negative": 0.025,
+      "unit": "GeV"
+     },
+     {
+      "year": 2015,
+      "value": 1.275,
+      "error_positive": 0.025,
+      "error_negative": 0.025,
+      "unit": "GeV"
+     },
+     {
+      "year": 2016,
+      "value": 1.27,
+      "error_positive": 0.03,
+      "error_negative": 0.03,
+      "unit": "GeV"
+     },
+     {
+      "year": 2017,
+      "value": 1.28,
+      "error_positive": 0.03,
+      "error_negative": 0.03,
+      "unit": "GeV"
+     },
+     {
+      "year": 2018,
+      "value": 1.275,
+      "error_positive": 0.025,
+      "error_negative": 0.035,
+      "unit": "GeV"
+     },
+     {
+      "year": 2019,
+      "value": 1.27,
+      "error_positive": 0.02,
+      "error_negative": 0.02,
+      "unit": "GeV"
+     },
+     {
+      "year": 2020,
+      "value": 1.27,
+      "error_positive": 0.02,
+      "error_negative": 0.02,
+      "unit": "GeV"
+     },
+     {
+      "year": 2021,
+      "value": 1.27,
+      "error_positive": 0.02,
+      "error_negative": 0.02,
+      "unit": "GeV"
+     },
+     {
+      "year": 2024,
+      "value": 1.273,
+      "error_positive": 0.005,
+      "error_negative": 0.005,
+      "unit": "GeV"
+     },
+     {
+      "year": 2025,
+      "value": 1.273,
+      "error_positive": 0.005,
+      "error_negative": 0.005,
+      "unit": "GeV"
+     }
+    ]
+   }
+  },
+  {
+   "key": "b_quark_mass",
+   "name": "Bottom quark mass",
+   "symbol": "m_b",
+   "category": "quark mass",
+   "pdgid": "Q005M",
+   "unit": "GeV",
+   "series": {
+    "pdg_database": [
+     {
+      "year": 1992,
+      "value": 5.0,
+      "error_positive": 0.2999999999999998,
+      "error_negative": 0.2999999999999998,
+      "unit": "GeV",
+      "value_text": "4.7 to 5.3",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 1994,
+      "value": 4.3,
+      "error_positive": 0.20000000000000018,
+      "error_negative": 0.20000000000000018,
+      "unit": "GeV",
+      "value_text": "4.1 to 4.5",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 1996,
+      "value": 4.3,
+      "error_positive": 0.20000000000000018,
+      "error_negative": 0.20000000000000018,
+      "unit": "GeV",
+      "value_text": "4.1 to 4.5",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 1997,
+      "value": 4.3,
+      "error_positive": 0.20000000000000018,
+      "error_negative": 0.20000000000000018,
+      "unit": "GeV",
+      "value_text": "4.1 to 4.5",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 1998,
+      "value": 4.25,
+      "error_positive": 0.15000000000000036,
+      "error_negative": 0.15000000000000036,
+      "unit": "GeV",
+      "value_text": "4.1 to 4.4",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2000,
+      "value": 4.2,
+      "error_positive": 0.20000000000000018,
+      "error_negative": 0.20000000000000018,
+      "unit": "GeV",
+      "value_text": "4.0 to 4.4",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2002,
+      "value": 4.25,
+      "error_positive": 0.25,
+      "error_negative": 0.25,
+      "unit": "GeV",
+      "value_text": "4.0 to 4.5",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2003,
+      "value": 4.25,
+      "error_positive": 0.25,
+      "error_negative": 0.25,
+      "unit": "GeV",
+      "value_text": "4.0 to 4.5",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2004,
+      "value": 4.25,
+      "error_positive": 0.15000000000000036,
+      "error_negative": 0.15000000000000036,
+      "unit": "GeV",
+      "value_text": "4.1 to 4.4",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2005,
+      "value": 4.25,
+      "error_positive": 0.15000000000000036,
+      "error_negative": 0.15000000000000036,
+      "unit": "GeV",
+      "value_text": "4.1 to 4.4",
+      "value_type": "V",
+      "limit_type": "R"
+     },
+     {
+      "year": 2006,
+      "value": 4.2,
+      "error_positive": 0.07,
+      "error_negative": 0.07,
+      "unit": "GeV",
+      "value_text": "4.20+-0.07",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2007,
+      "value": 4.2,
+      "error_positive": 0.07,
+      "error_negative": 0.07,
+      "unit": "GeV",
+      "value_text": "4.20+-0.07",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2008,
+      "value": 4.2,
+      "error_positive": 0.17,
+      "error_negative": 0.07,
+      "unit": "GeV",
+      "value_text": "4.20+0.17-0.07",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2009,
+      "value": 4.2,
+      "error_positive": 0.17,
+      "error_negative": 0.07,
+      "unit": "GeV",
+      "value_text": "4.20+0.17-0.07",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2010,
+      "value": 4.19,
+      "error_positive": 0.18,
+      "error_negative": 0.06,
+      "unit": "GeV",
+      "value_text": "4.19+0.18-0.06",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2011,
+      "value": 4.19,
+      "error_positive": 0.18,
+      "error_negative": 0.06,
+      "unit": "GeV",
+      "value_text": "4.19+0.18-0.06",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2012,
+      "value": 4.18,
+      "error_positive": 0.03,
+      "error_negative": 0.03,
+      "unit": "GeV",
+      "value_text": "4.18+-0.03",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2013,
+      "value": 4.18,
+      "error_positive": 0.03,
+      "error_negative": 0.03,
+      "unit": "GeV",
+      "value_text": "4.18+-0.03",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2014,
+      "value": 4.18,
+      "error_positive": 0.03,
+      "error_negative": 0.03,
+      "unit": "GeV",
+      "value_text": "4.18+-0.03",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2015,
+      "value": 4.18,
+      "error_positive": 0.03,
+      "error_negative": 0.03,
+      "unit": "GeV",
+      "value_text": "4.18+-0.03",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2016,
+      "value": 4.18,
+      "error_positive": 0.04,
+      "error_negative": 0.03,
+      "unit": "GeV",
+      "value_text": "4.18+0.04-0.03",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2017,
+      "value": 4.18,
+      "error_positive": 0.04,
+      "error_negative": 0.03,
+      "unit": "GeV",
+      "value_text": "4.18+0.04-0.03",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2018,
+      "value": 4.18,
+      "error_positive": 0.04,
+      "error_negative": 0.03,
+      "unit": "GeV",
+      "value_text": "4.18+0.04-0.03",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2019,
+      "value": 4.18,
+      "error_positive": 0.03,
+      "error_negative": 0.02,
+      "unit": "GeV",
+      "value_text": "4.18+0.03-0.02",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2020,
+      "value": 4.18,
+      "error_positive": 0.03,
+      "error_negative": 0.02,
+      "unit": "GeV",
+      "value_text": "4.18+0.03-0.02",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2021,
+      "value": 4.18,
+      "error_positive": 0.03,
+      "error_negative": 0.02,
+      "unit": "GeV",
+      "value_text": "4.18+0.03-0.02",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2022,
+      "value": 4.18,
+      "error_positive": 0.03,
+      "error_negative": 0.02,
+      "unit": "GeV",
+      "value_text": "4.18+0.03-0.02",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2023,
+      "value": 4.18,
+      "error_positive": 0.03,
+      "error_negative": 0.02,
+      "unit": "GeV",
+      "value_text": "4.18+0.03-0.02",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2024,
+      "value": 4.183,
+      "error_positive": 0.007,
+      "error_negative": 0.007,
+      "unit": "GeV",
+      "value_text": "4.183+-0.007",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2025,
+      "value": 4.183,
+      "error_positive": 0.007,
+      "error_negative": 0.007,
+      "unit": "GeV",
+      "value_text": "4.183+-0.007",
+      "value_type": "V",
+      "limit_type": null
+     }
+    ],
+    "mass_width_file": [
+     {
+      "year": 2006,
+      "value": 4.2,
+      "error_positive": 0.07,
+      "error_negative": 0.07,
+      "unit": "GeV"
+     },
+     {
+      "year": 2008,
+      "value": 4.68,
+      "error_positive": 0.17,
+      "error_negative": 0.07,
+      "unit": "GeV"
+     },
+     {
+      "year": 2010,
+      "value": 4.67,
+      "error_positive": 0.18,
+      "error_negative": 0.06,
+      "unit": "GeV"
+     },
+     {
+      "year": 2011,
+      "value": 4.19,
+      "error_positive": 0.18,
+      "error_negative": 0.06,
+      "unit": "GeV"
+     },
+     {
+      "year": 2012,
+      "value": 4.18,
+      "error_positive": 0.03,
+      "error_negative": 0.03,
+      "unit": "GeV"
+     },
+     {
+      "year": 2013,
+      "value": 4.18,
+      "error_positive": 0.03,
+      "error_negative": 0.03,
+      "unit": "GeV"
+     },
+     {
+      "year": 2014,
+      "value": 4.18,
+      "error_positive": 0.03,
+      "error_negative": 0.03,
+      "unit": "GeV"
+     },
+     {
+      "year": 2015,
+      "value": 4.18,
+      "error_positive": 0.03,
+      "error_negative": 0.03,
+      "unit": "GeV"
+     },
+     {
+      "year": 2016,
+      "value": 4.18,
+      "error_positive": 0.04,
+      "error_negative": 0.03,
+      "unit": "GeV"
+     },
+     {
+      "year": 2017,
+      "value": 4.18,
+      "error_positive": 0.04,
+      "error_negative": 0.03,
+      "unit": "GeV"
+     },
+     {
+      "year": 2018,
+      "value": 4.18,
+      "error_positive": 0.04,
+      "error_negative": 0.03,
+      "unit": "GeV"
+     },
+     {
+      "year": 2019,
+      "value": 4.18,
+      "error_positive": 0.03,
+      "error_negative": 0.02,
+      "unit": "GeV"
+     },
+     {
+      "year": 2020,
+      "value": 4.18,
+      "error_positive": 0.03,
+      "error_negative": 0.02,
+      "unit": "GeV"
+     },
+     {
+      "year": 2021,
+      "value": 4.18,
+      "error_positive": 0.03,
+      "error_negative": 0.02,
+      "unit": "GeV"
+     },
+     {
+      "year": 2022,
+      "value": 4.18,
+      "error_positive": 0.03,
+      "error_negative": 0.02,
+      "unit": "GeV"
+     },
+     {
+      "year": 2023,
+      "value": 4.18,
+      "error_positive": 0.03,
+      "error_negative": 0.02,
+      "unit": "GeV"
+     },
+     {
+      "year": 2024,
+      "value": 4.183,
+      "error_positive": 0.007,
+      "error_negative": 0.007,
+      "unit": "GeV"
+     },
+     {
+      "year": 2025,
+      "value": 4.183,
+      "error_positive": 0.007,
+      "error_negative": 0.007,
+      "unit": "GeV"
+     }
+    ]
+   }
+  },
+  {
+   "key": "t_quark_mass",
+   "name": "Top quark mass",
+   "symbol": "m_t",
+   "category": "quark mass",
+   "pdgid": "Q007TP",
+   "unit": "GeV",
+   "series": {
+    "pdg_database": [
+     {
+      "year": 1994,
+      "value": 131.0,
+      "error_positive": 0.0,
+      "error_negative": 0.0,
+      "unit": "GeV",
+      "value_text": ">131",
+      "value_type": "L",
+      "limit_type": "L"
+     },
+     {
+      "year": 1996,
+      "value": 179.511993721431,
+      "error_positive": 11.7193815901819,
+      "error_negative": 11.8026315722124,
+      "unit": "GeV",
+      "value_text": "180+-12",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 1997,
+      "value": 179.511993721431,
+      "error_positive": 11.7193815901819,
+      "error_negative": 11.8026315722124,
+      "unit": "GeV",
+      "value_text": "180+-12",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 1998,
+      "value": 173.8,
+      "error_positive": 5.2,
+      "error_negative": 5.2,
+      "unit": "GeV",
+      "value_text": "173.8+-5.2",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2000,
+      "value": 174.3,
+      "error_positive": 5.1,
+      "error_negative": 5.1,
+      "unit": "GeV",
+      "value_text": "174.3+-5.1",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2002,
+      "value": 174.3,
+      "error_positive": 5.1,
+      "error_negative": 5.1,
+      "unit": "GeV",
+      "value_text": "174.3+-5.1",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2003,
+      "value": 174.3,
+      "error_positive": 5.1,
+      "error_negative": 5.1,
+      "unit": "GeV",
+      "value_text": "174.3+-5.1",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2004,
+      "value": 174.3,
+      "error_positive": 5.1,
+      "error_negative": 5.1,
+      "unit": "GeV",
+      "value_text": "174.3+-5.1",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2005,
+      "value": 178.0,
+      "error_positive": 4.3,
+      "error_negative": 4.3,
+      "unit": "GeV",
+      "value_text": "178.0 +-4.3",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2006,
+      "value": 174.2,
+      "error_positive": 3.3,
+      "error_negative": 3.3,
+      "unit": "GeV",
+      "value_text": "174.2 +-3.3",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2007,
+      "value": 174.2,
+      "error_positive": 3.3,
+      "error_negative": 3.3,
+      "unit": "GeV",
+      "value_text": "172.5 +-2.7",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2008,
+      "value": 171.2,
+      "error_positive": 2.1,
+      "error_negative": 2.1,
+      "unit": "GeV",
+      "value_text": "171.2+-2.1",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2009,
+      "value": 171.3,
+      "error_positive": 1.1,
+      "error_negative": 1.1,
+      "unit": "GeV",
+      "value_text": "171.3+-1.1+-1.2",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2010,
+      "value": 172.0,
+      "error_positive": 0.9,
+      "error_negative": 0.9,
+      "unit": "GeV",
+      "value_text": "172.0+-0.9+-1.3",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2011,
+      "value": 172.9,
+      "error_positive": 0.6,
+      "error_negative": 0.6,
+      "unit": "GeV",
+      "value_text": "172.9+-0.6+-0.9",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2012,
+      "value": 173.5,
+      "error_positive": 0.6,
+      "error_negative": 0.6,
+      "unit": "GeV",
+      "value_text": "173.5+-0.6+-0.8",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2013,
+      "value": 173.07,
+      "error_positive": 0.52,
+      "error_negative": 0.52,
+      "unit": "GeV",
+      "value_text": "173.07+-0.52+-0.72",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2014,
+      "value": 173.21,
+      "error_positive": 0.51,
+      "error_negative": 0.51,
+      "unit": "GeV",
+      "value_text": "173.21+-0.51+-0.71",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2015,
+      "value": 173.21,
+      "error_positive": 0.51,
+      "error_negative": 0.51,
+      "unit": "GeV",
+      "value_text": "173.21+-0.51+-0.71",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2016,
+      "value": 173.21,
+      "error_positive": 0.51,
+      "error_negative": 0.51,
+      "unit": "GeV",
+      "value_text": "173.21+-0.51+-0.71",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2017,
+      "value": 173.0526320349815,
+      "error_positive": 0.5594957667124807,
+      "error_negative": 0.5594957667124807,
+      "unit": "GeV",
+      "value_text": "173.1+-0.6",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2018,
+      "value": 173.0452952960242,
+      "error_positive": 0.4408274814162661,
+      "error_negative": 0.4400260482800849,
+      "unit": "GeV",
+      "value_text": "173.0+-0.4",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2019,
+      "value": 172.8742540967435,
+      "error_positive": 0.3756166849086566,
+      "error_negative": 0.375080561158106,
+      "unit": "GeV",
+      "value_text": "172.9+-0.4",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2020,
+      "value": 172.7572375181499,
+      "error_positive": 0.2970321551232996,
+      "error_negative": 0.29981507224096,
+      "unit": "GeV",
+      "value_text": "172.76+-0.30",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2021,
+      "value": 172.7557296962293,
+      "error_positive": 0.2955980886650864,
+      "error_negative": 0.2983405326846084,
+      "unit": "GeV",
+      "value_text": "172.76+-0.30",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2022,
+      "value": 172.687433377613,
+      "error_positive": 0.2974266850240643,
+      "error_negative": 0.3006963707142658,
+      "unit": "GeV",
+      "value_text": "172.69+-0.30",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2023,
+      "value": 172.687433377613,
+      "error_positive": 0.2974266850240643,
+      "error_negative": 0.3006963707142658,
+      "unit": "GeV",
+      "value_text": "172.69+-0.30",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2024,
+      "value": 172.5746930968864,
+      "error_positive": 0.2883819664072206,
+      "error_negative": 0.2904332853293443,
+      "unit": "GeV",
+      "value_text": "172.57+-0.29",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2025,
+      "value": 172.5590883453979,
+      "error_positive": 0.3040826988999338,
+      "error_negative": 0.3061998752861254,
+      "unit": "GeV",
+      "value_text": "172.56+-0.31",
+      "value_type": "AC",
+      "limit_type": null
+     }
+    ],
+    "mass_width_file": [
+     {
+      "year": 2004,
+      "value": 174.0,
+      "error_positive": 5.0,
+      "error_negative": 5.0,
+      "unit": "GeV"
+     },
+     {
+      "year": 2006,
+      "value": 174.2,
+      "error_positive": 3.3,
+      "error_negative": 3.3,
+      "unit": "GeV"
+     },
+     {
+      "year": 2008,
+      "value": 171.2,
+      "error_positive": 2.1,
+      "error_negative": 2.1,
+      "unit": "GeV"
+     },
+     {
+      "year": 2010,
+      "value": 172.0,
+      "error_positive": 1.6,
+      "error_negative": 1.6,
+      "unit": "GeV"
+     },
+     {
+      "year": 2011,
+      "value": 172.9,
+      "error_positive": 1.1,
+      "error_negative": 1.1,
+      "unit": "GeV"
+     },
+     {
+      "year": 2012,
+      "value": 173.5,
+      "error_positive": 1.0,
+      "error_negative": 1.0,
+      "unit": "GeV"
+     },
+     {
+      "year": 2013,
+      "value": 173.07,
+      "error_positive": 0.89,
+      "error_negative": 0.89,
+      "unit": "GeV"
+     },
+     {
+      "year": 2014,
+      "value": 173.21,
+      "error_positive": 0.87,
+      "error_negative": 0.87,
+      "unit": "GeV"
+     },
+     {
+      "year": 2015,
+      "value": 173.21,
+      "error_positive": 0.87,
+      "error_negative": 0.87,
+      "unit": "GeV"
+     },
+     {
+      "year": 2016,
+      "value": 173.21,
+      "error_positive": 0.87,
+      "error_negative": 0.87,
+      "unit": "GeV"
+     },
+     {
+      "year": 2017,
+      "value": 173.1,
+      "error_positive": 0.6,
+      "error_negative": 0.6,
+      "unit": "GeV"
+     },
+     {
+      "year": 2018,
+      "value": 173.1,
+      "error_positive": 0.9,
+      "error_negative": 0.9,
+      "unit": "GeV"
+     },
+     {
+      "year": 2019,
+      "value": 173.1,
+      "error_positive": 0.9,
+      "error_negative": 0.9,
+      "unit": "GeV"
+     },
+     {
+      "year": 2020,
+      "value": 172.4,
+      "error_positive": 0.7,
+      "error_negative": 0.7,
+      "unit": "GeV"
+     },
+     {
+      "year": 2021,
+      "value": 172.5,
+      "error_positive": 0.7,
+      "error_negative": 0.7,
+      "unit": "GeV"
+     },
+     {
+      "year": 2022,
+      "value": 172.5,
+      "error_positive": 0.7,
+      "error_negative": 0.7,
+      "unit": "GeV"
+     },
+     {
+      "year": 2023,
+      "value": 172.5,
+      "error_positive": 0.7,
+      "error_negative": 0.7,
+      "unit": "GeV"
+     },
+     {
+      "year": 2024,
+      "value": 172.57,
+      "error_positive": 0.29,
+      "error_negative": 0.29,
+      "unit": "GeV"
+     },
+     {
+      "year": 2025,
+      "value": 172.56,
+      "error_positive": 0.31,
+      "error_negative": 0.31,
+      "unit": "GeV"
+     }
+    ]
+   }
+  },
+  {
+   "key": "electron_mass",
+   "name": "Electron mass",
+   "symbol": "m_e",
+   "category": "lepton mass",
+   "pdgid": "S003M",
+   "unit": "MeV",
+   "series": {
+    "pdg_database": [
+     {
+      "year": 1961,
+      "value": 0.510976,
+      "error_positive": 7e-06,
+      "error_negative": 7e-06,
+      "unit": "MeV",
+      "value_text": "0.510976+-0.000007",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1964,
+      "value": 0.511006,
+      "error_positive": 2e-06,
+      "error_negative": 2e-06,
+      "unit": "MeV",
+      "value_text": "0.511006+-0.0000020",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1970,
+      "value": 0.5110041,
+      "error_positive": 1.6e-06,
+      "error_negative": 1.6e-06,
+      "unit": "MeV",
+      "value_text": "0.5110041+-0.0000016",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1974,
+      "value": 0.5110034,
+      "error_positive": 1.4e-06,
+      "error_negative": 1.4e-06,
+      "unit": "MeV",
+      "value_text": "0.5110034+-0.0000014",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1988,
+      "value": 0.51099906,
+      "error_positive": 1.5e-07,
+      "error_negative": 1.5e-07,
+      "unit": "MeV",
+      "value_text": "0.51099906+-0.00000015",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1990,
+      "value": 0.51099906,
+      "error_positive": 1.5e-07,
+      "error_negative": 1.5e-07,
+      "unit": "MeV",
+      "value_text": "0.51099906+-0.00000015",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 1992,
+      "value": 0.51099906,
+      "error_positive": 1.5e-07,
+      "error_negative": 1.5e-07,
+      "unit": "MeV",
+      "value_text": "0.51099906+-0.00000015",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 1994,
+      "value": 0.51099906,
+      "error_positive": 1.5e-07,
+      "error_negative": 1.5e-07,
+      "unit": "MeV",
+      "value_text": "0.51099906+-0.00000015",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 1996,
+      "value": 0.51099907,
+      "error_positive": 1.5e-07,
+      "error_negative": 1.5e-07,
+      "unit": "MeV",
+      "value_text": "0.51099907+-0.00000015",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 1997,
+      "value": 0.51099907,
+      "error_positive": 1.5e-07,
+      "error_negative": 1.5e-07,
+      "unit": "MeV",
+      "value_text": "0.51099907+-0.00000015",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 1998,
+      "value": 0.51099907,
+      "error_positive": 1.5e-07,
+      "error_negative": 1.5e-07,
+      "unit": "MeV",
+      "value_text": "0.51099907+-0.00000015",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2000,
+      "value": 0.510998902,
+      "error_positive": 2.1e-08,
+      "error_negative": 2.1e-08,
+      "unit": "MeV",
+      "value_text": "0.510998902+-0.000000021",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2002,
+      "value": 0.510998902,
+      "error_positive": 2.1e-08,
+      "error_negative": 2.1e-08,
+      "unit": "MeV",
+      "value_text": "0.510998902+-0.000000021",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2003,
+      "value": 0.510998902,
+      "error_positive": 2.1e-08,
+      "error_negative": 2.1e-08,
+      "unit": "MeV",
+      "value_text": "0.510998902+-0.000000021",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2004,
+      "value": 0.510998918,
+      "error_positive": 4.4e-08,
+      "error_negative": 4.4e-08,
+      "unit": "MeV",
+      "value_text": "0.51099892+-0.00000004",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2005,
+      "value": 0.510998918,
+      "error_positive": 4.4e-08,
+      "error_negative": 4.4e-08,
+      "unit": "MeV",
+      "value_text": "0.51099892+-0.00000004",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2006,
+      "value": 0.510998918,
+      "error_positive": 4.4e-08,
+      "error_negative": 4.4e-08,
+      "unit": "MeV",
+      "value_text": "0.51099892+-0.00000004",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2007,
+      "value": 0.510998918,
+      "error_positive": 4.4e-08,
+      "error_negative": 4.4e-08,
+      "unit": "MeV",
+      "value_text": "0.51099892+-0.00000004",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2008,
+      "value": 0.5109989100000811,
+      "error_positive": 1.299999999997803e-08,
+      "error_negative": 1.299999999997803e-08,
+      "unit": "MeV",
+      "value_text": "0.510998910+-0.000000013",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2009,
+      "value": 0.51099891,
+      "error_positive": 1.3e-08,
+      "error_negative": 1.3e-08,
+      "unit": "MeV",
+      "value_text": "0.510998910+-0.000000013",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2010,
+      "value": 0.51099891,
+      "error_positive": 1.3e-08,
+      "error_negative": 1.3e-08,
+      "unit": "MeV",
+      "value_text": "0.510998910+-0.000000013",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2011,
+      "value": 0.51099891,
+      "error_positive": 1.3e-08,
+      "error_negative": 1.3e-08,
+      "unit": "MeV",
+      "value_text": "0.510998910+-0.000000013",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2012,
+      "value": 0.510998928,
+      "error_positive": 1.1e-08,
+      "error_negative": 1.1e-08,
+      "unit": "MeV",
+      "value_text": "0.510998928+-0.000000011",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2013,
+      "value": 0.510998928,
+      "error_positive": 1.1e-08,
+      "error_negative": 1.1e-08,
+      "unit": "MeV",
+      "value_text": "0.510998928+-0.000000011",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2014,
+      "value": 0.510998928,
+      "error_positive": 1.1e-08,
+      "error_negative": 1.1e-08,
+      "unit": "MeV",
+      "value_text": "0.510998928+-0.000000011",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2015,
+      "value": 0.510998928,
+      "error_positive": 1.1e-08,
+      "error_negative": 1.1e-08,
+      "unit": "MeV",
+      "value_text": "0.510998928+-0.000000011",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2016,
+      "value": 0.5109989461,
+      "error_positive": 3.1e-09,
+      "error_negative": 3.1e-09,
+      "unit": "MeV",
+      "value_text": "0.5109989461+-0.0000000031",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2017,
+      "value": 0.5109989461,
+      "error_positive": 3.1e-09,
+      "error_negative": 3.1e-09,
+      "unit": "MeV",
+      "value_text": "0.5109989461+-0.0000000031",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2018,
+      "value": 0.5109989461,
+      "error_positive": 3.1e-09,
+      "error_negative": 3.1e-09,
+      "unit": "MeV",
+      "value_text": "0.5109989461+-0.0000000031",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2019,
+      "value": 0.5109989461,
+      "error_positive": 3.1e-09,
+      "error_negative": 3.1e-09,
+      "unit": "MeV",
+      "value_text": "0.5109989461+-0.0000000031",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2020,
+      "value": 0.5109989461,
+      "error_positive": 3.1e-09,
+      "error_negative": 3.1e-09,
+      "unit": "MeV",
+      "value_text": "0.5109989461+-0.0000000031",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2021,
+      "value": 0.5109989461,
+      "error_positive": 3.1e-09,
+      "error_negative": 3.1e-09,
+      "unit": "MeV",
+      "value_text": "0.5109989461+-0.0000000031",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2022,
+      "value": 0.51099895,
+      "error_positive": 1.5e-10,
+      "error_negative": 1.5e-10,
+      "unit": "MeV",
+      "value_text": "0.51099895000+-0.00000000015",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2023,
+      "value": 0.51099895,
+      "error_positive": 1.5e-10,
+      "error_negative": 1.5e-10,
+      "unit": "MeV",
+      "value_text": "0.51099895000+-0.00000000015",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2024,
+      "value": 0.51099895,
+      "error_positive": 1.5e-10,
+      "error_negative": 1.5e-10,
+      "unit": "MeV",
+      "value_text": "0.51099895000+-0.00000000015",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2025,
+      "value": 0.51099895,
+      "error_positive": 1.5e-10,
+      "error_negative": 1.5e-10,
+      "unit": "MeV",
+      "value_text": "0.51099895000+-0.00000000015",
+      "value_type": "AC",
+      "limit_type": null
+     }
+    ],
+    "mass_width_file": [
+     {
+      "year": 2004,
+      "value": 0.51099892,
+      "error_positive": 4e-08,
+      "error_negative": 4e-08,
+      "unit": "MeV"
+     },
+     {
+      "year": 2006,
+      "value": 0.51099892,
+      "error_positive": 4e-08,
+      "error_negative": 4e-08,
+      "unit": "MeV"
+     },
+     {
+      "year": 2008,
+      "value": 0.51099891,
+      "error_positive": 1.3e-08,
+      "error_negative": 1.3e-08,
+      "unit": "MeV"
+     },
+     {
+      "year": 2010,
+      "value": 0.51099891,
+      "error_positive": 1.3e-08,
+      "error_negative": 1.3e-08,
+      "unit": "MeV"
+     },
+     {
+      "year": 2011,
+      "value": 0.51099891,
+      "error_positive": 1.3e-08,
+      "error_negative": 1.3e-08,
+      "unit": "MeV"
+     },
+     {
+      "year": 2012,
+      "value": 0.510998928,
+      "error_positive": 1.1000000000000001e-08,
+      "error_negative": 1.1000000000000001e-08,
+      "unit": "MeV"
+     },
+     {
+      "year": 2013,
+      "value": 0.510998928,
+      "error_positive": 1.1000000000000001e-08,
+      "error_negative": 1.1000000000000001e-08,
+      "unit": "MeV"
+     },
+     {
+      "year": 2014,
+      "value": 0.510998928,
+      "error_positive": 1.1000000000000001e-08,
+      "error_negative": 1.1000000000000001e-08,
+      "unit": "MeV"
+     },
+     {
+      "year": 2015,
+      "value": 0.510998928,
+      "error_positive": 1.1000000000000001e-08,
+      "error_negative": 1.1000000000000001e-08,
+      "unit": "MeV"
+     },
+     {
+      "year": 2016,
+      "value": 0.5109989461000001,
+      "error_positive": 3.1e-09,
+      "error_negative": 3.1e-09,
+      "unit": "MeV"
+     },
+     {
+      "year": 2017,
+      "value": 0.5109989461000001,
+      "error_positive": 3.1e-09,
+      "error_negative": 3.1e-09,
+      "unit": "MeV"
+     },
+     {
+      "year": 2018,
+      "value": 0.5109989461000001,
+      "error_positive": 3.1e-09,
+      "error_negative": 3.1e-09,
+      "unit": "MeV"
+     },
+     {
+      "year": 2019,
+      "value": 0.5109989461000001,
+      "error_positive": 3.1e-09,
+      "error_negative": 3.1e-09,
+      "unit": "MeV"
+     },
+     {
+      "year": 2020,
+      "value": 0.5109989461000001,
+      "error_positive": 3.1e-09,
+      "error_negative": 3.1e-09,
+      "unit": "MeV"
+     },
+     {
+      "year": 2021,
+      "value": 0.5109989461000001,
+      "error_positive": 3.1e-09,
+      "error_negative": 3.1e-09,
+      "unit": "MeV"
+     },
+     {
+      "year": 2022,
+      "value": 0.5109989500000001,
+      "error_positive": 1.5e-10,
+      "error_negative": 1.5e-10,
+      "unit": "MeV"
+     },
+     {
+      "year": 2023,
+      "value": 0.5109989500000001,
+      "error_positive": 1.5e-10,
+      "error_negative": 1.5e-10,
+      "unit": "MeV"
+     },
+     {
+      "year": 2024,
+      "value": 0.5109989500000001,
+      "error_positive": 1.5e-10,
+      "error_negative": 1.5e-10,
+      "unit": "MeV"
+     },
+     {
+      "year": 2025,
+      "value": 0.5109989500000001,
+      "error_positive": 1.5e-10,
+      "error_negative": 1.5e-10,
+      "unit": "MeV"
+     }
+    ]
+   }
+  },
+  {
+   "key": "muon_mass",
+   "name": "Muon mass",
+   "symbol": "m_mu",
+   "category": "lepton mass",
+   "pdgid": "S004M",
+   "unit": "MeV",
+   "series": {
+    "pdg_database": [
+     {
+      "year": 1958,
+      "value": 105.7,
+      "error_positive": 0.06,
+      "error_negative": 0.06,
+      "unit": "MeV",
+      "value_text": "105.70+-0.06",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1961,
+      "value": 105.655,
+      "error_positive": 0.01,
+      "error_negative": 0.01,
+      "unit": "MeV",
+      "value_text": "105.655+-0.010",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1963,
+      "value": 105.655,
+      "error_positive": 0.01,
+      "error_negative": 0.01,
+      "unit": "MeV",
+      "value_text": "105.655+-0.010",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1964,
+      "value": 105.659,
+      "error_positive": 0.002,
+      "error_negative": 0.002,
+      "unit": "MeV",
+      "value_text": "105.659+-0.0020",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1965,
+      "value": 105.659,
+      "error_positive": 0.002,
+      "error_negative": 0.002,
+      "unit": "MeV",
+      "value_text": "105.659+-0.0020",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1967,
+      "value": 105.659,
+      "error_positive": 0.002,
+      "error_negative": 0.002,
+      "unit": "MeV",
+      "value_text": "105.659+-0.0020",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1968,
+      "value": 105.659,
+      "error_positive": 0.002,
+      "error_negative": 0.002,
+      "unit": "MeV",
+      "value_text": "105.659+-0.0020",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1969,
+      "value": 105.659,
+      "error_positive": 0.002,
+      "error_negative": 0.002,
+      "unit": "MeV",
+      "value_text": "105.659+-0.0020",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1970,
+      "value": 105.659,
+      "error_positive": 0.002,
+      "error_negative": 0.002,
+      "unit": "MeV",
+      "value_text": "105.659+-0.0020",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1971,
+      "value": 105.6599,
+      "error_positive": 0.0014,
+      "error_negative": 0.0014,
+      "unit": "MeV",
+      "value_text": "105.6599+-0.0014",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1972,
+      "value": 105.6594,
+      "error_positive": 0.0004,
+      "error_negative": 0.0004,
+      "unit": "MeV",
+      "value_text": "105.6594+-0.0004",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1973,
+      "value": 105.6595,
+      "error_positive": 0.0003,
+      "error_negative": 0.0003,
+      "unit": "MeV",
+      "value_text": "105.6595+-0.00030",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1974,
+      "value": 105.65948,
+      "error_positive": 0.00035,
+      "error_negative": 0.00035,
+      "unit": "MeV",
+      "value_text": "105.65948+-0.00035",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1976,
+      "value": 105.65948,
+      "error_positive": 0.00035,
+      "error_negative": 0.00035,
+      "unit": "MeV",
+      "value_text": "105.65948+-0.00035",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1978,
+      "value": 105.65946,
+      "error_positive": 0.00024,
+      "error_negative": 0.00024,
+      "unit": "MeV",
+      "value_text": "105.65946+-0.00024",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1980,
+      "value": 105.65946,
+      "error_positive": 0.00024,
+      "error_negative": 0.00024,
+      "unit": "MeV",
+      "value_text": "105.65946+-0.00024",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1982,
+      "value": 105.65943,
+      "error_positive": 0.00018,
+      "error_negative": 0.00018,
+      "unit": "MeV",
+      "value_text": "105.65943+-0.00018",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1984,
+      "value": 105.65932,
+      "error_positive": 0.00029,
+      "error_negative": 0.00029,
+      "unit": "MeV",
+      "value_text": "105.65932+-0.00029",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1986,
+      "value": 105.65916,
+      "error_positive": 0.0003,
+      "error_negative": 0.0003,
+      "unit": "MeV",
+      "value_text": "105.65916+-0.00030",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1988,
+      "value": 105.658389,
+      "error_positive": 3.4e-05,
+      "error_negative": 3.4e-05,
+      "unit": "MeV",
+      "value_text": "105.658389+-0.000034",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1990,
+      "value": 105.65838714495908,
+      "error_positive": 3.399999999994788e-05,
+      "error_negative": 3.399999999994788e-05,
+      "unit": "MeV",
+      "value_text": "105.658387+-0.000034",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 1992,
+      "value": 105.658389,
+      "error_positive": 3.4e-05,
+      "error_negative": 3.4e-05,
+      "unit": "MeV",
+      "value_text": "105.658389+-0.000034",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 1994,
+      "value": 105.658389,
+      "error_positive": 3.4e-05,
+      "error_negative": 3.4e-05,
+      "unit": "MeV",
+      "value_text": "105.658389+-0.000034",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 1996,
+      "value": 105.658389,
+      "error_positive": 3.4e-05,
+      "error_negative": 3.4e-05,
+      "unit": "MeV",
+      "value_text": "105.658389+-0.000034",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 1997,
+      "value": 105.658389,
+      "error_positive": 3.4e-05,
+      "error_negative": 3.4e-05,
+      "unit": "MeV",
+      "value_text": "105.658389+-0.000034",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 1998,
+      "value": 105.658389,
+      "error_positive": 3.4e-05,
+      "error_negative": 3.4e-05,
+      "unit": "MeV",
+      "value_text": "105.658389+-0.000034",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2000,
+      "value": 105.6583568,
+      "error_positive": 5.2e-06,
+      "error_negative": 5.2e-06,
+      "unit": "MeV",
+      "value_text": "105.658357+-0.000005",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2002,
+      "value": 105.6583568,
+      "error_positive": 5.2e-06,
+      "error_negative": 5.2e-06,
+      "unit": "MeV",
+      "value_text": "105.658357+-0.000005",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2003,
+      "value": 105.6583568,
+      "error_positive": 5.2e-06,
+      "error_negative": 5.2e-06,
+      "unit": "MeV",
+      "value_text": "105.658357+-0.000005",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2004,
+      "value": 105.6583692,
+      "error_positive": 9.4e-06,
+      "error_negative": 9.4e-06,
+      "unit": "MeV",
+      "value_text": "105.658369+-0.000009",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2005,
+      "value": 105.6583692,
+      "error_positive": 9.4e-06,
+      "error_negative": 9.4e-06,
+      "unit": "MeV",
+      "value_text": "105.658369+-0.000009",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2006,
+      "value": 105.6583692,
+      "error_positive": 9.4e-06,
+      "error_negative": 9.4e-06,
+      "unit": "MeV",
+      "value_text": "105.658369+-0.000009",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2007,
+      "value": 105.6583692,
+      "error_positive": 9.4e-06,
+      "error_negative": 9.4e-06,
+      "unit": "MeV",
+      "value_text": "105.658369+-0.000009",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2008,
+      "value": 105.6583668,
+      "error_positive": 3.8e-06,
+      "error_negative": 3.8e-06,
+      "unit": "MeV",
+      "value_text": "105.658367+-0.000004",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2009,
+      "value": 105.6583668,
+      "error_positive": 3.8e-06,
+      "error_negative": 3.8e-06,
+      "unit": "MeV",
+      "value_text": "105.658367+-0.000004",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2010,
+      "value": 105.6583668,
+      "error_positive": 3.8e-06,
+      "error_negative": 3.8e-06,
+      "unit": "MeV",
+      "value_text": "105.658367+-0.000004",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2011,
+      "value": 105.6583668,
+      "error_positive": 3.8e-06,
+      "error_negative": 3.8e-06,
+      "unit": "MeV",
+      "value_text": "105.658367+-0.000004",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2012,
+      "value": 105.6583715,
+      "error_positive": 3.5e-06,
+      "error_negative": 3.5e-06,
+      "unit": "MeV",
+      "value_text": "105.6583715+-0.0000035",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2013,
+      "value": 105.6583715,
+      "error_positive": 3.5e-06,
+      "error_negative": 3.5e-06,
+      "unit": "MeV",
+      "value_text": "105.6583715+-0.0000035",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2014,
+      "value": 105.6583715,
+      "error_positive": 3.5e-06,
+      "error_negative": 3.5e-06,
+      "unit": "MeV",
+      "value_text": "105.6583715+-0.0000035",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2015,
+      "value": 105.6583715,
+      "error_positive": 3.5e-06,
+      "error_negative": 3.5e-06,
+      "unit": "MeV",
+      "value_text": "105.6583715+-0.0000035",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2016,
+      "value": 105.6583745,
+      "error_positive": 2.4e-06,
+      "error_negative": 2.4e-06,
+      "unit": "MeV",
+      "value_text": "105.6583745+-0.0000024",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2017,
+      "value": 105.6583745,
+      "error_positive": 2.4e-06,
+      "error_negative": 2.4e-06,
+      "unit": "MeV",
+      "value_text": "105.6583745+-0.0000024",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2018,
+      "value": 105.6583745,
+      "error_positive": 2.4e-06,
+      "error_negative": 2.4e-06,
+      "unit": "MeV",
+      "value_text": "105.6583745+-0.0000024",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2019,
+      "value": 105.6583745,
+      "error_positive": 2.4e-06,
+      "error_negative": 2.4e-06,
+      "unit": "MeV",
+      "value_text": "105.6583745+-0.0000024",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2020,
+      "value": 105.6583745,
+      "error_positive": 2.4e-06,
+      "error_negative": 2.4e-06,
+      "unit": "MeV",
+      "value_text": "105.6583745+-0.0000024",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2021,
+      "value": 105.6583745,
+      "error_positive": 2.4e-06,
+      "error_negative": 2.4e-06,
+      "unit": "MeV",
+      "value_text": "105.6583745+-0.0000024",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2022,
+      "value": 105.6583755,
+      "error_positive": 2.3e-06,
+      "error_negative": 2.3e-06,
+      "unit": "MeV",
+      "value_text": "105.6583755+-0.0000023",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2023,
+      "value": 105.6583755,
+      "error_positive": 2.3e-06,
+      "error_negative": 2.3e-06,
+      "unit": "MeV",
+      "value_text": "105.6583755+-0.0000023",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2024,
+      "value": 105.6583755,
+      "error_positive": 2.3e-06,
+      "error_negative": 2.3e-06,
+      "unit": "MeV",
+      "value_text": "105.6583755+-0.0000023",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2025,
+      "value": 105.6583755,
+      "error_positive": 2.3e-06,
+      "error_negative": 2.3e-06,
+      "unit": "MeV",
+      "value_text": "105.6583755+-0.0000023",
+      "value_type": "AC",
+      "limit_type": null
+     }
+    ],
+    "mass_width_file": [
+     {
+      "year": 2004,
+      "value": 105.65836900000001,
+      "error_positive": 9e-06,
+      "error_negative": 9e-06,
+      "unit": "MeV"
+     },
+     {
+      "year": 2006,
+      "value": 105.65836900000001,
+      "error_positive": 9e-06,
+      "error_negative": 9e-06,
+      "unit": "MeV"
+     },
+     {
+      "year": 2008,
+      "value": 105.658367,
+      "error_positive": 4.000000000000001e-06,
+      "error_negative": 4.000000000000001e-06,
+      "unit": "MeV"
+     },
+     {
+      "year": 2010,
+      "value": 105.658367,
+      "error_positive": 4.000000000000001e-06,
+      "error_negative": 4.000000000000001e-06,
+      "unit": "MeV"
+     },
+     {
+      "year": 2011,
+      "value": 105.658367,
+      "error_positive": 4.000000000000001e-06,
+      "error_negative": 4.000000000000001e-06,
+      "unit": "MeV"
+     },
+     {
+      "year": 2012,
+      "value": 105.658372,
+      "error_positive": 3.5e-06,
+      "error_negative": 3.5e-06,
+      "unit": "MeV"
+     },
+     {
+      "year": 2013,
+      "value": 105.6583715,
+      "error_positive": 3.5e-06,
+      "error_negative": 3.5e-06,
+      "unit": "MeV"
+     },
+     {
+      "year": 2014,
+      "value": 105.6583715,
+      "error_positive": 3.5e-06,
+      "error_negative": 3.5e-06,
+      "unit": "MeV"
+     },
+     {
+      "year": 2015,
+      "value": 105.6583715,
+      "error_positive": 3.5e-06,
+      "error_negative": 3.5e-06,
+      "unit": "MeV"
+     },
+     {
+      "year": 2016,
+      "value": 105.6583745,
+      "error_positive": 2.4e-06,
+      "error_negative": 2.4e-06,
+      "unit": "MeV"
+     },
+     {
+      "year": 2017,
+      "value": 105.6583745,
+      "error_positive": 2.4e-06,
+      "error_negative": 2.4e-06,
+      "unit": "MeV"
+     },
+     {
+      "year": 2018,
+      "value": 105.6583745,
+      "error_positive": 2.4e-06,
+      "error_negative": 2.4e-06,
+      "unit": "MeV"
+     },
+     {
+      "year": 2019,
+      "value": 105.6583745,
+      "error_positive": 2.4e-06,
+      "error_negative": 2.4e-06,
+      "unit": "MeV"
+     },
+     {
+      "year": 2020,
+      "value": 105.6583745,
+      "error_positive": 2.4e-06,
+      "error_negative": 2.4e-06,
+      "unit": "MeV"
+     },
+     {
+      "year": 2021,
+      "value": 105.6583745,
+      "error_positive": 2.4e-06,
+      "error_negative": 2.4e-06,
+      "unit": "MeV"
+     },
+     {
+      "year": 2022,
+      "value": 105.6583755,
+      "error_positive": 2.3e-06,
+      "error_negative": 2.3e-06,
+      "unit": "MeV"
+     },
+     {
+      "year": 2023,
+      "value": 105.6583755,
+      "error_positive": 2.3e-06,
+      "error_negative": 2.3e-06,
+      "unit": "MeV"
+     },
+     {
+      "year": 2024,
+      "value": 105.6583755,
+      "error_positive": 2.3e-06,
+      "error_negative": 2.3e-06,
+      "unit": "MeV"
+     },
+     {
+      "year": 2025,
+      "value": 105.6583755,
+      "error_positive": 2.3e-06,
+      "error_negative": 2.3e-06,
+      "unit": "MeV"
+     }
+    ]
+   }
+  },
+  {
+   "key": "tau_mass",
+   "name": "Tau mass",
+   "symbol": "m_tau",
+   "category": "lepton mass",
+   "pdgid": "S035M",
+   "unit": "MeV",
+   "series": {
+    "pdg_database": [
+     {
+      "year": 1978,
+      "value": 1807.0,
+      "error_positive": 20.0,
+      "error_negative": 20.0,
+      "unit": "MeV",
+      "value_text": "1807.0+-20",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1980,
+      "value": 1784.0,
+      "error_positive": 4.0,
+      "error_negative": 4.0,
+      "unit": "MeV",
+      "value_text": "1784.0+-4",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1982,
+      "value": 1784.2,
+      "error_positive": 3.2,
+      "error_negative": 3.2,
+      "unit": "MeV",
+      "value_text": "1784.2+-3.2",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1984,
+      "value": 1784.2,
+      "error_positive": 3.2,
+      "error_negative": 3.2,
+      "unit": "MeV",
+      "value_text": "1784.2+-3.2",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1986,
+      "value": 1784.2,
+      "error_positive": 3.2,
+      "error_negative": 3.2,
+      "unit": "MeV",
+      "value_text": "1784.2+-3.2",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1988,
+      "value": 1784.1,
+      "error_positive": 2.7,
+      "error_negative": 3.6,
+      "unit": "MeV",
+      "value_text": "1784.1+2.7-3.6",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1990,
+      "value": 1784.0832681715028,
+      "error_positive": 2.735764515525319,
+      "error_negative": 3.5785924761939487,
+      "unit": "MeV",
+      "value_text": "1784.1+2.7-3.6",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 1992,
+      "value": 1784.0832681715028,
+      "error_positive": 2.7357645155253194,
+      "error_negative": 3.5785924761939487,
+      "unit": "MeV",
+      "value_text": "1784.1+2.7-3.6",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 1994,
+      "value": 1777.05891259945,
+      "error_positive": 0.424132501999553,
+      "error_negative": 0.503042932819393,
+      "unit": "MeV",
+      "value_text": "1777.1+0.4-0.5",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 1996,
+      "value": 1777.00388920718,
+      "error_positive": 0.300503471817093,
+      "error_negative": 0.265498477558044,
+      "unit": "MeV",
+      "value_text": "1777.00+0.30-0.27",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 1997,
+      "value": 1777.00388920718,
+      "error_positive": 0.300503471817093,
+      "error_negative": 0.265498477558044,
+      "unit": "MeV",
+      "value_text": "1777.00+0.30-0.27",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 1998,
+      "value": 1777.0505625246,
+      "error_positive": 0.294185350480641,
+      "error_negative": 0.261110926175321,
+      "unit": "MeV",
+      "value_text": "1777.05+0.29-0.26",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2000,
+      "value": 1777.03190154357,
+      "error_positive": 0.298025569790294,
+      "error_negative": 0.263784918642182,
+      "unit": "MeV",
+      "value_text": "1777.03+0.30-0.26",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2002,
+      "value": 1776.98842571409,
+      "error_positive": 0.294375967150942,
+      "error_negative": 0.261244181110911,
+      "unit": "MeV",
+      "value_text": "1776.99+0.29-0.26",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2003,
+      "value": 1776.98842571409,
+      "error_positive": 0.294375967150942,
+      "error_negative": 0.261244181110911,
+      "unit": "MeV",
+      "value_text": "1776.99+0.29-0.26",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2004,
+      "value": 1776.98842571409,
+      "error_positive": 0.294375967150942,
+      "error_negative": 0.261244181110911,
+      "unit": "MeV",
+      "value_text": "1776.99+0.29-0.26",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2005,
+      "value": 1776.98842571409,
+      "error_positive": 0.294375967150942,
+      "error_negative": 0.261244181110911,
+      "unit": "MeV",
+      "value_text": "1776.99+0.29-0.26",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2006,
+      "value": 1776.988425714095,
+      "error_positive": 0.2943759671509421,
+      "error_negative": 0.2612441811109109,
+      "unit": "MeV",
+      "value_text": "1776.99+0.29-0.26",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2007,
+      "value": 1776.902449734979,
+      "error_positive": 0.2071480213687156,
+      "error_negative": 0.1892699718778177,
+      "unit": "MeV",
+      "value_text": "1776.90+-0.20",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2008,
+      "value": 1776.839643501257,
+      "error_positive": 0.1811367495203841,
+      "error_negative": 0.1688174737980087,
+      "unit": "MeV",
+      "value_text": "1776.84+-0.17",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2009,
+      "value": 1776.839643501257,
+      "error_positive": 0.1811367495203841,
+      "error_negative": 0.1688174737980087,
+      "unit": "MeV",
+      "value_text": "1776.84+-0.17",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2010,
+      "value": 1776.817566190253,
+      "error_positive": 0.166765180378446,
+      "error_negative": 0.1570031202889019,
+      "unit": "MeV",
+      "value_text": "1776.82+-0.16",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2011,
+      "value": 1776.817566190253,
+      "error_positive": 0.166765180378446,
+      "error_negative": 0.1570031202889019,
+      "unit": "MeV",
+      "value_text": "1776.82+-0.16",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2012,
+      "value": 1776.817566190253,
+      "error_positive": 0.166765180378446,
+      "error_negative": 0.1570031202889019,
+      "unit": "MeV",
+      "value_text": "1776.82+-0.16",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2013,
+      "value": 1776.817566190253,
+      "error_positive": 0.166765180378446,
+      "error_negative": 0.1570031202889019,
+      "unit": "MeV",
+      "value_text": "1776.82+-0.16",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2014,
+      "value": 1776.817566190253,
+      "error_positive": 0.166765180378446,
+      "error_negative": 0.1570031202889019,
+      "unit": "MeV",
+      "value_text": "1776.82+-0.16",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2015,
+      "value": 1776.861049071306,
+      "error_positive": 0.1140041978238036,
+      "error_negative": 0.1174303852077363,
+      "unit": "MeV",
+      "value_text": "1776.86+-0.12",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2016,
+      "value": 1776.861049071306,
+      "error_positive": 0.1140041978238036,
+      "error_negative": 0.1174303852077363,
+      "unit": "MeV",
+      "value_text": "1776.86+-0.12",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2017,
+      "value": 1776.861049071306,
+      "error_positive": 0.1140041978238036,
+      "error_negative": 0.1174303852077363,
+      "unit": "MeV",
+      "value_text": "1776.86+-0.12",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2018,
+      "value": 1776.861049071306,
+      "error_positive": 0.1140041978238036,
+      "error_negative": 0.1174303852077363,
+      "unit": "MeV",
+      "value_text": "1776.86+-0.12",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2019,
+      "value": 1776.861049071306,
+      "error_positive": 0.1140041978238036,
+      "error_negative": 0.1174303852077363,
+      "unit": "MeV",
+      "value_text": "1776.86+-0.12",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2020,
+      "value": 1776.861049071306,
+      "error_positive": 0.1140041978238036,
+      "error_negative": 0.1174303852077363,
+      "unit": "MeV",
+      "value_text": "1776.86+-0.12",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2021,
+      "value": 1776.861049071306,
+      "error_positive": 0.1140041978238036,
+      "error_negative": 0.1174303852077363,
+      "unit": "MeV",
+      "value_text": "1776.86+-0.12",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2022,
+      "value": 1776.861049071306,
+      "error_positive": 0.1140041978238036,
+      "error_negative": 0.1174303852077363,
+      "unit": "MeV",
+      "value_text": "1776.86+-0.12",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2023,
+      "value": 1776.861049071306,
+      "error_positive": 0.1140041978238036,
+      "error_negative": 0.1174303852077363,
+      "unit": "MeV",
+      "value_text": "1776.86+-0.12",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2024,
+      "value": 1776.93246513409,
+      "error_positive": 0.08491495391323055,
+      "error_negative": 0.08758019173411406,
+      "unit": "MeV",
+      "value_text": "1776.93+-0.09",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2025,
+      "value": 1776.93246513409,
+      "error_positive": 0.08491495391323055,
+      "error_negative": 0.08758019173411406,
+      "unit": "MeV",
+      "value_text": "1776.93+-0.09",
+      "value_type": "AC",
+      "limit_type": null
+     }
+    ],
+    "mass_width_file": [
+     {
+      "year": 2004,
+      "value": 1776.99,
+      "error_positive": 0.29,
+      "error_negative": 0.25999999999999995,
+      "unit": "MeV"
+     },
+     {
+      "year": 2006,
+      "value": 1776.99,
+      "error_positive": 0.29,
+      "error_negative": 0.25999999999999995,
+      "unit": "MeV"
+     },
+     {
+      "year": 2008,
+      "value": 1776.84,
+      "error_positive": 0.17,
+      "error_negative": 0.17,
+      "unit": "MeV"
+     },
+     {
+      "year": 2010,
+      "value": 1776.8200000000002,
+      "error_positive": 0.16,
+      "error_negative": 0.16,
+      "unit": "MeV"
+     },
+     {
+      "year": 2011,
+      "value": 1776.8200000000002,
+      "error_positive": 0.16,
+      "error_negative": 0.16,
+      "unit": "MeV"
+     },
+     {
+      "year": 2012,
+      "value": 1776.8200000000002,
+      "error_positive": 0.16,
+      "error_negative": 0.16,
+      "unit": "MeV"
+     },
+     {
+      "year": 2013,
+      "value": 1776.8200000000002,
+      "error_positive": 0.16,
+      "error_negative": 0.16,
+      "unit": "MeV"
+     },
+     {
+      "year": 2014,
+      "value": 1776.8200000000002,
+      "error_positive": 0.16,
+      "error_negative": 0.16,
+      "unit": "MeV"
+     },
+     {
+      "year": 2015,
+      "value": 1776.8600000000001,
+      "error_positive": 0.12000000000000001,
+      "error_negative": 0.12000000000000001,
+      "unit": "MeV"
+     },
+     {
+      "year": 2016,
+      "value": 1776.8600000000001,
+      "error_positive": 0.12000000000000001,
+      "error_negative": 0.12000000000000001,
+      "unit": "MeV"
+     },
+     {
+      "year": 2017,
+      "value": 1776.8600000000001,
+      "error_positive": 0.12000000000000001,
+      "error_negative": 0.12000000000000001,
+      "unit": "MeV"
+     },
+     {
+      "year": 2018,
+      "value": 1776.8600000000001,
+      "error_positive": 0.12000000000000001,
+      "error_negative": 0.12000000000000001,
+      "unit": "MeV"
+     },
+     {
+      "year": 2019,
+      "value": 1776.8600000000001,
+      "error_positive": 0.12000000000000001,
+      "error_negative": 0.12000000000000001,
+      "unit": "MeV"
+     },
+     {
+      "year": 2020,
+      "value": 1776.8600000000001,
+      "error_positive": 0.12000000000000001,
+      "error_negative": 0.12000000000000001,
+      "unit": "MeV"
+     },
+     {
+      "year": 2021,
+      "value": 1776.8600000000001,
+      "error_positive": 0.12000000000000001,
+      "error_negative": 0.12000000000000001,
+      "unit": "MeV"
+     },
+     {
+      "year": 2022,
+      "value": 1776.8600000000001,
+      "error_positive": 0.12000000000000001,
+      "error_negative": 0.12000000000000001,
+      "unit": "MeV"
+     },
+     {
+      "year": 2023,
+      "value": 1776.8600000000001,
+      "error_positive": 0.12000000000000001,
+      "error_negative": 0.12000000000000001,
+      "unit": "MeV"
+     },
+     {
+      "year": 2024,
+      "value": 1776.9299999999998,
+      "error_positive": 0.09000000000000001,
+      "error_negative": 0.09000000000000001,
+      "unit": "MeV"
+     },
+     {
+      "year": 2025,
+      "value": 1776.9299999999998,
+      "error_positive": 0.09000000000000001,
+      "error_negative": 0.09000000000000001,
+      "unit": "MeV"
+     }
+    ]
+   }
+  },
+  {
+   "key": "W_mass",
+   "name": "W boson mass",
+   "symbol": "m_W",
+   "category": "boson mass",
+   "pdgid": "S043M",
+   "unit": "GeV",
+   "series": {
+    "pdg_database": [
+     {
+      "year": 1984,
+      "value": 80.8,
+      "error_positive": 2.7,
+      "error_negative": 2.7,
+      "unit": "GeV",
+      "value_text": "80.8+-2.7",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1986,
+      "value": 81.8,
+      "error_positive": 1.5,
+      "error_negative": 1.5,
+      "unit": "GeV",
+      "value_text": "81.8+-1.5",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1988,
+      "value": 81.0,
+      "error_positive": 1.3,
+      "error_negative": 1.3,
+      "unit": "GeV",
+      "value_text": "81.0+-1.3",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1990,
+      "value": 80.62203616880959,
+      "error_positive": 0.4354954118128567,
+      "error_negative": 0.4354954118128567,
+      "unit": "GeV",
+      "value_text": "80.6+-0.4",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 1992,
+      "value": 80.21755446053595,
+      "error_positive": 0.2567118075122953,
+      "error_negative": 0.2567118075122953,
+      "unit": "GeV",
+      "value_text": "80.22+-0.26",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 1994,
+      "value": 80.2237957849238,
+      "error_positive": 0.256605661344473,
+      "error_negative": 0.256605661344473,
+      "unit": "GeV",
+      "value_text": "80.22+-0.26",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 1996,
+      "value": 80.3327439450393,
+      "error_positive": 0.149869515382266,
+      "error_negative": 0.149869515382266,
+      "unit": "GeV",
+      "value_text": "80.33+-0.15",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 1997,
+      "value": 80.3569685758622,
+      "error_positive": 0.116555453741772,
+      "error_negative": 0.115380676224063,
+      "unit": "GeV",
+      "value_text": "80.36+-0.12",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 1998,
+      "value": 80.4072743922865,
+      "error_positive": 0.0966754013567042,
+      "error_negative": 0.0966754013567042,
+      "unit": "GeV",
+      "value_text": "80.41+-0.10",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2000,
+      "value": 80.419,
+      "error_positive": 0.056,
+      "error_negative": 0.056,
+      "unit": "GeV",
+      "value_text": "80.419+-0.056",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2002,
+      "value": 80.423,
+      "error_positive": 0.039,
+      "error_negative": 0.039,
+      "unit": "GeV",
+      "value_text": "80.423+-0.039",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2003,
+      "value": 80.425,
+      "error_positive": 0.038,
+      "error_negative": 0.038,
+      "unit": "GeV",
+      "value_text": "80.425+-0.038",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2004,
+      "value": 80.425,
+      "error_positive": 0.038,
+      "error_negative": 0.038,
+      "unit": "GeV",
+      "value_text": "80.425+-0.038",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2005,
+      "value": 80.425,
+      "error_positive": 0.038,
+      "error_negative": 0.038,
+      "unit": "GeV",
+      "value_text": "80.425+-0.038",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2006,
+      "value": 80.403,
+      "error_positive": 0.029,
+      "error_negative": 0.029,
+      "unit": "GeV",
+      "value_text": "80.403 +-0.029",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2007,
+      "value": 80.403,
+      "error_positive": 0.029,
+      "error_negative": 0.029,
+      "unit": "GeV",
+      "value_text": "80.403 +-0.029",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2008,
+      "value": 80.398,
+      "error_positive": 0.025,
+      "error_negative": 0.025,
+      "unit": "GeV",
+      "value_text": "80.398 +-0.025",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2009,
+      "value": 80.398,
+      "error_positive": 0.025,
+      "error_negative": 0.025,
+      "unit": "GeV",
+      "value_text": "80.398 +-0.025",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2010,
+      "value": 80.399,
+      "error_positive": 0.023,
+      "error_negative": 0.023,
+      "unit": "GeV",
+      "value_text": "80.399 +-0.023",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2011,
+      "value": 80.399,
+      "error_positive": 0.023,
+      "error_negative": 0.023,
+      "unit": "GeV",
+      "value_text": "80.399 +-0.023",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2012,
+      "value": 80.385,
+      "error_positive": 0.015,
+      "error_negative": 0.015,
+      "unit": "GeV",
+      "value_text": "80.385 +-0.015",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2013,
+      "value": 80.385,
+      "error_positive": 0.015,
+      "error_negative": 0.015,
+      "unit": "GeV",
+      "value_text": "80.385 +-0.015",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2014,
+      "value": 80.385,
+      "error_positive": 0.015,
+      "error_negative": 0.015,
+      "unit": "GeV",
+      "value_text": "80.385 +-0.015",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2015,
+      "value": 80.385,
+      "error_positive": 0.015,
+      "error_negative": 0.015,
+      "unit": "GeV",
+      "value_text": "80.385 +-0.015",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2016,
+      "value": 80.385,
+      "error_positive": 0.015,
+      "error_negative": 0.015,
+      "unit": "GeV",
+      "value_text": "80.385 +-0.015",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2017,
+      "value": 80.385,
+      "error_positive": 0.015,
+      "error_negative": 0.015,
+      "unit": "GeV",
+      "value_text": "80.385 +-0.015",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2018,
+      "value": 80.379,
+      "error_positive": 0.012,
+      "error_negative": 0.012,
+      "unit": "GeV",
+      "value_text": "80.379 +-0.012",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2019,
+      "value": 80.379,
+      "error_positive": 0.012,
+      "error_negative": 0.012,
+      "unit": "GeV",
+      "value_text": "80.379 +-0.012",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2020,
+      "value": 80.379,
+      "error_positive": 0.012,
+      "error_negative": 0.012,
+      "unit": "GeV",
+      "value_text": "80.379 +-0.012",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2021,
+      "value": 80.379,
+      "error_positive": 0.012,
+      "error_negative": 0.012,
+      "unit": "GeV",
+      "value_text": "80.379 +-0.012",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2022,
+      "value": 80.379,
+      "error_positive": 0.012,
+      "error_negative": 0.012,
+      "unit": "GeV",
+      "value_text": "80.377 +-0.012",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2023,
+      "value": 80.377,
+      "error_positive": 0.012,
+      "error_negative": 0.012,
+      "unit": "GeV",
+      "value_text": "80.377 +-0.012",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2024,
+      "value": 80.377,
+      "error_positive": 0.012,
+      "error_negative": 0.012,
+      "unit": "GeV",
+      "value_text": "80.3692 +- 0.0133 ",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2025,
+      "value": 80.377,
+      "error_positive": 0.012,
+      "error_negative": 0.012,
+      "unit": "GeV",
+      "value_text": "80.3692 +- 0.0133 ",
+      "value_type": "V",
+      "limit_type": null
+     }
+    ],
+    "mass_width_file": [
+     {
+      "year": 2004,
+      "value": 80.42,
+      "error_positive": 0.04,
+      "error_negative": 0.04,
+      "unit": "GeV"
+     },
+     {
+      "year": 2006,
+      "value": 80.403,
+      "error_positive": 0.029,
+      "error_negative": 0.029,
+      "unit": "GeV"
+     },
+     {
+      "year": 2008,
+      "value": 80.398,
+      "error_positive": 0.025,
+      "error_negative": 0.025,
+      "unit": "GeV"
+     },
+     {
+      "year": 2010,
+      "value": 80.399,
+      "error_positive": 0.023,
+      "error_negative": 0.023,
+      "unit": "GeV"
+     },
+     {
+      "year": 2011,
+      "value": 80.399,
+      "error_positive": 0.023,
+      "error_negative": 0.023,
+      "unit": "GeV"
+     },
+     {
+      "year": 2012,
+      "value": 80.385,
+      "error_positive": 0.015,
+      "error_negative": 0.015,
+      "unit": "GeV"
+     },
+     {
+      "year": 2013,
+      "value": 80.385,
+      "error_positive": 0.015,
+      "error_negative": 0.015,
+      "unit": "GeV"
+     },
+     {
+      "year": 2014,
+      "value": 80.385,
+      "error_positive": 0.015,
+      "error_negative": 0.015,
+      "unit": "GeV"
+     },
+     {
+      "year": 2015,
+      "value": 80.385,
+      "error_positive": 0.015,
+      "error_negative": 0.015,
+      "unit": "GeV"
+     },
+     {
+      "year": 2016,
+      "value": 80.385,
+      "error_positive": 0.015,
+      "error_negative": 0.015,
+      "unit": "GeV"
+     },
+     {
+      "year": 2017,
+      "value": 80.385,
+      "error_positive": 0.015,
+      "error_negative": 0.015,
+      "unit": "GeV"
+     },
+     {
+      "year": 2018,
+      "value": 80.379,
+      "error_positive": 0.012,
+      "error_negative": 0.012,
+      "unit": "GeV"
+     },
+     {
+      "year": 2019,
+      "value": 80.379,
+      "error_positive": 0.012,
+      "error_negative": 0.012,
+      "unit": "GeV"
+     },
+     {
+      "year": 2020,
+      "value": 80.379,
+      "error_positive": 0.012,
+      "error_negative": 0.012,
+      "unit": "GeV"
+     },
+     {
+      "year": 2021,
+      "value": 80.379,
+      "error_positive": 0.012,
+      "error_negative": 0.012,
+      "unit": "GeV"
+     },
+     {
+      "year": 2022,
+      "value": 80.379,
+      "error_positive": 0.012,
+      "error_negative": 0.012,
+      "unit": "GeV"
+     },
+     {
+      "year": 2023,
+      "value": 80.377,
+      "error_positive": 0.012,
+      "error_negative": 0.012,
+      "unit": "GeV"
+     },
+     {
+      "year": 2024,
+      "value": 80.369,
+      "error_positive": 0.013,
+      "error_negative": 0.013,
+      "unit": "GeV"
+     },
+     {
+      "year": 2025,
+      "value": 80.369,
+      "error_positive": 0.013,
+      "error_negative": 0.013,
+      "unit": "GeV"
+     }
+    ]
+   }
+  },
+  {
+   "key": "Z_mass",
+   "name": "Z boson mass",
+   "symbol": "m_Z",
+   "category": "boson mass",
+   "pdgid": "S044M",
+   "unit": "GeV",
+   "series": {
+    "pdg_database": [
+     {
+      "year": 1984,
+      "value": 92.9,
+      "error_positive": 1.6,
+      "error_negative": 1.6,
+      "unit": "GeV",
+      "value_text": "92.9+-1.6",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1986,
+      "value": 92.6,
+      "error_positive": 1.7,
+      "error_negative": 1.7,
+      "unit": "GeV",
+      "value_text": "92.6+-1.7",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1988,
+      "value": 92.4,
+      "error_positive": 1.8,
+      "error_negative": 1.8,
+      "unit": "GeV",
+      "value_text": "92.4+-1.8",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 1990,
+      "value": 91.16080951039675,
+      "error_positive": 0.031294733596343625,
+      "error_negative": 0.031294733596343625,
+      "unit": "GeV",
+      "value_text": "91.161+-0.031",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 1992,
+      "value": 91.17256698371746,
+      "error_positive": 0.020244665148205825,
+      "error_negative": 0.020244665148205825,
+      "unit": "GeV",
+      "value_text": "91.173+-0.020",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 1994,
+      "value": 91.187,
+      "error_positive": 0.007,
+      "error_negative": 0.007,
+      "unit": "GeV",
+      "value_text": "91.187+-0.007",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 1996,
+      "value": 91.187,
+      "error_positive": 0.007,
+      "error_negative": 0.007,
+      "unit": "GeV",
+      "value_text": "91.187+-0.007",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 1997,
+      "value": 91.187,
+      "error_positive": 0.007,
+      "error_negative": 0.007,
+      "unit": "GeV",
+      "value_text": "91.187+-0.007",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 1998,
+      "value": 91.187,
+      "error_positive": 0.007,
+      "error_negative": 0.007,
+      "unit": "GeV",
+      "value_text": "91.187+-0.007",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2000,
+      "value": 91.1882,
+      "error_positive": 0.0022,
+      "error_negative": 0.0022,
+      "unit": "GeV",
+      "value_text": "91.1882+-0.0022",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2002,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV",
+      "value_text": "91.1876+-0.0021",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2003,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV",
+      "value_text": "91.1876+-0.0021",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2004,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV",
+      "value_text": "91.1876+-0.0021",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2005,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV",
+      "value_text": "91.1876+-0.0021",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2006,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV",
+      "value_text": "91.1876+-0.0021",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2007,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV",
+      "value_text": "91.1876+-0.0021",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2008,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV",
+      "value_text": "91.1876+-0.0021",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2009,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV",
+      "value_text": "91.1876+-0.0021",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2010,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV",
+      "value_text": "91.1876+-0.0021",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2011,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV",
+      "value_text": "91.1876+-0.0021",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2012,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV",
+      "value_text": "91.1876+-0.0021",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2013,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV",
+      "value_text": "91.1876+-0.0021",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2014,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV",
+      "value_text": "91.1876+-0.0021",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2015,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV",
+      "value_text": "91.1876+-0.0021",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2016,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV",
+      "value_text": "91.1876+-0.0021",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2017,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV",
+      "value_text": "91.1876+-0.0021",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2018,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV",
+      "value_text": "91.1876+-0.0021",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2019,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV",
+      "value_text": "91.1876+-0.0021",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2020,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV",
+      "value_text": "91.1876+-0.0021",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2021,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV",
+      "value_text": "91.1876+-0.0021",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2022,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV",
+      "value_text": "91.1876+-0.0021",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2023,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV",
+      "value_text": "91.1876+-0.0021",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2024,
+      "value": 91.18797809193725,
+      "error_positive": 0.002013761937203607,
+      "error_negative": 0.002013761937203607,
+      "unit": "GeV",
+      "value_text": "91.1880+-0.0020",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2025,
+      "value": 91.18797809193725,
+      "error_positive": 0.002013761937203607,
+      "error_negative": 0.002013761937203607,
+      "unit": "GeV",
+      "value_text": "91.1880+-0.0020",
+      "value_type": "AC",
+      "limit_type": null
+     }
+    ],
+    "mass_width_file": [
+     {
+      "year": 2004,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV"
+     },
+     {
+      "year": 2006,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV"
+     },
+     {
+      "year": 2008,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV"
+     },
+     {
+      "year": 2010,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV"
+     },
+     {
+      "year": 2011,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV"
+     },
+     {
+      "year": 2012,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV"
+     },
+     {
+      "year": 2013,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV"
+     },
+     {
+      "year": 2014,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV"
+     },
+     {
+      "year": 2015,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV"
+     },
+     {
+      "year": 2016,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV"
+     },
+     {
+      "year": 2017,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV"
+     },
+     {
+      "year": 2018,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV"
+     },
+     {
+      "year": 2019,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV"
+     },
+     {
+      "year": 2020,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV"
+     },
+     {
+      "year": 2021,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV"
+     },
+     {
+      "year": 2022,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV"
+     },
+     {
+      "year": 2023,
+      "value": 91.1876,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV"
+     },
+     {
+      "year": 2024,
+      "value": 91.188,
+      "error_positive": 0.002,
+      "error_negative": 0.002,
+      "unit": "GeV"
+     },
+     {
+      "year": 2025,
+      "value": 91.188,
+      "error_positive": 0.002,
+      "error_negative": 0.002,
+      "unit": "GeV"
+     }
+    ]
+   }
+  },
+  {
+   "key": "H_mass",
+   "name": "Higgs boson mass",
+   "symbol": "m_H",
+   "category": "boson mass",
+   "pdgid": "S126M",
+   "unit": "GeV",
+   "series": {
+    "pdg_database": [
+     {
+      "year": 2014,
+      "value": 125.6509681149962,
+      "error_positive": 0.3900399307006702,
+      "error_negative": 0.4216370213557839,
+      "unit": "GeV",
+      "value_text": "125.7+-0.4",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2015,
+      "value": 125.09,
+      "error_positive": 0.237065391822594,
+      "error_negative": 0.237065391822594,
+      "unit": "GeV",
+      "value_text": "125.09+-0.24",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2016,
+      "value": 125.09,
+      "error_positive": 0.237065391822594,
+      "error_negative": 0.237065391822594,
+      "unit": "GeV",
+      "value_text": "125.09+-0.24",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2017,
+      "value": 125.09,
+      "error_positive": 0.237065391822594,
+      "error_negative": 0.237065391822594,
+      "unit": "GeV",
+      "value_text": "125.09+-0.24",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2018,
+      "value": 125.1831189083821,
+      "error_positive": 0.1594239141580023,
+      "error_negative": 0.1594239141580023,
+      "unit": "GeV",
+      "value_text": "125.18+-0.16",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2019,
+      "value": 125.0995883900619,
+      "error_positive": 0.1372793347140053,
+      "error_negative": 0.1372793347140053,
+      "unit": "GeV",
+      "value_text": "125.10+-0.14",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2020,
+      "value": 125.0995883900619,
+      "error_positive": 0.1372793347140053,
+      "error_negative": 0.1372793347140053,
+      "unit": "GeV",
+      "value_text": "125.10+-0.14",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2021,
+      "value": 125.2500900574714,
+      "error_positive": 0.1738212366152515,
+      "error_negative": 0.1738212366152515,
+      "unit": "GeV",
+      "value_text": "125.25+-0.17",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2022,
+      "value": 125.2500900574714,
+      "error_positive": 0.1738212366152515,
+      "error_negative": 0.1738212366152515,
+      "unit": "GeV",
+      "value_text": "125.25+-0.17",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2023,
+      "value": 125.2500900574714,
+      "error_positive": 0.1738212366152515,
+      "error_negative": 0.1738212366152515,
+      "unit": "GeV",
+      "value_text": "125.25+-0.17",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2024,
+      "value": 125.1995304097179,
+      "error_positive": 0.1148838236816068,
+      "error_negative": 0.1148838236816068,
+      "unit": "GeV",
+      "value_text": "125.20+-0.11",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2025,
+      "value": 125.1995304097179,
+      "error_positive": 0.1148838236816068,
+      "error_negative": 0.1148838236816068,
+      "unit": "GeV",
+      "value_text": "125.20+-0.11",
+      "value_type": "AC",
+      "limit_type": null
+     }
+    ],
+    "mass_width_file": [
+     {
+      "year": 2014,
+      "value": 125.7,
+      "error_positive": 0.4,
+      "error_negative": 0.4,
+      "unit": "GeV"
+     },
+     {
+      "year": 2015,
+      "value": 125.09,
+      "error_positive": 0.24,
+      "error_negative": 0.24,
+      "unit": "GeV"
+     },
+     {
+      "year": 2016,
+      "value": 125.09,
+      "error_positive": 0.24,
+      "error_negative": 0.24,
+      "unit": "GeV"
+     },
+     {
+      "year": 2017,
+      "value": 125.09,
+      "error_positive": 0.24,
+      "error_negative": 0.24,
+      "unit": "GeV"
+     },
+     {
+      "year": 2018,
+      "value": 125.18,
+      "error_positive": 0.16,
+      "error_negative": 0.16,
+      "unit": "GeV"
+     },
+     {
+      "year": 2019,
+      "value": 125.1,
+      "error_positive": 0.14,
+      "error_negative": 0.14,
+      "unit": "GeV"
+     },
+     {
+      "year": 2020,
+      "value": 125.1,
+      "error_positive": 0.14,
+      "error_negative": 0.14,
+      "unit": "GeV"
+     },
+     {
+      "year": 2021,
+      "value": 125.25,
+      "error_positive": 0.17,
+      "error_negative": 0.17,
+      "unit": "GeV"
+     },
+     {
+      "year": 2022,
+      "value": 125.25,
+      "error_positive": 0.17,
+      "error_negative": 0.17,
+      "unit": "GeV"
+     },
+     {
+      "year": 2023,
+      "value": 125.25,
+      "error_positive": 0.17,
+      "error_negative": 0.17,
+      "unit": "GeV"
+     },
+     {
+      "year": 2024,
+      "value": 125.2,
+      "error_positive": 0.11,
+      "error_negative": 0.11,
+      "unit": "GeV"
+     },
+     {
+      "year": 2025,
+      "value": 125.2,
+      "error_positive": 0.11,
+      "error_negative": 0.11,
+      "unit": "GeV"
+     }
+    ]
+   }
+  },
+  {
+   "key": "W_width",
+   "name": "W boson width",
+   "symbol": "Gamma_W",
+   "category": "boson width",
+   "pdgid": "S043W",
+   "unit": "GeV",
+   "series": {
+    "pdg_database": [
+     {
+      "year": 1990,
+      "value": 2.248076765200519,
+      "error_positive": 0.1407712421558961,
+      "error_negative": 0.14079937741569074,
+      "unit": "GeV",
+      "value_text": "2.25+-0.14",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 1992,
+      "value": 2.1225495089795503,
+      "error_positive": 0.11504749336253872,
+      "error_negative": 0.11050439413033407,
+      "unit": "GeV",
+      "value_text": "2.12+-0.11",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 1994,
+      "value": 2.08030063208383,
+      "error_positive": 0.0730988465542287,
+      "error_negative": 0.0718912549207921,
+      "unit": "GeV",
+      "value_text": "2.08+-0.07",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 1996,
+      "value": 2.06833601749585,
+      "error_positive": 0.056164654062618,
+      "error_negative": 0.0556113175061139,
+      "unit": "GeV",
+      "value_text": "2.07+-0.06",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 1997,
+      "value": 2.06833601749585,
+      "error_positive": 0.056164654062618,
+      "error_negative": 0.0556113175061139,
+      "unit": "GeV",
+      "value_text": "2.07+-0.06",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 1998,
+      "value": 2.0625173332411,
+      "error_positive": 0.055891242066085,
+      "error_negative": 0.0552303242431082,
+      "unit": "GeV",
+      "value_text": "2.06+-0.06",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2000,
+      "value": 2.11703922010026,
+      "error_positive": 0.0470994422751179,
+      "error_negative": 0.0467716861506785,
+      "unit": "GeV",
+      "value_text": "2.12+-0.05",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2002,
+      "value": 2.118,
+      "error_positive": 0.042,
+      "error_negative": 0.042,
+      "unit": "GeV",
+      "value_text": "2.118+-0.042",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2003,
+      "value": 2.124,
+      "error_positive": 0.041,
+      "error_negative": 0.041,
+      "unit": "GeV",
+      "value_text": "2.124+-0.041",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2004,
+      "value": 2.124,
+      "error_positive": 0.041,
+      "error_negative": 0.041,
+      "unit": "GeV",
+      "value_text": "2.124+-0.041",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2005,
+      "value": 2.138,
+      "error_positive": 0.044,
+      "error_negative": 0.044,
+      "unit": "GeV",
+      "value_text": "2.138 +- 0.044",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2006,
+      "value": 2.141,
+      "error_positive": 0.041,
+      "error_negative": 0.041,
+      "unit": "GeV",
+      "value_text": "2.141 +- 0.041",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2007,
+      "value": 2.141,
+      "error_positive": 0.041,
+      "error_negative": 0.041,
+      "unit": "GeV",
+      "value_text": "2.141 +- 0.041",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2008,
+      "value": 2.141,
+      "error_positive": 0.041,
+      "error_negative": 0.041,
+      "unit": "GeV",
+      "value_text": "2.141 +- 0.041",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2009,
+      "value": 2.141,
+      "error_positive": 0.041,
+      "error_negative": 0.041,
+      "unit": "GeV",
+      "value_text": "2.141 +- 0.041",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2010,
+      "value": 2.085,
+      "error_positive": 0.042,
+      "error_negative": 0.042,
+      "unit": "GeV",
+      "value_text": "2.085 +- 0.042",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2011,
+      "value": 2.085,
+      "error_positive": 0.042,
+      "error_negative": 0.042,
+      "unit": "GeV",
+      "value_text": "2.085 +- 0.042",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2012,
+      "value": 2.085,
+      "error_positive": 0.042,
+      "error_negative": 0.042,
+      "unit": "GeV",
+      "value_text": "2.085 +- 0.042",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2013,
+      "value": 2.085,
+      "error_positive": 0.042,
+      "error_negative": 0.042,
+      "unit": "GeV",
+      "value_text": "2.085 +- 0.042",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2014,
+      "value": 2.085,
+      "error_positive": 0.042,
+      "error_negative": 0.042,
+      "unit": "GeV",
+      "value_text": "2.085 +- 0.042",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2015,
+      "value": 2.085,
+      "error_positive": 0.042,
+      "error_negative": 0.042,
+      "unit": "GeV",
+      "value_text": "2.085 +- 0.042",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2016,
+      "value": 2.085,
+      "error_positive": 0.042,
+      "error_negative": 0.042,
+      "unit": "GeV",
+      "value_text": "2.085 +- 0.042",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2017,
+      "value": 2.085,
+      "error_positive": 0.042,
+      "error_negative": 0.042,
+      "unit": "GeV",
+      "value_text": "2.085 +- 0.042",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2018,
+      "value": 2.085,
+      "error_positive": 0.042,
+      "error_negative": 0.042,
+      "unit": "GeV",
+      "value_text": "2.085 +- 0.042",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2019,
+      "value": 2.085,
+      "error_positive": 0.042,
+      "error_negative": 0.042,
+      "unit": "GeV",
+      "value_text": "2.085 +- 0.042",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2020,
+      "value": 2.085,
+      "error_positive": 0.042,
+      "error_negative": 0.042,
+      "unit": "GeV",
+      "value_text": "2.085 +- 0.042",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2021,
+      "value": 2.085,
+      "error_positive": 0.042,
+      "error_negative": 0.042,
+      "unit": "GeV",
+      "value_text": "2.085 +- 0.042",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2022,
+      "value": 2.085,
+      "error_positive": 0.042,
+      "error_negative": 0.042,
+      "unit": "GeV",
+      "value_text": "2.085 +- 0.042",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2023,
+      "value": 2.085,
+      "error_positive": 0.042,
+      "error_negative": 0.042,
+      "unit": "GeV",
+      "value_text": "2.085 +- 0.042",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2024,
+      "value": 2.085,
+      "error_positive": 0.042,
+      "error_negative": 0.042,
+      "unit": "GeV",
+      "value_text": "2.085 +- 0.042",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2025,
+      "value": 2.137328174029357,
+      "error_positive": 0.05365622500314941,
+      "error_negative": 0.05365622500314941,
+      "unit": "GeV",
+      "value_text": "2.14+-0.05",
+      "value_type": "AC",
+      "limit_type": null
+     }
+    ],
+    "mass_width_file": [
+     {
+      "year": 2004,
+      "value": 2.12,
+      "error_positive": 0.04,
+      "error_negative": 0.04,
+      "unit": "GeV"
+     },
+     {
+      "year": 2006,
+      "value": 2.14,
+      "error_positive": 0.04,
+      "error_negative": 0.04,
+      "unit": "GeV"
+     },
+     {
+      "year": 2008,
+      "value": 2.14,
+      "error_positive": 0.04,
+      "error_negative": 0.04,
+      "unit": "GeV"
+     },
+     {
+      "year": 2010,
+      "value": 2.08,
+      "error_positive": 0.04,
+      "error_negative": 0.04,
+      "unit": "GeV"
+     },
+     {
+      "year": 2011,
+      "value": 2.08,
+      "error_positive": 0.04,
+      "error_negative": 0.04,
+      "unit": "GeV"
+     },
+     {
+      "year": 2012,
+      "value": 2.085,
+      "error_positive": 0.042,
+      "error_negative": 0.042,
+      "unit": "GeV"
+     },
+     {
+      "year": 2013,
+      "value": 2.08,
+      "error_positive": 0.04,
+      "error_negative": 0.04,
+      "unit": "GeV"
+     },
+     {
+      "year": 2014,
+      "value": 2.08,
+      "error_positive": 0.04,
+      "error_negative": 0.04,
+      "unit": "GeV"
+     },
+     {
+      "year": 2015,
+      "value": 2.08,
+      "error_positive": 0.04,
+      "error_negative": 0.04,
+      "unit": "GeV"
+     },
+     {
+      "year": 2016,
+      "value": 2.085,
+      "error_positive": 0.042,
+      "error_negative": 0.042,
+      "unit": "GeV"
+     },
+     {
+      "year": 2017,
+      "value": 2.08,
+      "error_positive": 0.04,
+      "error_negative": 0.04,
+      "unit": "GeV"
+     },
+     {
+      "year": 2018,
+      "value": 2.08,
+      "error_positive": 0.04,
+      "error_negative": 0.04,
+      "unit": "GeV"
+     },
+     {
+      "year": 2019,
+      "value": 2.085,
+      "error_positive": 0.042,
+      "error_negative": 0.042,
+      "unit": "GeV"
+     },
+     {
+      "year": 2020,
+      "value": 2.085,
+      "error_positive": 0.042,
+      "error_negative": 0.042,
+      "unit": "GeV"
+     },
+     {
+      "year": 2021,
+      "value": 2.08,
+      "error_positive": 0.04,
+      "error_negative": 0.04,
+      "unit": "GeV"
+     },
+     {
+      "year": 2022,
+      "value": 2.08,
+      "error_positive": 0.04,
+      "error_negative": 0.04,
+      "unit": "GeV"
+     },
+     {
+      "year": 2023,
+      "value": 2.08,
+      "error_positive": 0.04,
+      "error_negative": 0.04,
+      "unit": "GeV"
+     },
+     {
+      "year": 2024,
+      "value": 2.08,
+      "error_positive": 0.04,
+      "error_negative": 0.04,
+      "unit": "GeV"
+     },
+     {
+      "year": 2025,
+      "value": 2.14,
+      "error_positive": 0.05,
+      "error_negative": 0.05,
+      "unit": "GeV"
+     }
+    ]
+   }
+  },
+  {
+   "key": "Z_width",
+   "name": "Z boson width",
+   "symbol": "Gamma_Z",
+   "category": "boson width",
+   "pdgid": "S044W",
+   "unit": "GeV",
+   "series": {
+    "pdg_database": [
+     {
+      "year": 1990,
+      "value": 2.5337632057647266,
+      "error_positive": 0.026741465331248708,
+      "error_negative": 0.026710184886235187,
+      "unit": "GeV",
+      "value_text": "2.534+-0.027",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 1992,
+      "value": 2.487,
+      "error_positive": 0.01,
+      "error_negative": 0.01,
+      "unit": "GeV",
+      "value_text": "2.487+-0.010",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 1994,
+      "value": 2.49,
+      "error_positive": 0.007,
+      "error_negative": 0.007,
+      "unit": "GeV",
+      "value_text": "2.490+-0.007",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 1996,
+      "value": 2.49,
+      "error_positive": 0.007,
+      "error_negative": 0.007,
+      "unit": "GeV",
+      "value_text": "2.490+-0.007",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 1997,
+      "value": 2.49,
+      "error_positive": 0.007,
+      "error_negative": 0.007,
+      "unit": "GeV",
+      "value_text": "2.490+-0.007",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 1998,
+      "value": 2.49,
+      "error_positive": 0.007,
+      "error_negative": 0.007,
+      "unit": "GeV",
+      "value_text": "2.490+-0.007",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2000,
+      "value": 2.4952,
+      "error_positive": 0.0026,
+      "error_negative": 0.0026,
+      "unit": "GeV",
+      "value_text": "2.4952+-0.0026",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2002,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV",
+      "value_text": "2.4952+-0.0023",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2003,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV",
+      "value_text": "2.4952+-0.0023",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2004,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV",
+      "value_text": "2.4952+-0.0023",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2005,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV",
+      "value_text": "2.4952+-0.0023",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2006,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV",
+      "value_text": "2.4952+-0.0023",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2007,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV",
+      "value_text": "2.4952+-0.0023",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2008,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV",
+      "value_text": "2.4952+-0.0023",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2009,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV",
+      "value_text": "2.4952+-0.0023",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2010,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV",
+      "value_text": "2.4952+-0.0023",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2011,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV",
+      "value_text": "2.4952+-0.0023",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2012,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV",
+      "value_text": "2.4952+-0.0023",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2013,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV",
+      "value_text": "2.4952+-0.0023",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2014,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV",
+      "value_text": "2.4952+-0.0023",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2015,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV",
+      "value_text": "2.4952+-0.0023",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2016,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV",
+      "value_text": "2.4952+-0.0023",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2017,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV",
+      "value_text": "2.4952+-0.0023",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2018,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV",
+      "value_text": "2.4952+-0.0023",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2019,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV",
+      "value_text": "2.4952+-0.0023",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2020,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV",
+      "value_text": "2.4952+-0.0023",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2021,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV",
+      "value_text": "2.4952+-0.0023",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2022,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV",
+      "value_text": "2.4952+-0.0023",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2023,
+      "value": 2.4955,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV",
+      "value_text": "2.4955+-0.0023",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2024,
+      "value": 2.4955,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV",
+      "value_text": "2.4955+-0.0023",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2025,
+      "value": 2.4955,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV",
+      "value_text": "2.4955+-0.0023",
+      "value_type": "V",
+      "limit_type": null
+     }
+    ],
+    "mass_width_file": [
+     {
+      "year": 2004,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV"
+     },
+     {
+      "year": 2006,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV"
+     },
+     {
+      "year": 2008,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV"
+     },
+     {
+      "year": 2010,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV"
+     },
+     {
+      "year": 2011,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV"
+     },
+     {
+      "year": 2012,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV"
+     },
+     {
+      "year": 2013,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV"
+     },
+     {
+      "year": 2014,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV"
+     },
+     {
+      "year": 2015,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV"
+     },
+     {
+      "year": 2016,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV"
+     },
+     {
+      "year": 2017,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV"
+     },
+     {
+      "year": 2018,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV"
+     },
+     {
+      "year": 2019,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV"
+     },
+     {
+      "year": 2020,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV"
+     },
+     {
+      "year": 2021,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV"
+     },
+     {
+      "year": 2022,
+      "value": 2.4952,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV"
+     },
+     {
+      "year": 2023,
+      "value": 2.4955,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV"
+     },
+     {
+      "year": 2024,
+      "value": 2.4955,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV"
+     },
+     {
+      "year": 2025,
+      "value": 2.4955,
+      "error_positive": 0.0023,
+      "error_negative": 0.0023,
+      "unit": "GeV"
+     }
+    ]
+   }
+  },
+  {
+   "key": "H_width",
+   "name": "Higgs boson width",
+   "symbol": "Gamma_H",
+   "category": "boson width",
+   "pdgid": "S126W",
+   "unit": "GeV",
+   "series": {
+    "pdg_database": [
+     {
+      "year": 2016,
+      "value": 1.7,
+      "error_positive": 0.0,
+      "error_negative": 0.0,
+      "unit": "GeV",
+      "value_text": "< 1.7",
+      "value_type": "L",
+      "limit_type": "U"
+     },
+     {
+      "year": 2017,
+      "value": 0.013,
+      "error_positive": 0.0,
+      "error_negative": 0.0,
+      "unit": "GeV",
+      "value_text": "< 0.013",
+      "value_type": "L",
+      "limit_type": "U"
+     },
+     {
+      "year": 2018,
+      "value": 0.013,
+      "error_positive": 0.0,
+      "error_negative": 0.0,
+      "unit": "GeV",
+      "value_text": "< 0.013",
+      "value_type": "L",
+      "limit_type": "U"
+     },
+     {
+      "year": 2019,
+      "value": 0.013,
+      "error_positive": 0.0,
+      "error_negative": 0.0,
+      "unit": "GeV",
+      "value_text": "< 0.013",
+      "value_type": "L",
+      "limit_type": "U"
+     },
+     {
+      "year": 2020,
+      "value": 0.013,
+      "error_positive": 0.0,
+      "error_negative": 0.0,
+      "unit": "GeV",
+      "value_text": "< 0.013",
+      "value_type": "L",
+      "limit_type": "U"
+     },
+     {
+      "year": 2021,
+      "value": 0.0032,
+      "error_positive": 0.0028,
+      "error_negative": 0.0022,
+      "unit": "GeV",
+      "value_text": "3.2+2.8-2.2",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2022,
+      "value": 0.0032,
+      "error_positive": 0.0028,
+      "error_negative": 0.0022,
+      "unit": "GeV",
+      "value_text": "3.2+2.8-2.2",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2023,
+      "value": 0.0032,
+      "error_positive": 0.0024,
+      "error_negative": 0.0017,
+      "unit": "GeV",
+      "value_text": "3.2+2.4-1.7",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2024,
+      "value": 0.0036738064836626793,
+      "error_positive": 0.001940966602327652,
+      "error_negative": 0.001405775053518198,
+      "unit": "GeV",
+      "value_text": "3.7+1.9-1.4",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2025,
+      "value": 0.003691816286605071,
+      "error_positive": 0.001874085142663273,
+      "error_negative": 0.001405775053518198,
+      "unit": "GeV",
+      "value_text": "3.7+1.9-1.4",
+      "value_type": "AC",
+      "limit_type": null
+     }
+    ],
+    "mass_width_file": [
+     {
+      "year": 2021,
+      "value": 0.0032,
+      "error_positive": 0.0028,
+      "error_negative": 0.0022,
+      "unit": "GeV"
+     },
+     {
+      "year": 2022,
+      "value": 0.0032,
+      "error_positive": 0.0028,
+      "error_negative": 0.0022,
+      "unit": "GeV"
+     },
+     {
+      "year": 2023,
+      "value": 0.0032,
+      "error_positive": 0.0024,
+      "error_negative": 0.0017,
+      "unit": "GeV"
+     },
+     {
+      "year": 2024,
+      "value": 0.0037,
+      "error_positive": 0.0019,
+      "error_negative": 0.0014,
+      "unit": "GeV"
+     },
+     {
+      "year": 2025,
+      "value": 0.0037,
+      "error_positive": 0.0019,
+      "error_negative": 0.0014,
+      "unit": "GeV"
+     }
+    ]
+   }
+  },
+  {
+   "key": "sin2_theta_eff",
+   "name": "Effective weak mixing angle",
+   "symbol": "sin^2(theta_eff)",
+   "category": "electroweak mixing",
+   "pdgid": "S044SEF",
+   "unit": "",
+   "series": {
+    "pdg_database": [
+     {
+      "year": 2025,
+      "value": 0.2314768393597835,
+      "error_positive": 0.0001317579993451817,
+      "error_negative": 0.0001317579993451817,
+      "unit": "",
+      "value_text": "0.23148+-0.00013",
+      "value_type": "AC",
+      "limit_type": null
+     }
+    ],
+    "mass_width_file": []
+   }
+  },
+  {
+   "key": "sin2_theta_12",
+   "name": "Neutrino mixing sin^2(theta_12)",
+   "symbol": "sin^2(theta_12)",
+   "category": "neutrino mixing",
+   "pdgid": "S067P12",
+   "unit": "",
+   "series": {
+    "pdg_database": [
+     {
+      "year": 2015,
+      "value": 0.304,
+      "error_positive": 0.014,
+      "error_negative": 0.013,
+      "unit": "",
+      "value_text": "0.304+-0.014",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2016,
+      "value": 0.304,
+      "error_positive": 0.014,
+      "error_negative": 0.013,
+      "unit": "",
+      "value_text": "0.304+-0.014",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2017,
+      "value": 0.307,
+      "error_positive": 0.013,
+      "error_negative": 0.012,
+      "unit": "",
+      "value_text": "0.307+-0.013",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2018,
+      "value": 0.307,
+      "error_positive": 0.013,
+      "error_negative": 0.012,
+      "unit": "",
+      "value_text": "0.307+-0.013",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2019,
+      "value": 0.307,
+      "error_positive": 0.013,
+      "error_negative": 0.012,
+      "unit": "",
+      "value_text": "0.307+-0.013",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2020,
+      "value": 0.307,
+      "error_positive": 0.013,
+      "error_negative": 0.012,
+      "unit": "",
+      "value_text": "0.307+-0.013",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2021,
+      "value": 0.307,
+      "error_positive": 0.013,
+      "error_negative": 0.012,
+      "unit": "",
+      "value_text": "0.307+-0.013",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2022,
+      "value": 0.307,
+      "error_positive": 0.013,
+      "error_negative": 0.012,
+      "unit": "",
+      "value_text": "0.307+-0.013",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2023,
+      "value": 0.307,
+      "error_positive": 0.013,
+      "error_negative": 0.012,
+      "unit": "",
+      "value_text": "0.307+-0.013",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2024,
+      "value": 0.307,
+      "error_positive": 0.013,
+      "error_negative": 0.012,
+      "unit": "",
+      "value_text": "0.307+-0.013",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2025,
+      "value": 0.307,
+      "error_positive": 0.012,
+      "error_negative": 0.012,
+      "unit": "",
+      "value_text": "0.307+-0.012",
+      "value_type": "AC",
+      "limit_type": null
+     }
+    ],
+    "mass_width_file": []
+   }
+  },
+  {
+   "key": "sin2_theta_13",
+   "name": "Neutrino mixing sin^2(theta_13)",
+   "symbol": "sin^2(theta_13)",
+   "category": "neutrino mixing",
+   "pdgid": "S067P13",
+   "unit": "",
+   "series": {
+    "pdg_database": [
+     {
+      "year": 2015,
+      "value": 0.02186382873231481,
+      "error_positive": 0.001208318617671755,
+      "error_negative": 0.001205436297502472,
+      "unit": "",
+      "value_text": "0.0219+-0.0012",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2016,
+      "value": 0.02186382873231481,
+      "error_positive": 0.001208318617671755,
+      "error_negative": 0.001205436297502472,
+      "unit": "",
+      "value_text": "0.0219+-0.0012",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2017,
+      "value": 0.02095111828307827,
+      "error_positive": 0.001083873225667231,
+      "error_negative": 0.001083676528579005,
+      "unit": "",
+      "value_text": "0.0210+-0.0011",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2018,
+      "value": 0.02119693835202354,
+      "error_positive": 0.0007941535620928134,
+      "error_negative": 0.0007940761817434934,
+      "unit": "",
+      "value_text": "0.0212+-0.0008",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2019,
+      "value": 0.02182183126141179,
+      "error_positive": 0.0006805085338589724,
+      "error_negative": 0.0006804601282414235,
+      "unit": "",
+      "value_text": "0.0218+-0.0007",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2020,
+      "value": 0.02182183126141179,
+      "error_positive": 0.0006805085338589724,
+      "error_negative": 0.0006804601282414235,
+      "unit": "",
+      "value_text": "0.0218+-0.0007",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2021,
+      "value": 0.02199237814413483,
+      "error_positive": 0.000661230970984213,
+      "error_negative": 0.000661230970984213,
+      "unit": "",
+      "value_text": "0.0220+-0.0007",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2022,
+      "value": 0.02199237814413483,
+      "error_positive": 0.000661230970984213,
+      "error_negative": 0.000661230970984213,
+      "unit": "",
+      "value_text": "0.0220+-0.0007",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2023,
+      "value": 0.02199237814413483,
+      "error_positive": 0.000661230970984213,
+      "error_negative": 0.000661230970984213,
+      "unit": "",
+      "value_text": "0.0220+-0.0007",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2024,
+      "value": 0.02186550935423537,
+      "error_positive": 0.000646089943891306,
+      "error_negative": 0.0006568294291484408,
+      "unit": "",
+      "value_text": "0.0219+-0.0007",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2025,
+      "value": 0.02160372817875048,
+      "error_positive": 0.0006348527076089226,
+      "error_negative": 0.0006440016047469267,
+      "unit": "",
+      "value_text": "0.0216+-0.0006",
+      "value_type": "AC",
+      "limit_type": null
+     }
+    ],
+    "mass_width_file": []
+   }
+  },
+  {
+   "key": "sin2_theta_23",
+   "name": "Neutrino mixing sin^2(theta_23)",
+   "symbol": "sin^2(theta_23)",
+   "category": "neutrino mixing",
+   "pdgid": "S067P23",
+   "unit": "",
+   "series": {
+    "pdg_database": [
+     {
+      "year": 2015,
+      "value": 0.514,
+      "error_positive": 0.055,
+      "error_negative": 0.056,
+      "unit": "",
+      "value_text": "0.514 +0.055 -0.056",
+      "value_type": "L",
+      "limit_type": null
+     },
+     {
+      "year": 2016,
+      "value": 0.502745431545162,
+      "error_positive": 0.04694366516075821,
+      "error_negative": 0.04626268442267182,
+      "unit": "",
+      "value_text": "0.50+-0.05",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2017,
+      "value": 0.5029929644112144,
+      "error_positive": 0.04433645890652468,
+      "error_negative": 0.04376319358881147,
+      "unit": "",
+      "value_text": "0.50+-0.04",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2018,
+      "value": 0.421,
+      "error_positive": 0.033,
+      "error_negative": 0.025,
+      "unit": "",
+      "value_text": "0.421+0.033-0.025",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2019,
+      "value": 0.536,
+      "error_positive": 0.023,
+      "error_negative": 0.028,
+      "unit": "",
+      "value_text": "0.536+0.023-0.028",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2020,
+      "value": 0.5466037572204712,
+      "error_positive": 0.02126320066346443,
+      "error_negative": 0.02160341877149947,
+      "unit": "",
+      "value_text": "0.547+-0.021",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2021,
+      "value": 0.5385207168798032,
+      "error_positive": 0.02186922602785783,
+      "error_negative": 0.02186922602785783,
+      "unit": "",
+      "value_text": "0.539+-0.022",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2022,
+      "value": 0.5385207168798032,
+      "error_positive": 0.02186922602785783,
+      "error_negative": 0.02186922602785783,
+      "unit": "",
+      "value_text": "0.539+-0.022",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2023,
+      "value": 0.5340288542651067,
+      "error_positive": 0.02127911643631432,
+      "error_negative": 0.02370765337192353,
+      "unit": "",
+      "value_text": "0.534+0.021-0.024",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2024,
+      "value": 0.5529894603427739,
+      "error_positive": 0.01557018799120562,
+      "error_negative": 0.02376487951333883,
+      "unit": "",
+      "value_text": "0.553+0.016-0.024",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2025,
+      "value": 0.5367550895136158,
+      "error_positive": 0.01924924061948874,
+      "error_negative": 0.02040933777671124,
+      "unit": "",
+      "value_text": "0.537+-0.020",
+      "value_type": "FC",
+      "limit_type": null
+     }
+    ],
+    "mass_width_file": []
+   }
+  },
+  {
+   "key": "dm2_21",
+   "name": "Neutrino mass-squared difference Delta(m^2_21)",
+   "symbol": "Delta(m^2_21)",
+   "category": "neutrino mass-squared difference",
+   "pdgid": "S067DM3",
+   "unit": "eV^2",
+   "series": {
+    "pdg_database": [
+     {
+      "year": 2006,
+      "value": 8e-05,
+      "error_positive": 4e-06,
+      "error_negative": 3e-06,
+      "unit": "eV^2",
+      "value_text": "80 +4 -3 E-6",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2007,
+      "value": 8e-05,
+      "error_positive": 3e-06,
+      "error_negative": 3e-06,
+      "unit": "eV^2",
+      "value_text": "80 +-3 E-6",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2008,
+      "value": 8e-05,
+      "error_positive": 3e-06,
+      "error_negative": 3e-06,
+      "unit": "eV^2",
+      "value_text": "80 +-3 E-6",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2009,
+      "value": 7.59e-05,
+      "error_positive": 1.9e-06,
+      "error_negative": 2.1e-06,
+      "unit": "eV^2",
+      "value_text": "75.9 +-2.0 E-6",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2010,
+      "value": 7.59e-05,
+      "error_positive": 1.9e-06,
+      "error_negative": 2.1e-06,
+      "unit": "eV^2",
+      "value_text": "75.9 +-2.0 E-6",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2011,
+      "value": 7.59e-05,
+      "error_positive": 2e-06,
+      "error_negative": 2.1e-06,
+      "unit": "eV^2",
+      "value_text": "(7.59+-0.21)E-5",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2012,
+      "value": 7.500000000000001e-05,
+      "error_positive": 1.9e-06,
+      "error_negative": 2e-06,
+      "unit": "eV^2",
+      "value_text": "(7.50+-0.20)E-5",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2013,
+      "value": 7.500000000000001e-05,
+      "error_positive": 1.9e-06,
+      "error_negative": 2e-06,
+      "unit": "eV^2",
+      "value_text": "(7.50+-0.20)E-5",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2014,
+      "value": 7.530000000000001e-05,
+      "error_positive": 1.8e-06,
+      "error_negative": 1.8e-06,
+      "unit": "eV^2",
+      "value_text": "(7.53+-0.18)E-5",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2015,
+      "value": 7.530000000000001e-05,
+      "error_positive": 1.8e-06,
+      "error_negative": 1.8e-06,
+      "unit": "eV^2",
+      "value_text": "(7.53+-0.18)E-5",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2016,
+      "value": 7.530000000000001e-05,
+      "error_positive": 1.8e-06,
+      "error_negative": 1.8e-06,
+      "unit": "eV^2",
+      "value_text": "(7.53+-0.18)E-5",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2017,
+      "value": 7.530000000000001e-05,
+      "error_positive": 1.8e-06,
+      "error_negative": 1.8e-06,
+      "unit": "eV^2",
+      "value_text": "(7.53+-0.18)E-5",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2018,
+      "value": 7.530000000000001e-05,
+      "error_positive": 1.8e-06,
+      "error_negative": 1.8e-06,
+      "unit": "eV^2",
+      "value_text": "(7.53+-0.18)E-5",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2019,
+      "value": 7.530000000000001e-05,
+      "error_positive": 1.8e-06,
+      "error_negative": 1.8e-06,
+      "unit": "eV^2",
+      "value_text": "(7.53+-0.18)E-5",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2020,
+      "value": 7.530000000000001e-05,
+      "error_positive": 1.8e-06,
+      "error_negative": 1.8e-06,
+      "unit": "eV^2",
+      "value_text": "(7.53+-0.18)E-5",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2021,
+      "value": 7.530000000000001e-05,
+      "error_positive": 1.8e-06,
+      "error_negative": 1.8e-06,
+      "unit": "eV^2",
+      "value_text": "(7.53+-0.18)E-5",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2022,
+      "value": 7.530000000000001e-05,
+      "error_positive": 1.8e-06,
+      "error_negative": 1.8e-06,
+      "unit": "eV^2",
+      "value_text": "(7.53+-0.18)E-5",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2023,
+      "value": 7.530000000000001e-05,
+      "error_positive": 1.8e-06,
+      "error_negative": 1.8e-06,
+      "unit": "eV^2",
+      "value_text": "(7.53+-0.18)E-5",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2024,
+      "value": 7.530000000000001e-05,
+      "error_positive": 1.8e-06,
+      "error_negative": 1.8e-06,
+      "unit": "eV^2",
+      "value_text": "(7.53+-0.18)E-5",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2025,
+      "value": 7.500000000000001e-05,
+      "error_positive": 1.9e-06,
+      "error_negative": 1.8e-06,
+      "unit": "eV^2",
+      "value_text": "(7.50+-0.19)E-5",
+      "value_type": "AC",
+      "limit_type": null
+     }
+    ],
+    "mass_width_file": []
+   }
+  },
+  {
+   "key": "dm2_32",
+   "name": "Neutrino mass-squared difference Delta(m^2_32)",
+   "symbol": "Delta(m^2_32)",
+   "category": "neutrino mass-squared difference",
+   "pdgid": "S067DM1",
+   "unit": "eV^2",
+   "series": {
+    "pdg_database": [
+     {
+      "year": 2006,
+      "value": 0.00245,
+      "error_positive": 0.00055,
+      "error_negative": 0.00055,
+      "unit": "eV^2",
+      "value_text": "1.9 E-3 to 3.0 E-3",
+      "value_type": "L",
+      "limit_type": "R"
+     },
+     {
+      "year": 2007,
+      "value": 0.00245,
+      "error_positive": 0.00055,
+      "error_negative": 0.00055,
+      "unit": "eV^2",
+      "value_text": "1.9 E-3 to 3.0 E-3",
+      "value_type": "L",
+      "limit_type": "R"
+     },
+     {
+      "year": 2008,
+      "value": 0.00245,
+      "error_positive": 0.00055,
+      "error_negative": 0.00055,
+      "unit": "eV^2",
+      "value_text": "1.9 E-3 to 3.0 E-3",
+      "value_type": "L",
+      "limit_type": "R"
+     },
+     {
+      "year": 2009,
+      "value": 0.00243,
+      "error_positive": 0.00013,
+      "error_negative": 0.00013,
+      "unit": "eV^2",
+      "value_text": "24.3 +-1.3 E-4",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2010,
+      "value": 0.00243,
+      "error_positive": 0.00013,
+      "error_negative": 0.00013,
+      "unit": "eV^2",
+      "value_text": "24.3 +-1.3 E-4",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2011,
+      "value": 0.00243,
+      "error_positive": 0.00013,
+      "error_negative": 0.00013,
+      "unit": "eV^2",
+      "value_text": "0.00243+-0.00013",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2012,
+      "value": 0.00232,
+      "error_positive": 0.00012,
+      "error_negative": 8e-05,
+      "unit": "eV^2",
+      "value_text": "0.00232+0.00012-0.00008",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2013,
+      "value": 0.00232,
+      "error_positive": 0.00012,
+      "error_negative": 8e-05,
+      "unit": "eV^2",
+      "value_text": "0.00232+0.00012-0.00008",
+      "value_type": "AC",
+      "limit_type": null
+     },
+     {
+      "year": 2014,
+      "value": 0.002515627760166687,
+      "error_positive": 7.121591924990954e-05,
+      "error_negative": 6.540870494839136e-05,
+      "unit": "eV^2",
+      "value_text": "0.00252+-0.00007",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2015,
+      "value": 0.002486804810336697,
+      "error_positive": 6.303272609843098e-05,
+      "error_negative": 5.854605162423039e-05,
+      "unit": "eV^2",
+      "value_text": "0.00249+-0.00006",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2016,
+      "value": 0.002507670087518489,
+      "error_positive": 5.964413856186707e-05,
+      "error_negative": 5.647683496832531e-05,
+      "unit": "eV^2",
+      "value_text": "0.00251+-0.00006",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2017,
+      "value": 0.00252142807080927,
+      "error_positive": 5.536359499786378e-05,
+      "error_negative": 5.323600650850405e-05,
+      "unit": "eV^2",
+      "value_text": "0.00252+-0.00005",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2018,
+      "value": -0.002561856232409191,
+      "error_positive": 4.398233033556541e-05,
+      "error_negative": 4.505161711713746e-05,
+      "unit": "eV^2",
+      "value_text": "-0.00256+-0.00004",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2019,
+      "value": -0.002525129749459806,
+      "error_positive": 4.619684993154829e-05,
+      "error_negative": 4.874204815246215e-05,
+      "unit": "eV^2",
+      "value_text": "-0.00253+-0.00005",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2020,
+      "value": -0.002546026623009976,
+      "error_positive": 3.438540034988313e-05,
+      "error_negative": 3.843470415808041e-05,
+      "unit": "eV^2",
+      "value_text": "-0.002546+0.000034-0.000040",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2021,
+      "value": -0.002524384656507203,
+      "error_positive": 3.306593935475672e-05,
+      "error_negative": 3.447208790224191e-05,
+      "unit": "eV^2",
+      "value_text": "-0.002524+-0.000034",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2022,
+      "value": -0.002536181324174201,
+      "error_positive": 3.277079863159934e-05,
+      "error_negative": 3.453489439783638e-05,
+      "unit": "eV^2",
+      "value_text": "-0.002536+-0.000034",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2023,
+      "value": -0.002519021182773815,
+      "error_positive": 3.275636044127831e-05,
+      "error_negative": 3.275636044127831e-05,
+      "unit": "eV^2",
+      "value_text": "-0.002519+-0.000033",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2024,
+      "value": -0.002528997802250303,
+      "error_positive": 2.796931704339034e-05,
+      "error_negative": 2.95642224306904e-05,
+      "unit": "eV^2",
+      "value_text": "-0.002529+-0.000029",
+      "value_type": "FC",
+      "limit_type": null
+     },
+     {
+      "year": 2025,
+      "value": -0.00252693950951024,
+      "error_positive": 3.243668596800482e-05,
+      "error_negative": 3.464919046029242e-05,
+      "unit": "eV^2",
+      "value_text": "-0.002527+-0.000034",
+      "value_type": "FC",
+      "limit_type": null
+     }
+    ],
+    "mass_width_file": []
+   }
+  }
+ ]
+}

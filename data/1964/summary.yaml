@@ -1,0 +1,19 @@
+edition: 1964
+source: PDG Review of Particle Physics database
+source_file: pdgall-2025-v0.2.2.sqlite
+source_api: https://pdgapi.lbl.gov/
+quantities:
+  electron_mass:
+    value: 0.511006
+    error_positive: 2.0e-06
+    error_negative: 2.0e-06
+    unit: MeV
+    value_text: 0.511006+-0.0000020
+    value_type: V
+  muon_mass:
+    value: 105.659
+    error_positive: 0.002
+    error_negative: 0.002
+    unit: MeV
+    value_text: 105.659+-0.0020
+    value_type: V

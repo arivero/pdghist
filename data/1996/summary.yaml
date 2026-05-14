@@ -1,0 +1,101 @@
+edition: 1996
+source: PDG Review of Particle Physics database
+source_file: pdgall-2025-v0.2.2.sqlite
+source_api: https://pdgapi.lbl.gov/
+quantities:
+  d_quark_mass:
+    value: 10.0
+    error_positive: 5.0
+    error_negative: 5.0
+    unit: MeV
+    value_text: 5 to 15
+    value_type: V
+    limit_type: R
+  u_quark_mass:
+    value: 5.0
+    error_positive: 3.0
+    error_negative: 3.0
+    unit: MeV
+    value_text: 2 to 8
+    value_type: V
+    limit_type: R
+  s_quark_mass:
+    value: 200.0
+    error_positive: 100.0
+    error_negative: 100.0
+    unit: MeV
+    value_text: 100 to 300
+    value_type: V
+    limit_type: R
+  c_quark_mass:
+    value: 1.3
+    error_positive: 0.30000000000000004
+    error_negative: 0.30000000000000004
+    unit: GeV
+    value_text: 1.0 to 1.6
+    value_type: V
+    limit_type: R
+  b_quark_mass:
+    value: 4.3
+    error_positive: 0.20000000000000018
+    error_negative: 0.20000000000000018
+    unit: GeV
+    value_text: 4.1 to 4.5
+    value_type: V
+    limit_type: R
+  t_quark_mass:
+    value: 179.511993721431
+    error_positive: 11.7193815901819
+    error_negative: 11.8026315722124
+    unit: GeV
+    value_text: 180+-12
+    value_type: AC
+  electron_mass:
+    value: 0.51099907
+    error_positive: 1.5e-07
+    error_negative: 1.5e-07
+    unit: MeV
+    value_text: 0.51099907+-0.00000015
+    value_type: AC
+  muon_mass:
+    value: 105.658389
+    error_positive: 3.4e-05
+    error_negative: 3.4e-05
+    unit: MeV
+    value_text: 105.658389+-0.000034
+    value_type: AC
+  tau_mass:
+    value: 1777.00388920718
+    error_positive: 0.300503471817093
+    error_negative: 0.265498477558044
+    unit: MeV
+    value_text: 1777.00+0.30-0.27
+    value_type: AC
+  W_mass:
+    value: 80.3327439450393
+    error_positive: 0.149869515382266
+    error_negative: 0.149869515382266
+    unit: GeV
+    value_text: 80.33+-0.15
+    value_type: FC
+  Z_mass:
+    value: 91.187
+    error_positive: 0.007
+    error_negative: 0.007
+    unit: GeV
+    value_text: 91.187+-0.007
+    value_type: FC
+  W_width:
+    value: 2.06833601749585
+    error_positive: 0.056164654062618
+    error_negative: 0.0556113175061139
+    unit: GeV
+    value_text: 2.07+-0.06
+    value_type: AC
+  Z_width:
+    value: 2.49
+    error_positive: 0.007
+    error_negative: 0.007
+    unit: GeV
+    value_text: 2.490+-0.007
+    value_type: FC

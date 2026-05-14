@@ -1,0 +1,7 @@
+# PDG SQLite database — large binary, regenerable; not a committed source.
+# The traceable text sources are the YAML files it produces (see README).
+data/_sqlite/
+
+__pycache__/
+*.pyc
+.DS_Store
