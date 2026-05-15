@@ -8,7 +8,7 @@ mass, width and mixing parameter. Those estimates *change* as new measurements
 come in. `pdghist` plots that history: for every quantity, **x = PDG edition
 year**, **y = the value with its error bars**.
 
-🌐 **Live site:** https://&lt;your-github-username&gt;.github.io/pdghist/
+🌐 **Live site:** https://arivero.github.io/pdghist/
 *(served from the [`docs/`](docs/) folder via GitHub Pages — see repo Settings → Pages)*
 
 Each plot overlays the **independent PDG sources** that carry the quantity, as a
