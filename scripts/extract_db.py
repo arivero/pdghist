@@ -21,11 +21,14 @@ import yaml
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
 
-# key, PDG Identifier, display name, symbol, category
+# key, PDG Identifier(s), display name, symbol, category
+# The Identifier may be a list: PDG renamed the light-quark masses, so the
+# history is split across the current id and a legacy id. Editions are merged,
+# preferring the id listed first when both carry a value for the same edition.
 QUANTITIES = [
-    ("d_quark_mass",   "Q001M",   "Down quark mass",    "m_d",    "quark mass"),
-    ("u_quark_mass",   "Q002M",   "Up quark mass",      "m_u",    "quark mass"),
-    ("s_quark_mass",   "Q003M",   "Strange quark mass", "m_s",    "quark mass"),
+    ("d_quark_mass",   ["Q001M", "Q123DM"], "Down quark mass",    "m_d", "quark mass"),
+    ("u_quark_mass",   ["Q002M", "Q123UM"], "Up quark mass",      "m_u", "quark mass"),
+    ("s_quark_mass",   ["Q003M", "Q123SM"], "Strange quark mass", "m_s", "quark mass"),
     ("c_quark_mass",   "Q004M",   "Charm quark mass",   "m_c",    "quark mass"),
     ("b_quark_mass",   "Q005M",   "Bottom quark mass",  "m_b",    "quark mass"),
     ("t_quark_mass",   "Q007TP",  "Top quark mass",     "m_t",    "quark mass"),
@@ -113,32 +116,29 @@ def main():
     catalogue = []
 
     for key, pdgid, name, symbol, category in QUANTITIES:
+        pdgids = [pdgid] if isinstance(pdgid, str) else list(pdgid)
+        placeholders = ",".join("?" * len(pdgids))
         rows = con.execute(
-            "SELECT edition, value_type, limit_type, value, value_text, "
-            "error_positive, error_negative, unit_text "
-            "FROM pdgdata WHERE pdgid = ? AND in_summary_table = 1 "
-            "ORDER BY edition", (pdgid,)).fetchall()
+            f"SELECT pdgid, edition, value_type, limit_type, value, value_text, "
+            f"error_positive, error_negative, unit_text "
+            f"FROM pdgdata WHERE pdgid IN ({placeholders}) "
+            f"AND in_summary_table = 1 ORDER BY edition", pdgids).fetchall()
 
-        by_edition = {}
+        # pick the best usable row per edition: prefer the id listed first,
+        # then the value_type rank. Rows with no recoverable value are skipped.
+        best = {}
         for r in rows:
-            ed = r["edition"]
-            rank = VALUE_TYPE_RANK.get(r["value_type"], 9)
-            if ed in by_edition and by_edition[ed][0] <= rank:
-                continue
-            by_edition[ed] = (rank, r)
-
-        valid_years = []
-        for ed, (_, r) in by_edition.items():
             value = r["value"]
             err_p, err_n = r["error_positive"], r["error_negative"]
             if value is None:
                 parsed = parse_value_text(r["value_text"])
                 if parsed is None:
-                    # edition truly has no machine-readable value for this
-                    # quantity in the database -> leave it out of the series
                     continue
                 value, err_p, err_n = parsed
-            valid_years.append(int(ed))
+            sort_key = (pdgids.index(r["pdgid"]),
+                        VALUE_TYPE_RANK.get(r["value_type"], 9))
+            if r["edition"] in best and best[r["edition"]][0] <= sort_key:
+                continue
             entry = {
                 "value": value,
                 "error_positive": err_p,
@@ -149,11 +149,16 @@ def main():
             }
             if r["limit_type"]:
                 entry["limit_type"] = r["limit_type"]
+            best[r["edition"]] = (sort_key, entry)
+
+        valid_years = []
+        for ed, (_, entry) in best.items():
+            valid_years.append(int(ed))
             editions.setdefault(ed, {})[key] = entry
 
         valid_years.sort()
         catalogue.append({
-            "key": key, "pdgid": pdgid, "name": name, "symbol": symbol,
+            "key": key, "pdgid": pdgids[0], "name": name, "symbol": symbol,
             "category": category,
             "editions": valid_years,
             "n_editions": len(valid_years),

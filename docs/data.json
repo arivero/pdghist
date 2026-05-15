@@ -1,9 +1,11 @@
 {
- "generated": "2026-05-14 12:05:54",
+ "generated": "2026-05-15 21:14:27",
  "about": "History of PDG values for fundamental Standard Model parameters. x = PDG edition year, y = value with errors.",
  "sources": {
   "pdg_database": "PDG pdgall SQLite database (all editions)",
-  "mass_width_file": "PDG yearly mass_width machine-readable files"
+  "mass_width_file": "PDG yearly mass_width machine-readable files",
+  "review_pdf": "PDG Electroweak review (values extracted from the review text; see scripts/scrape_reviews.py)",
+  "ew_fit": "SM-constrained best-fit value from the EW review's fit table (2nd column); ~2x more precise than direct m_W"
  },
  "categories": [
   "boson mass",
@@ -183,6 +185,126 @@
       "value_text": "4.1 -- 5.7",
       "value_type": "V",
       "limit_type": "R"
+     },
+     {
+      "year": 2012,
+      "value": 4.8,
+      "error_positive": 0.7,
+      "error_negative": 0.3,
+      "unit": "MeV",
+      "value_text": "4.8+0.7-0.3",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2013,
+      "value": 4.8,
+      "error_positive": 0.5,
+      "error_negative": 0.3,
+      "unit": "MeV",
+      "value_text": "4.8+0.5-0.3",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2014,
+      "value": 4.8,
+      "error_positive": 0.5,
+      "error_negative": 0.3,
+      "unit": "MeV",
+      "value_text": "4.8+0.5-0.3",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2015,
+      "value": 4.8,
+      "error_positive": 0.5,
+      "error_negative": 0.3,
+      "unit": "MeV",
+      "value_text": "4.8+0.5-0.3",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2016,
+      "value": 4.7,
+      "error_positive": 0.5,
+      "error_negative": 0.4,
+      "unit": "MeV",
+      "value_text": "4.7+0.5-0.4",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2017,
+      "value": 4.7,
+      "error_positive": 0.5,
+      "error_negative": 0.4,
+      "unit": "MeV",
+      "value_text": "4.7+0.5-0.4",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2018,
+      "value": 4.7,
+      "error_positive": 0.5,
+      "error_negative": 0.3,
+      "unit": "MeV",
+      "value_text": "4.7+0.5-0.3",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2019,
+      "value": 4.67,
+      "error_positive": 0.48,
+      "error_negative": 0.17,
+      "unit": "MeV",
+      "value_text": "4.67+0.48-0.17",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2020,
+      "value": 4.67,
+      "error_positive": 0.48,
+      "error_negative": 0.17,
+      "unit": "MeV",
+      "value_text": "4.67+0.48-0.17",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2021,
+      "value": 4.67,
+      "error_positive": 0.48,
+      "error_negative": 0.17,
+      "unit": "MeV",
+      "value_text": "4.67+0.48-0.17",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2022,
+      "value": 4.67,
+      "error_positive": 0.48,
+      "error_negative": 0.17,
+      "unit": "MeV",
+      "value_text": "4.67+0.48-0.17",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2023,
+      "value": 4.67,
+      "error_positive": 0.48,
+      "error_negative": 0.17,
+      "unit": "MeV",
+      "value_text": "4.67+0.48-0.17",
+      "value_type": "V",
+      "limit_type": null
      },
      {
       "year": 2024,
@@ -491,6 +613,126 @@
       "limit_type": "R"
      },
      {
+      "year": 2012,
+      "value": 2.3,
+      "error_positive": 0.7,
+      "error_negative": 0.5,
+      "unit": "MeV",
+      "value_text": "2.3+0.7-0.5",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2013,
+      "value": 2.3,
+      "error_positive": 0.7,
+      "error_negative": 0.5,
+      "unit": "MeV",
+      "value_text": "2.3+0.7-0.5",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2014,
+      "value": 2.3,
+      "error_positive": 0.7,
+      "error_negative": 0.5,
+      "unit": "MeV",
+      "value_text": "2.3+0.7-0.5",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2015,
+      "value": 2.3,
+      "error_positive": 0.7,
+      "error_negative": 0.5,
+      "unit": "MeV",
+      "value_text": "2.3+0.7-0.5",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2016,
+      "value": 2.2,
+      "error_positive": 0.6,
+      "error_negative": 0.4,
+      "unit": "MeV",
+      "value_text": "2.2+0.6-0.4",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2017,
+      "value": 2.2,
+      "error_positive": 0.6,
+      "error_negative": 0.4,
+      "unit": "MeV",
+      "value_text": "2.2+0.6-0.4",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2018,
+      "value": 2.2,
+      "error_positive": 0.5,
+      "error_negative": 0.4,
+      "unit": "MeV",
+      "value_text": "2.2+0.5-0.4",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2019,
+      "value": 2.16,
+      "error_positive": 0.49,
+      "error_negative": 0.26,
+      "unit": "MeV",
+      "value_text": "2.16+0.49-0.26",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2020,
+      "value": 2.16,
+      "error_positive": 0.49,
+      "error_negative": 0.26,
+      "unit": "MeV",
+      "value_text": "2.16+0.49-0.26",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2021,
+      "value": 2.16,
+      "error_positive": 0.49,
+      "error_negative": 0.26,
+      "unit": "MeV",
+      "value_text": "2.16+0.49-0.26",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2022,
+      "value": 2.16,
+      "error_positive": 0.49,
+      "error_negative": 0.26,
+      "unit": "MeV",
+      "value_text": "2.16+0.49-0.26",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2023,
+      "value": 2.16,
+      "error_positive": 0.49,
+      "error_negative": 0.26,
+      "unit": "MeV",
+      "value_text": "2.16+0.49-0.26",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
       "year": 2024,
       "value": 2.16,
       "error_positive": 0.07,
@@ -793,6 +1035,126 @@
       "error_negative": 20.0,
       "unit": "MeV",
       "value_text": "100+30-20",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2012,
+      "value": 95.0,
+      "error_positive": 5.0,
+      "error_negative": 5.0,
+      "unit": "MeV",
+      "value_text": "95+-5",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2013,
+      "value": 95.0,
+      "error_positive": 5.0,
+      "error_negative": 5.0,
+      "unit": "MeV",
+      "value_text": "95+-5",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2014,
+      "value": 95.0,
+      "error_positive": 5.0,
+      "error_negative": 5.0,
+      "unit": "MeV",
+      "value_text": "95+-5",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2015,
+      "value": 95.0,
+      "error_positive": 5.0,
+      "error_negative": 5.0,
+      "unit": "MeV",
+      "value_text": "95+-5",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2016,
+      "value": 96.0,
+      "error_positive": 8.0,
+      "error_negative": 4.0,
+      "unit": "MeV",
+      "value_text": "96+8-4",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2017,
+      "value": 96.0,
+      "error_positive": 8.0,
+      "error_negative": 4.0,
+      "unit": "MeV",
+      "value_text": "96+8-4",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2018,
+      "value": 95.0,
+      "error_positive": 9.0,
+      "error_negative": 3.0,
+      "unit": "MeV",
+      "value_text": "95+9-3",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2019,
+      "value": 93.0,
+      "error_positive": 11.0,
+      "error_negative": 5.0,
+      "unit": "MeV",
+      "value_text": "93+11-5",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2020,
+      "value": 93.0,
+      "error_positive": 11.0,
+      "error_negative": 5.0,
+      "unit": "MeV",
+      "value_text": "93+11-5",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2021,
+      "value": 93.0,
+      "error_positive": 11.0,
+      "error_negative": 5.0,
+      "unit": "MeV",
+      "value_text": "93+11-5",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2022,
+      "value": 93.4,
+      "error_positive": 8.6,
+      "error_negative": 3.4,
+      "unit": "MeV",
+      "value_text": "93.4+8.6-3.4",
+      "value_type": "V",
+      "limit_type": null
+     },
+     {
+      "year": 2023,
+      "value": 93.4,
+      "error_positive": 8.6,
+      "error_negative": 3.4,
+      "unit": "MeV",
+      "value_text": "93.4+8.6-3.4",
       "value_type": "V",
       "limit_type": null
      },
@@ -4401,6 +4763,114 @@
       "error_negative": 0.013,
       "unit": "GeV"
      }
+    ],
+    "review_pdf": [
+     {
+      "year": 2026,
+      "value": 80.3625,
+      "error_positive": 0.0077,
+      "error_negative": 0.0077,
+      "unit": "GeV",
+      "scheme": null
+     }
+    ],
+    "ew_fit": [
+     {
+      "year": 2008,
+      "value": 80.375,
+      "error_positive": 0.015,
+      "error_negative": 0.015,
+      "unit": "GeV",
+      "scheme": null
+     },
+     {
+      "year": 2010,
+      "value": 80.384,
+      "error_positive": 0.014,
+      "error_negative": 0.014,
+      "unit": "GeV",
+      "scheme": null
+     },
+     {
+      "year": 2012,
+      "value": 80.381,
+      "error_positive": 0.014,
+      "error_negative": 0.014,
+      "unit": "GeV",
+      "scheme": null
+     },
+     {
+      "year": 2014,
+      "value": 80.363,
+      "error_positive": 0.006,
+      "error_negative": 0.006,
+      "unit": "GeV",
+      "scheme": null
+     },
+     {
+      "year": 2016,
+      "value": 80.361,
+      "error_positive": 0.006,
+      "error_negative": 0.006,
+      "unit": "GeV",
+      "scheme": null
+     },
+     {
+      "year": 2018,
+      "value": 80.358,
+      "error_positive": 0.004,
+      "error_negative": 0.004,
+      "unit": "GeV",
+      "scheme": null
+     },
+     {
+      "year": 2020,
+      "value": 80.361,
+      "error_positive": 0.006,
+      "error_negative": 0.006,
+      "unit": "GeV",
+      "scheme": null
+     },
+     {
+      "year": 2022,
+      "value": 80.36,
+      "error_positive": 0.006,
+      "error_negative": 0.006,
+      "unit": "GeV",
+      "scheme": null
+     },
+     {
+      "year": 2023,
+      "value": 80.36,
+      "error_positive": 0.006,
+      "error_negative": 0.006,
+      "unit": "GeV",
+      "scheme": null
+     },
+     {
+      "year": 2024,
+      "value": 80.356,
+      "error_positive": 0.005,
+      "error_negative": 0.005,
+      "unit": "GeV",
+      "scheme": null
+     },
+     {
+      "year": 2025,
+      "value": 80.359,
+      "error_positive": 0.006,
+      "error_negative": 0.006,
+      "unit": "GeV",
+      "scheme": null
+     },
+     {
+      "year": 2026,
+      "value": 80.359,
+      "error_positive": 0.006,
+      "error_negative": 0.006,
+      "unit": "GeV",
+      "scheme": null
+     }
     ]
    }
   },
@@ -4887,6 +5357,114 @@
       "error_positive": 0.002,
       "error_negative": 0.002,
       "unit": "GeV"
+     }
+    ],
+    "review_pdf": [
+     {
+      "year": 2026,
+      "value": 91.1879,
+      "error_positive": 0.002,
+      "error_negative": 0.002,
+      "unit": "GeV",
+      "scheme": null
+     }
+    ],
+    "ew_fit": [
+     {
+      "year": 2008,
+      "value": 91.1874,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV",
+      "scheme": null
+     },
+     {
+      "year": 2010,
+      "value": 91.1874,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV",
+      "scheme": null
+     },
+     {
+      "year": 2012,
+      "value": 91.1874,
+      "error_positive": 0.0021,
+      "error_negative": 0.0021,
+      "unit": "GeV",
+      "scheme": null
+     },
+     {
+      "year": 2014,
+      "value": 91.188,
+      "error_positive": 0.002,
+      "error_negative": 0.002,
+      "unit": "GeV",
+      "scheme": null
+     },
+     {
+      "year": 2016,
+      "value": 91.188,
+      "error_positive": 0.002,
+      "error_negative": 0.002,
+      "unit": "GeV",
+      "scheme": null
+     },
+     {
+      "year": 2018,
+      "value": 91.1884,
+      "error_positive": 0.002,
+      "error_negative": 0.002,
+      "unit": "GeV",
+      "scheme": null
+     },
+     {
+      "year": 2020,
+      "value": 91.1882,
+      "error_positive": 0.002,
+      "error_negative": 0.002,
+      "unit": "GeV",
+      "scheme": null
+     },
+     {
+      "year": 2022,
+      "value": 91.1882,
+      "error_positive": 0.002,
+      "error_negative": 0.002,
+      "unit": "GeV",
+      "scheme": null
+     },
+     {
+      "year": 2023,
+      "value": 91.1882,
+      "error_positive": 0.002,
+      "error_negative": 0.002,
+      "unit": "GeV",
+      "scheme": null
+     },
+     {
+      "year": 2024,
+      "value": 91.1884,
+      "error_positive": 0.0019,
+      "error_negative": 0.0019,
+      "unit": "GeV",
+      "scheme": null
+     },
+     {
+      "year": 2025,
+      "value": 91.1883,
+      "error_positive": 0.002,
+      "error_negative": 0.002,
+      "unit": "GeV",
+      "scheme": null
+     },
+     {
+      "year": 2026,
+      "value": 91.1883,
+      "error_positive": 0.002,
+      "error_negative": 0.002,
+      "unit": "GeV",
+      "scheme": null
      }
     ]
    }
@@ -6192,7 +6770,105 @@
       "limit_type": null
      }
     ],
-    "mass_width_file": []
+    "mass_width_file": [],
+    "review_pdf": [
+     {
+      "year": 2008,
+      "value": 0.2315,
+      "error_positive": null,
+      "error_negative": null,
+      "unit": "",
+      "scheme": "effective leptonic"
+     },
+     {
+      "year": 2010,
+      "value": 0.2316,
+      "error_positive": null,
+      "error_negative": null,
+      "unit": "",
+      "scheme": "effective leptonic"
+     },
+     {
+      "year": 2012,
+      "value": 0.2315,
+      "error_positive": null,
+      "error_negative": null,
+      "unit": "",
+      "scheme": "effective leptonic"
+     },
+     {
+      "year": 2014,
+      "value": 0.23155,
+      "error_positive": null,
+      "error_negative": null,
+      "unit": "",
+      "scheme": "effective leptonic"
+     },
+     {
+      "year": 2016,
+      "value": 0.23152,
+      "error_positive": 5e-05,
+      "error_negative": 5e-05,
+      "unit": "",
+      "scheme": "effective leptonic"
+     },
+     {
+      "year": 2018,
+      "value": 0.23154,
+      "error_positive": 3e-05,
+      "error_negative": 3e-05,
+      "unit": "",
+      "scheme": "effective leptonic"
+     },
+     {
+      "year": 2020,
+      "value": 0.23153,
+      "error_positive": 4e-05,
+      "error_negative": 4e-05,
+      "unit": "",
+      "scheme": "effective leptonic"
+     },
+     {
+      "year": 2022,
+      "value": 0.23155,
+      "error_positive": 4e-05,
+      "error_negative": 4e-05,
+      "unit": "",
+      "scheme": "effective leptonic"
+     },
+     {
+      "year": 2023,
+      "value": 0.23155,
+      "error_positive": 4e-05,
+      "error_negative": 4e-05,
+      "unit": "",
+      "scheme": "effective leptonic"
+     },
+     {
+      "year": 2024,
+      "value": 0.23161,
+      "error_positive": 4e-05,
+      "error_negative": 4e-05,
+      "unit": "",
+      "scheme": "effective leptonic"
+     },
+     {
+      "year": 2025,
+      "value": 0.23154,
+      "error_positive": 6e-05,
+      "error_negative": 6e-05,
+      "unit": "",
+      "scheme": "effective leptonic"
+     },
+     {
+      "year": 2026,
+      "value": 0.23154,
+      "error_positive": 6e-05,
+      "error_negative": 6e-05,
+      "unit": "",
+      "scheme": "effective leptonic"
+     }
+    ]
    }
   },
   {
@@ -6988,6 +7664,449 @@
      }
     ],
     "mass_width_file": []
+   }
+  },
+  {
+   "key": "sin2_theta_W",
+   "name": "Weak mixing angle (on-shell)",
+   "symbol": "sin^2(theta_W)",
+   "category": "electroweak mixing",
+   "pdgid": "(review + derived)",
+   "unit": "",
+   "series": {
+    "pdg_database": [],
+    "mass_width_file": [],
+    "review_pdf": [
+     {
+      "year": 2008,
+      "value": 0.2231,
+      "error_positive": null,
+      "error_negative": null,
+      "unit": "",
+      "scheme": "on-shell"
+     },
+     {
+      "year": 2010,
+      "value": 0.2233,
+      "error_positive": null,
+      "error_negative": null,
+      "unit": "",
+      "scheme": "on-shell"
+     },
+     {
+      "year": 2012,
+      "value": 0.2231,
+      "error_positive": null,
+      "error_negative": null,
+      "unit": "",
+      "scheme": "on-shell"
+     },
+     {
+      "year": 2014,
+      "value": 0.22333,
+      "error_positive": null,
+      "error_negative": null,
+      "unit": "",
+      "scheme": "on-shell"
+     },
+     {
+      "year": 2016,
+      "value": 0.22336,
+      "error_positive": 0.0001,
+      "error_negative": 0.0001,
+      "unit": "",
+      "scheme": "on-shell"
+     },
+     {
+      "year": 2018,
+      "value": 0.22343,
+      "error_positive": 7e-05,
+      "error_negative": 7e-05,
+      "unit": "",
+      "scheme": "on-shell"
+     },
+     {
+      "year": 2020,
+      "value": 0.22337,
+      "error_positive": 0.0001,
+      "error_negative": 0.0001,
+      "unit": "",
+      "scheme": "on-shell"
+     },
+     {
+      "year": 2022,
+      "value": 0.22339,
+      "error_positive": 0.0001,
+      "error_negative": 0.0001,
+      "unit": "",
+      "scheme": "on-shell"
+     },
+     {
+      "year": 2023,
+      "value": 0.22339,
+      "error_positive": 0.0001,
+      "error_negative": 0.0001,
+      "unit": "",
+      "scheme": "on-shell"
+     },
+     {
+      "year": 2024,
+      "value": 0.22348,
+      "error_positive": 0.0001,
+      "error_negative": 0.0001,
+      "unit": "",
+      "scheme": "on-shell"
+     },
+     {
+      "year": 2025,
+      "value": 0.22342,
+      "error_positive": 9e-05,
+      "error_negative": 9e-05,
+      "unit": "",
+      "scheme": "on-shell"
+     },
+     {
+      "year": 2026,
+      "value": 0.22342,
+      "error_positive": 9e-05,
+      "error_negative": 9e-05,
+      "unit": "",
+      "scheme": "on-shell"
+     }
+    ],
+    "derived_direct": [
+     {
+      "year": 1984,
+      "value": 0.2435307244962871,
+      "error_positive": 0.056876107351216613,
+      "error_negative": 0.056876107351216613,
+      "unit": ""
+     },
+     {
+      "year": 1986,
+      "value": 0.21965862601402264,
+      "error_positive": 0.04049652111512654,
+      "error_negative": 0.04049652111512654,
+      "unit": ""
+     },
+     {
+      "year": 1988,
+      "value": 0.2315314555574297,
+      "error_positive": 0.03879277088484721,
+      "error_negative": 0.03879277088484721,
+      "unit": ""
+     },
+     {
+      "year": 1990,
+      "value": 0.21784796674030305,
+      "error_positive": 0.008466935906685675,
+      "error_negative": 0.008466935906685675,
+      "unit": ""
+     },
+     {
+      "year": 1992,
+      "value": 0.22587610991304097,
+      "error_positive": 0.004966607187602735,
+      "error_negative": 0.004966607187602735,
+      "unit": ""
+     },
+     {
+      "year": 1994,
+      "value": 0.22600071819787237,
+      "error_positive": 0.00495288923755141,
+      "error_negative": 0.00495288923755141,
+      "unit": ""
+     },
+     {
+      "year": 1996,
+      "value": 0.22389702673562417,
+      "error_positive": 0.0028982603183557573,
+      "error_negative": 0.0028982603183557573,
+      "unit": ""
+     },
+     {
+      "year": 1997,
+      "value": 0.2234288828179526,
+      "error_positive": 0.0022559406083967567,
+      "error_negative": 0.0022559406083967567,
+      "unit": ""
+     },
+     {
+      "year": 1998,
+      "value": 0.22245626593112955,
+      "error_positive": 0.0018735223091231401,
+      "error_negative": 0.0018735223091231401,
+      "unit": ""
+     },
+     {
+      "year": 2000,
+      "value": 0.22224994472998416,
+      "error_positive": 0.0010838268411010198,
+      "error_negative": 0.0010838268411010198,
+      "unit": ""
+     },
+     {
+      "year": 2002,
+      "value": 0.22216233702770505,
+      "error_positive": 0.0007552530280408378,
+      "error_negative": 0.0007552530280408378,
+      "unit": ""
+     },
+     {
+      "year": 2003,
+      "value": 0.22212364922273364,
+      "error_positive": 0.0007359500587763843,
+      "error_negative": 0.0007359500587763843,
+      "unit": ""
+     },
+     {
+      "year": 2004,
+      "value": 0.22222036693123204,
+      "error_positive": 0.0007745465021397826,
+      "error_negative": 0.0007745465021397826,
+      "unit": ""
+     },
+     {
+      "year": 2005,
+      "value": 0.22212364922273364,
+      "error_positive": 0.0007359500587763843,
+      "error_negative": 0.0007359500587763843,
+      "unit": ""
+     },
+     {
+      "year": 2006,
+      "value": 0.22254916216213794,
+      "error_positive": 0.0005619687091443095,
+      "error_negative": 0.0005619687091443095,
+      "unit": ""
+     },
+     {
+      "year": 2007,
+      "value": 0.22254916216213794,
+      "error_positive": 0.0005619687091443095,
+      "error_negative": 0.0005619687091443095,
+      "unit": ""
+     },
+     {
+      "year": 2008,
+      "value": 0.22264585341299603,
+      "error_positive": 0.00048476524862154795,
+      "error_negative": 0.00048476524862154795,
+      "unit": ""
+     },
+     {
+      "year": 2009,
+      "value": 0.22264585341299603,
+      "error_positive": 0.00048476524862154795,
+      "error_negative": 0.00048476524862154795,
+      "unit": ""
+     },
+     {
+      "year": 2010,
+      "value": 0.22262651564387248,
+      "error_positive": 0.00044621031288313346,
+      "error_negative": 0.00044621031288313346,
+      "unit": ""
+     },
+     {
+      "year": 2011,
+      "value": 0.22262651564387248,
+      "error_positive": 0.00044621031288313346,
+      "error_negative": 0.00044621031288313346,
+      "unit": ""
+     },
+     {
+      "year": 2012,
+      "value": 0.2228972225239183,
+      "error_positive": 0.00029221814592302444,
+      "error_negative": 0.00029221814592302444,
+      "unit": ""
+     },
+     {
+      "year": 2013,
+      "value": 0.2228972225239183,
+      "error_positive": 0.00029221814592302444,
+      "error_negative": 0.00029221814592302444,
+      "unit": ""
+     },
+     {
+      "year": 2014,
+      "value": 0.2228972225239183,
+      "error_positive": 0.00029221814592302444,
+      "error_negative": 0.00029221814592302444,
+      "unit": ""
+     },
+     {
+      "year": 2015,
+      "value": 0.2228972225239183,
+      "error_positive": 0.00029221814592302444,
+      "error_negative": 0.00029221814592302444,
+      "unit": ""
+     },
+     {
+      "year": 2016,
+      "value": 0.2228972225239183,
+      "error_positive": 0.00029221814592302444,
+      "error_negative": 0.00029221814592302444,
+      "unit": ""
+     },
+     {
+      "year": 2017,
+      "value": 0.2228972225239183,
+      "error_positive": 0.00029221814592302444,
+      "error_negative": 0.00029221814592302444,
+      "unit": ""
+     },
+     {
+      "year": 2018,
+      "value": 0.22301322532678336,
+      "error_positive": 0.0002347409286122865,
+      "error_negative": 0.0002347409286122865,
+      "unit": ""
+     },
+     {
+      "year": 2019,
+      "value": 0.22301322532678336,
+      "error_positive": 0.0002347409286122865,
+      "error_negative": 0.0002347409286122865,
+      "unit": ""
+     },
+     {
+      "year": 2020,
+      "value": 0.22301322532678336,
+      "error_positive": 0.0002347409286122865,
+      "error_negative": 0.0002347409286122865,
+      "unit": ""
+     },
+     {
+      "year": 2021,
+      "value": 0.22301322532678336,
+      "error_positive": 0.0002347409286122865,
+      "error_negative": 0.0002347409286122865,
+      "unit": ""
+     },
+     {
+      "year": 2022,
+      "value": 0.22301322532678336,
+      "error_positive": 0.0002347409286122865,
+      "error_negative": 0.0002347409286122865,
+      "unit": ""
+     },
+     {
+      "year": 2023,
+      "value": 0.2230518910035465,
+      "error_positive": 0.00023473495201107125,
+      "error_negative": 0.00023473495201107125,
+      "unit": ""
+     },
+     {
+      "year": 2024,
+      "value": 0.22321335894906902,
+      "error_positive": 0.00025359613560251736,
+      "error_negative": 0.00025359613560251736,
+      "unit": ""
+     },
+     {
+      "year": 2025,
+      "value": 0.22321335894906902,
+      "error_positive": 0.00025359613560251736,
+      "error_negative": 0.00025359613560251736,
+      "unit": ""
+     },
+     {
+      "year": 2026,
+      "value": 0.22333729871365948,
+      "error_positive": 0.0001526826346572147,
+      "error_negative": 0.0001526826346572147,
+      "unit": ""
+     }
+    ],
+    "derived_fit": [
+     {
+      "year": 2008,
+      "value": 0.22308714774607563,
+      "error_positive": 0.00029218253960558476,
+      "error_negative": 0.00029218253960558476,
+      "unit": ""
+     },
+     {
+      "year": 2010,
+      "value": 0.22291314819030905,
+      "error_positive": 0.00027303723044950974,
+      "error_negative": 0.00027303723044950974,
+      "unit": ""
+     },
+     {
+      "year": 2012,
+      "value": 0.2229711502069568,
+      "error_positive": 0.00027302686537033653,
+      "error_negative": 0.00027302686537033653,
+      "unit": ""
+     },
+     {
+      "year": 2014,
+      "value": 0.22332933764413232,
+      "error_positive": 0.00012087493232718055,
+      "error_negative": 0.00012087493232718055,
+      "unit": ""
+     },
+     {
+      "year": 2016,
+      "value": 0.22336799528497808,
+      "error_positive": 0.0001208716851354216,
+      "error_negative": 0.0001208716851354216,
+      "unit": ""
+     },
+     {
+      "year": 2018,
+      "value": 0.22343279284675321,
+      "error_positive": 8.448271567551613e-05,
+      "error_negative": 8.448271567551613e-05,
+      "unit": ""
+     },
+     {
+      "year": 2020,
+      "value": 0.22337140200274652,
+      "error_positive": 0.00012087113386934171,
+      "error_negative": 0.00012087113386934171,
+      "unit": ""
+     },
+     {
+      "year": 2022,
+      "value": 0.22339073037760182,
+      "error_positive": 0.00012086951028786308,
+      "error_negative": 0.00012086951028786308,
+      "unit": ""
+     },
+     {
+      "year": 2023,
+      "value": 0.22339073037760182,
+      "error_positive": 0.00012086951028786308,
+      "error_negative": 0.00012086951028786308,
+      "unit": ""
+     },
+     {
+      "year": 2024,
+      "value": 0.22347144774325722,
+      "error_positive": 0.00010191005549834926,
+      "error_negative": 0.00010191005549834926,
+      "unit": ""
+     },
+     {
+      "year": 2025,
+      "value": 0.2234117617776309,
+      "error_positive": 0.00012086761108700207,
+      "error_negative": 0.00012086761108700207,
+      "unit": ""
+     },
+     {
+      "year": 2026,
+      "value": 0.2234117617776309,
+      "error_positive": 0.00012086761108700207,
+      "error_negative": 0.00012086761108700207,
+      "unit": ""
+     }
+    ]
    }
   }
  ]

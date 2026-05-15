@@ -3,6 +3,27 @@ source: PDG Review of Particle Physics database
 source_file: pdgall-2025-v0.2.2.sqlite
 source_api: https://pdgapi.lbl.gov/
 quantities:
+  d_quark_mass:
+    value: 4.7
+    error_positive: 0.5
+    error_negative: 0.4
+    unit: MeV
+    value_text: 4.7+0.5-0.4
+    value_type: V
+  u_quark_mass:
+    value: 2.2
+    error_positive: 0.6
+    error_negative: 0.4
+    unit: MeV
+    value_text: 2.2+0.6-0.4
+    value_type: V
+  s_quark_mass:
+    value: 96.0
+    error_positive: 8.0
+    error_negative: 4.0
+    unit: MeV
+    value_text: 96+8-4
+    value_type: V
   c_quark_mass:
     value: 1.27
     error_positive: 0.03

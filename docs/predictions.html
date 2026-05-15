@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pdghist &mdash; Theoretical predictions</title>
+<link rel="stylesheet" href="style.css?v=2026-05-15c">
+</head>
+<body>
+<header>
+  <h1>pdghist &mdash; predictions</h1>
+  <p class="tagline">A small playground that overlays a couple of theoretical
+  sum-rule predictions on the PDG history. The motivating articles by
+  Alejandro Rivero are <a href="https://a.rivero.nom.es/research/plb.pdf">
+  <em>New sum rules of the Koide type</em> (Phys. Lett. B 877, 140510, 2026)</a>
+  and <a href="https://a.rivero.nom.es/research/fused_manuscript.pdf">
+  <em>the Casimir-quartic / Poincar&eacute; manuscript</em></a>.</p>
+  <p class="tagline">&laquo; <a href="index.html">back to the main pdghist
+  page</a> &mdash; many of these predictions also appear as dashed pink
+  reference lines on the per-quantity cards there.</p>
+</header>
+
+<main>
+
+<section class="category">
+  <h2>Koide tuples</h2>
+  <p class="tagline">The original Koide formula
+  <code>K = (m₁+m₂+m₃) / (√m₁+√m₂+√m₃)² = 2/3</code> for charged leptons
+  inspires a whole family of triplet sum rules. Some require taking the
+  <em>negative</em> square root for one of the masses (those entries are
+  marked &minus; below). The down-quark inverse tuple uses
+  <code>K⁻¹ = (1/m₁+1/m₂+1/m₃)/(1/√m₁+1/√m₂+1/√m₃)² = 2/3</code>.
+  Source: <a href="https://a.rivero.nom.es/research/plb.pdf">Rivero, Phys.
+  Lett. B 877 (2026) 140510</a>.</p>
+
+  <table class="pred-table">
+    <thead><tr>
+      <th>tuple</th>
+      <th>type</th>
+      <th>predicted K</th>
+      <th>K from PDG 2025</th>
+      <th>deviation</th>
+      <th>postdicted</th>
+      <th>note (hover for citation)</th>
+    </tr></thead>
+    <tbody id="koide-tbody"></tbody>
+  </table>
+
+  <p class="tagline">Square-root sum rule (Eq. 10 of the paper):
+  <code>√m_b = √3·√m_s + √m_c</code> &rarr; predicts
+  <strong>m_b = 4184.5 MeV</strong> (PDG 2025: 4183 &plusmn; 7 MeV, match
+  to 0.04%). Drawn as a pink dashed line on the b-quark mass card on the
+  main page.</p>
+
+  <p class="tagline">The down-quark <em>inverse</em> Koide tuple hits the
+  fixed point <code>K⁻¹ = 2/3</code> exactly at
+  <strong>Q &asymp; 280 TeV</strong> under SM RG running (Martin-Robertson
+  SMDR, 5-loop). At Q = M_Z the value is K⁻¹ = 0.66750 (+0.13% from 2/3);
+  at Planck scale, 0.66539 (&minus;0.19%).</p>
+
+  <h3>K(year) per tuple</h3>
+  <p class="tagline">Computed live from the PDG mass history. Pink dashed
+  line is the prediction <code>K = 2/3 = 0.66667</code>.</p>
+  <div id="koide-plots" class="grid"></div>
+</section>
+
+<section class="category">
+  <h2>Poincar&eacute;&ndash;Casimir quartic spectrum</h2>
+  <p class="tagline">Identifying the four electroweak masses with a signed
+  quartet of Poincar&eacute; representations indexed by spin <em>s</em> and
+  parity, with mass-squared values <code>r² M_Z²</code>. The four predicted
+  ratios r come out of a single dimensionless construction and depend on no
+  free parameter beyond <code>M_Z</code> as the input scale.
+  Source: <a href="https://a.rivero.nom.es/research/fused_manuscript.pdf">
+  Rivero, Casimir-quartic / Poincar&eacute; manuscript</a>.</p>
+
+  <table class="pred-table">
+    <thead><tr>
+      <th>slot</th>
+      <th>identified with</th>
+      <th>r = ratio to M_Z</th>
+      <th>tree prediction (GeV)</th>
+      <th>with 3/8 correction (GeV)</th>
+      <th>PDG 2025 (GeV)</th>
+    </tr></thead>
+    <tbody id="casimir-tbody"></tbody>
+  </table>
+
+  <p class="tagline">The fourth column (<strong>3/8 correction</strong>) applies
+  <code>ε = (C_F/C_A)(M_Z² − M_W²) = (3/8)·(91.188² − 80.369²) ≈ 696 GeV²</code>
+  to the negative-sector slots with the spin-grading sign factor
+  <code>(−1)^(2s+1)</code> (Eq. 33 of the manuscript). The positive slots are
+  unchanged. With this single correction the s = ½ negative slot lands at
+  <strong>125.20 GeV</strong>, the s = 1 negative slot at
+  <strong>174.17 GeV</strong>, and the s = 3/2 positive slot stays at
+  <strong>96.54 GeV</strong>. All four electroweak masses are then reproduced
+  within experimental error.</p>
+
+  <p class="tagline">Equivalent on-shell weak mixing angle:
+  <code>s²_dV = 1 − (β_{1/2}/β_1)² = 0.22310132…</code> (the pink dashed
+  line on the on-shell sin²θ_W card on the main page).</p>
+
+  <p class="tagline">Same construction, read as a one-parameter
+  over-determined fit, gives a Poincar&eacute; rest mass
+  <code>m ≈ 106.57 GeV</code>:
+  <code>m_W = M_W/√((√57−3)/8) = 106.5705 GeV</code>,
+  <code>m_Z = M_Z/√(√3−1) = 106.5779 GeV</code>
+  (two agreeing-determinations to a part in 10⁴, reproducing the
+  <em>m ≈ 106.5 GeV</em> Rivero noticed in his 2004 posting).</p>
+
+  <p class="tagline">The construction also has a positive
+  <em>s = 3/2</em> slot at <strong>96.54 GeV</strong>, coincident with
+  the LEP/CMS 95-96 GeV anomaly. No Standard Model particle is currently
+  identified at this mass.</p>
+</section>
+
+<section class="category">
+  <h2>How to read the deviations</h2>
+  <p class="tagline">For the W mass slot the +0.4σ agreement is striking
+  because the construction has only <em>one</em> input
+  (M_Z), so the W mass is a pure prediction with no fitted parameter
+  &mdash; competitive with the global SM electroweak fit's ±5 MeV
+  prediction (80.359 GeV).</p>
+
+  <p class="tagline">The Higgs and the Fermi VEV deviate at the
+  percent level. The paper interprets these as the tree-level signal
+  to be perturbed by O(α) corrections; the splitting structure of the
+  <em>signed</em> negative-sector eigenvalues then naturally produces
+  values close to the observed m_H and v/√2.</p>
+</section>
+
+</main>
+
+<footer>
+  <p>&laquo; <a href="index.html">main pdghist page</a>.
+  Data: <a href="https://pdg.lbl.gov/">PDG</a> /
+  Review of Particle Physics, CC BY 4.0.
+  Theoretical predictions: A. Rivero,
+  <a href="https://a.rivero.nom.es/research/plb.pdf">PLB 877, 140510 (2026)</a>
+  and the
+  <a href="https://a.rivero.nom.es/research/fused_manuscript.pdf">Casimir-quartic
+  manuscript</a>.</p>
+</footer>
+
+<script src="predictions.js?v=2026-05-15c"></script>
+</body>
+</html>

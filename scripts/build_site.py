@@ -8,6 +8,7 @@ sources, so the site can cross-check them visually:
 """
 import glob
 import json
+import math
 import os
 import time
 from collections import Counter
@@ -62,10 +63,11 @@ def main():
     years = sorted(d for d in os.listdir(DATA)
                    if d.isdigit() and os.path.isdir(os.path.join(DATA, d)))
 
-    summaries, masswidth = {}, {}
+    summaries, masswidth, electroweak = {}, {}, {}
     for y in years:
         sp = os.path.join(DATA, y, "summary.yaml")
         mp = os.path.join(DATA, y, "masses.yaml")
+        ep = os.path.join(DATA, y, "electroweak.yaml")
         if os.path.exists(sp):
             summaries[int(y)] = load_yaml(sp)
         if os.path.exists(mp):
@@ -75,6 +77,25 @@ def main():
                 for mid in p.get("mc_ids", []):
                     by_id.setdefault(mid, p)
             masswidth[int(y)] = by_id
+        if os.path.exists(ep):
+            electroweak[int(y)] = load_yaml(ep)
+
+    def review_series(qkey):
+        """Time series scraped from the Electroweak review PDFs."""
+        out = []
+        for year, doc in sorted(electroweak.items()):
+            e = doc.get("quantities", {}).get(qkey)
+            if not e:
+                continue
+            out.append({
+                "year": year,
+                "value": e.get("value"),
+                "error_positive": e.get("error_positive"),
+                "error_negative": e.get("error_negative"),
+                "unit": e.get("unit", ""),
+                "scheme": e.get("scheme"),
+            })
+        return out
 
     quantities = []
     for q in catalogue["quantities"]:
@@ -117,6 +138,27 @@ def main():
 
         unit = normalise_units(db_series + mw_series)
 
+        series = {
+            "pdg_database": db_series,
+            "mass_width_file": mw_series,
+        }
+        # the effective weak mixing angle has a long history in the
+        # Electroweak review even though the database only carries one edition
+        if key == "sin2_theta_eff":
+            series["review_pdf"] = review_series("sin2_theta_eff")
+        # for W and Z masses the review carries the world average too -
+        # useful as a third cross-check and the only source for editions
+        # whose pdgall SQLite has not yet been released (e.g. 2026 preview).
+        if key in ("W_mass", "Z_mass"):
+            rs = review_series(key)
+            if rs:
+                series["review_pdf"] = rs
+            # the EW fit's SM-constrained value: ~2x more precise than direct
+            # for W (5-15 MeV vs 13-40 MeV), about the same for Z
+            fs = review_series(key + "_ew_fit")
+            if fs:
+                series["ew_fit"] = fs
+
         quantities.append({
             "key": key,
             "name": q["name"],
@@ -124,9 +166,85 @@ def main():
             "category": q["category"],
             "pdgid": q["pdgid"],
             "unit": unit,
+            "series": series,
+        })
+
+    # on-shell sin^2(theta_W) is not in the database at all - it comes only
+    # from the Electroweak review PDFs (see scripts/scrape_reviews.py).
+    # We also compute it directly: 1 - (m_W/m_Z)^2 from the headline masses
+    # and from the EW fit values. The three series give different stories:
+    #   * review_pdf     - the schemes-table value the review prints
+    #   * derived_direct - 1 - (m_W/m_Z)^2 from the experimental world averages
+    #   * derived_fit    - 1 - (m_W/m_Z)^2 from the EW review's fit table
+    sw_series = review_series("sin2_theta_W")
+
+    def headline_mass(qkey):
+        q = next((q for q in quantities if q["key"] == qkey), None)
+        if not q:
+            return {}
+        by_year = {}
+        # mass_width is machine-generated from the database headline and
+        # tracks value_text more faithfully than the SQLite numeric column
+        for sk in ("mass_width_file", "pdg_database", "review_pdf"):
+            for p in q["series"].get(sk, []):
+                y = p["year"]
+                if y in by_year or p.get("value") is None:
+                    continue
+                ep = p.get("error_positive") or 0
+                en = p.get("error_negative") or 0
+                by_year[y] = (p["value"], max(ep, en))
+        return by_year
+
+    def fit_mass(qkey):
+        q = next((q for q in quantities if q["key"] == qkey), None)
+        if not q:
+            return {}
+        by_year = {}
+        for p in q["series"].get("ew_fit", []):
+            if p.get("value") is None:
+                continue
+            ep = p.get("error_positive") or 0
+            en = p.get("error_negative") or 0
+            by_year[p["year"]] = (p["value"], max(ep, en))
+        return by_year
+
+    def derived_swsq(mw_by, mz_by):
+        out = []
+        for y in sorted(set(mw_by) & set(mz_by)):
+            mw, ew = mw_by[y]
+            mz, ez = mz_by[y]
+            if mw <= 0 or mz <= 0:
+                continue
+            r = mw / mz
+            sr = r * math.sqrt((ew / mw) ** 2 + (ez / mz) ** 2)
+            r2 = r * r
+            sr2 = 2 * r * sr
+            out.append({
+                "year": y,
+                "value": 1.0 - r2,
+                "error_positive": sr2,
+                "error_negative": sr2,
+                "unit": "",
+            })
+        return out
+
+    dd = derived_swsq(headline_mass("W_mass"), headline_mass("Z_mass"))
+    df = derived_swsq(fit_mass("W_mass"), fit_mass("Z_mass"))
+
+    if sw_series or dd or df:
+        quantities.append({
+            "key": "sin2_theta_W",
+            "name": "Weak mixing angle (on-shell)",
+            "symbol": "sin^2(theta_W)",
+            "category": "electroweak mixing",
+            "pdgid": "(review + derived)",
+            "unit": "",
             "series": {
-                "pdg_database": db_series,
-                "mass_width_file": mw_series,
+                "pdg_database": [],
+                "mass_width_file": [],
+                "review_pdf": sw_series,
+                "derived_direct": dd,
+                "derived_fit": df,
             },
         })
 
@@ -138,6 +256,10 @@ def main():
         "sources": {
             "pdg_database": "PDG pdgall SQLite database (all editions)",
             "mass_width_file": "PDG yearly mass_width machine-readable files",
+            "review_pdf": "PDG Electroweak review (values extracted from the "
+                          "review text; see scripts/scrape_reviews.py)",
+            "ew_fit": "SM-constrained best-fit value from the EW review's fit "
+                      "table (2nd column); ~2x more precise than direct m_W",
         },
         "categories": sorted({q["category"] for q in quantities}),
         "quantities": quantities,
@@ -145,8 +267,7 @@ def main():
     with open(os.path.join(DOCS, "data.json"), "w") as fh:
         json.dump(out, fh, indent=1)
 
-    npts = sum(len(q["series"]["pdg_database"]) +
-               len(q["series"]["mass_width_file"]) for q in quantities)
+    npts = sum(len(s) for q in quantities for s in q["series"].values())
     print(f"docs/data.json: {len(quantities)} quantities, {npts} points")
 
 

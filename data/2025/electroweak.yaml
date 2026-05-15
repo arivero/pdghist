@@ -1,0 +1,31 @@
+edition: 2025
+source: PDG Review of Particle Physics - Electroweak Model and Constraints on New
+  Physics review
+source_url: https://pdg.lbl.gov/2025/reviews/rpp2025-rev-standard-model.pdf
+note: Extracted from the review's schemes table; the PDF is copyrighted and not stored,
+  see src/electroweak_review.md
+quantities:
+  sin2_theta_W:
+    value: 0.22342
+    error_positive: 9.0e-05
+    error_negative: 9.0e-05
+    unit: ''
+    scheme: on-shell
+  sin2_theta_eff:
+    value: 0.23154
+    error_positive: 6.0e-05
+    error_negative: 6.0e-05
+    unit: ''
+    scheme: effective leptonic
+  W_mass_ew_fit:
+    value: 80.359
+    error_positive: 0.006
+    error_negative: 0.006
+    unit: GeV
+    source_column: EW review fit table, 2nd value column (SM-constrained value)
+  Z_mass_ew_fit:
+    value: 91.1883
+    error_positive: 0.002
+    error_negative: 0.002
+    unit: GeV
+    source_column: EW review fit table, 2nd value column (SM-constrained value)

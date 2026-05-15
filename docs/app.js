@@ -1,9 +1,46 @@
 "use strict";
 
 const SERIES = {
-  pdg_database:   { label: "PDG database",    color: "#4ea1ff", shape: "circle" },
-  mass_width_file:{ label: "mass_width file", color: "#ff9d4e", shape: "square" },
+  pdg_database:    { label: "PDG database",       color: "#0969da", shape: "circle" },
+  mass_width_file: { label: "mass_width file",    color: "#bc4c00", shape: "square" },
+  review_pdf:      { label: "Electroweak review", color: "#1a7f37", shape: "triangle" },
+  ew_fit:          { label: "EW fit (constrained)", color: "#8250df", shape: "diamond" },
+  derived_direct:  { label: "1−(m_W/m_Z)² direct",  color: "#cf222e", shape: "plus" },
+  derived_fit:     { label: "1−(m_W/m_Z)² (EW fit)", color: "#9a6700", shape: "cross" },
 };
+
+// Horizontal reference lines drawn over selected plots. These come from the
+// theoretical predictions catalogued on the /predictions.html page (Koide
+// tuples and the Poincare-Casimir quartic construction by A. Rivero).
+const ANNOTATIONS = {
+  sin2_theta_W: [
+    { value: 0.22310132, label: "Casimir-quartic s²_dV (0.22310132)",
+      color: "#bf3989" },
+  ],
+  W_mass: [
+    { value: 80.3724, label: "Casimir-quartic (80.3724 GeV)",
+      color: "#bf3989" },
+  ],
+  H_mass: [
+    { value: 122.3879, label: "Casimir-quartic (122.39 GeV)",
+      color: "#bf3989" },
+  ],
+  b_quark_mass: [
+    { value: 4.1845, label: "√mb = √3·√ms + √mc → 4.1845 GeV",
+      color: "#bf3989" },
+  ],
+};
+const ANN_STORAGE_KEY = "pdghist.annotations";
+let annotationsEnabled =
+  (localStorage.getItem(ANN_STORAGE_KEY) ?? "1") === "1";
+
+// vertical-zoom: ?recent=N keeps only the last N editions of every plot, so
+// the y-axis rescales and the (tiny) modern error bars become visible. It is
+// a URL parameter on purpose: the state survives printing and bookmarking.
+const RECENT = (() => {
+  const v = parseInt(new URLSearchParams(location.search).get("recent"), 10);
+  return Number.isFinite(v) && v > 0 ? v : 0;
+})();
 
 const tooltip = document.createElement("div");
 tooltip.className = "tooltip";
@@ -54,6 +91,20 @@ function fmt(v) {
   return v.toPrecision(3);
 }
 
+// choose enough decimal places that adjacent axis ticks render distinctly
+function tickFormatter(ticks) {
+  let mind = Infinity;
+  for (let i = 1; i < ticks.length; i++)
+    mind = Math.min(mind, Math.abs(ticks[i] - ticks[i - 1]));
+  if (!Number.isFinite(mind) || mind === 0) return fmt;
+  const dec = Math.min(8, Math.max(0, Math.ceil(-Math.log10(mind)) + 1));
+  return v => {
+    const a = Math.abs(v);
+    if (a !== 0 && (a >= 1e5 || a < 1e-4)) return v.toExponential(1);
+    return v.toFixed(dec);
+  };
+}
+
 const isLimit = p => !!p.value_text && /^\s*[<>]/.test(p.value_text);
 
 const SVGNS = "http://www.w3.org/2000/svg";
@@ -64,7 +115,21 @@ function el(name, attrs, parent) {
   return n;
 }
 
-function renderPlot(q) {
+// keep only the last RECENT editions across every series of one quantity
+function applyRecent(q) {
+  if (!RECENT) return q;
+  const years = new Set();
+  for (const sk in SERIES) (q.series[sk] || []).forEach(p => years.add(p.year));
+  const keep = [...years].sort((a, b) => b - a).slice(0, RECENT);
+  const cut = keep.length ? Math.min(...keep) : -Infinity;
+  const series = {};
+  for (const sk in SERIES)
+    series[sk] = (q.series[sk] || []).filter(p => p.year >= cut);
+  return Object.assign({}, q, { series });
+}
+
+function renderPlot(q0) {
+  const q = applyRecent(q0);
   const W = 460, H = 300;
   const m = { l: 60, r: 16, t: 16, b: 38 };
   const iw = W - m.l - m.r, ih = H - m.t - m.b;
@@ -89,6 +154,12 @@ function renderPlot(q) {
     if (lo <= 0) anyNeg = true;
     else posMin = Math.min(posMin, lo);
   }
+  // extend y-extent to cover any annotation lines so they stay visible
+  const anns = (annotationsEnabled && ANNOTATIONS[q0.key]) || [];
+  for (const a of anns) {
+    ymin = Math.min(ymin, a.value); ymax = Math.max(ymax, a.value);
+    if (a.value > 0) posMin = Math.min(posMin, a.value);
+  }
   if (xmin === xmax) { xmin -= 1; xmax += 1; }
   const xpad = Math.max(1, (xmax - xmin) * 0.04);
   xmin -= xpad; xmax += xpad;
@@ -109,12 +180,13 @@ function renderPlot(q) {
   const X = v => m.l + (v - xmin) / (xmax - xmin) * iw;
 
   // y grid + labels
+  const yfmt = useLog ? fmt : tickFormatter(yticks);
   for (const t of yticks) {
     const y = Y(t);
     if (y < m.t - 1 || y > m.t + ih + 1) continue;
     el("line", { x1: m.l, y1: y, x2: m.l + iw, y2: y, class: "grid-line" }, svg);
     el("text", { x: m.l - 6, y: y + 3, "text-anchor": "end",
-      class: "tick-label" }, svg).textContent = fmt(t);
+      class: "tick-label" }, svg).textContent = yfmt(t);
   }
   // x grid + labels (integer years)
   for (const t of niceTicks(xmin, xmax, 6)) {
@@ -125,6 +197,17 @@ function renderPlot(q) {
     el("text", { x: x, y: m.t + ih + 14, "text-anchor": "middle",
       class: "tick-label" }, svg).textContent = yr;
   }
+  // annotation reference lines (drawn under the data points)
+  for (const a of anns) {
+    const y = Y(a.value);
+    if (y < m.t - 1 || y > m.t + ih + 1) continue;
+    el("line", { x1: m.l, y1: y, x2: m.l + iw, y2: y,
+      stroke: a.color, "stroke-width": 1.2,
+      "stroke-dasharray": "5 3", opacity: 0.85 }, svg);
+    el("text", { x: m.l + iw - 4, y: y - 3, "text-anchor": "end",
+      class: "annotation-label", fill: a.color }, svg).textContent = a.label;
+  }
+
   // axes
   el("line", { x1: m.l, y1: m.t, x2: m.l, y2: m.t + ih, class: "axis" }, svg);
   el("line", { x1: m.l, y1: m.t + ih, x2: m.l + iw, y2: m.t + ih,
@@ -166,13 +249,26 @@ function renderPlot(q) {
 
       let mark;
       if (limit) {
-        // upper/lower limit: hollow triangle pointing in the bound direction
         const up = /^\s*>/.test(p.value_text), dy = up ? -6 : 6;
         mark = el("path", { d: `M${cx - 4} ${cy} L${cx + 4} ${cy} ` +
           `L${cx} ${cy + dy} Z`, fill: "none", stroke: cfg.color,
           "stroke-width": 1.5 }, svg);
       } else if (cfg.shape === "circle") {
         mark = el("circle", { cx: cx, cy: cy, r: 3.4, fill: cfg.color }, svg);
+      } else if (cfg.shape === "triangle") {
+        mark = el("path", { d: `M${cx} ${cy - 4} L${cx + 3.7} ${cy + 3} ` +
+          `L${cx - 3.7} ${cy + 3} Z`, fill: cfg.color }, svg);
+      } else if (cfg.shape === "diamond") {
+        mark = el("path", { d: `M${cx} ${cy - 4} L${cx + 4} ${cy} ` +
+          `L${cx} ${cy + 4} L${cx - 4} ${cy} Z`, fill: cfg.color }, svg);
+      } else if (cfg.shape === "plus") {
+        mark = el("path", { d: `M${cx - 4} ${cy} L${cx + 4} ${cy} ` +
+          `M${cx} ${cy - 4} L${cx} ${cy + 4}`,
+          stroke: cfg.color, "stroke-width": 1.8, fill: "none" }, svg);
+      } else if (cfg.shape === "cross") {
+        mark = el("path", { d: `M${cx - 3} ${cy - 3} L${cx + 3} ${cy + 3} ` +
+          `M${cx - 3} ${cy + 3} L${cx + 3} ${cy - 3}`,
+          stroke: cfg.color, "stroke-width": 1.8, fill: "none" }, svg);
       } else {
         mark = el("rect", { x: cx - 3.2, y: cy - 3.2, width: 6.4, height: 6.4,
           fill: "none", stroke: cfg.color, "stroke-width": 1.6 }, svg);
@@ -209,7 +305,8 @@ function card(q) {
   h.textContent = q.name;
   const meta = document.createElement("div");
   meta.className = "meta";
-  const n = (q.series.pdg_database || []).length;
+  let n = 0;
+  for (const sk in SERIES) n = Math.max(n, (q.series[sk] || []).length);
   meta.innerHTML = `${q.symbol} &middot; PDG id <code>${q.pdgid}</code> ` +
     `&middot; ${n} editions`;
   c.appendChild(h);
@@ -218,37 +315,192 @@ function card(q) {
   return c;
 }
 
-fetch("data.json")
+// ----- the global all-masses figure (log y, shaded uncertainty bands) -------
+
+const UNIT_TO_GEV = { GeV: 1, MeV: 1e-3, keV: 1e-6, eV: 1e-9 };
+const MASS_COLORS = {
+  d_quark_mass: "#d62728", u_quark_mass: "#ff7f0e", s_quark_mass: "#bcbd22",
+  c_quark_mass: "#2ca02c", b_quark_mass: "#17becf", t_quark_mass: "#1f77b4",
+  electron_mass: "#9467bd", muon_mass: "#8c564b", tau_mass: "#e377c2",
+  W_mass: "#7f7f7f", Z_mass: "#393b79", H_mass: "#e7298a",
+};
+
+function massSeriesGeV(q) {
+  // prefer the database series, fall back to the mass_width file
+  const raw = (q.series.pdg_database && q.series.pdg_database.length)
+    ? q.series.pdg_database : q.series.mass_width_file || [];
+  const f = UNIT_TO_GEV[q.unit] || 1;
+  return raw
+    .filter(p => p.value != null && !isLimit(p))
+    .map(p => ({
+      year: p.year,
+      v: p.value * f,
+      hi: (p.value + (p.error_positive || 0)) * f,
+      lo: (p.value - (p.error_negative || 0)) * f,
+    }))
+    .sort((a, b) => a.year - b.year);
+}
+
+function renderGlobalPlot(quantities) {
+  const masses = quantities
+    .filter(q => /mass$/.test(q.category) && MASS_COLORS[q.key])
+    .map(q => ({ q, pts: massSeriesGeV(q) }))
+    .filter(d => d.pts.length);
+  if (!masses.length) return null;
+
+  const W = 1180, H = 640;
+  const m = { l: 66, r: 150, t: 18, b: 44 };
+  const iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}` });
+
+  let xmin = Infinity, xmax = -Infinity, ymin = Infinity, ymax = -Infinity;
+  const FLOOR = 1e-5; // GeV, keeps the log scale finite for huge old errors
+  for (const d of masses)
+    for (const p of d.pts) {
+      xmin = Math.min(xmin, p.year); xmax = Math.max(xmax, p.year);
+      ymax = Math.max(ymax, p.hi);
+      ymin = Math.min(ymin, Math.max(FLOOR, p.lo, p.v * 0.2));
+    }
+  const xpad = (xmax - xmin) * 0.02;
+  xmin -= xpad; xmax += xpad;
+  const l0 = Math.log10(ymin) - 0.1, l1 = Math.log10(ymax) + 0.1;
+  const X = v => m.l + (v - xmin) / (xmax - xmin) * iw;
+  const Y = v => m.t + ih - (Math.log10(Math.max(FLOOR, v)) - l0) /
+    (l1 - l0) * ih;
+
+  for (const t of logTicks(Math.pow(10, l0), Math.pow(10, l1))) {
+    const y = Y(t);
+    el("line", { x1: m.l, y1: y, x2: m.l + iw, y2: y, class: "grid-line" }, svg);
+    el("text", { x: m.l - 7, y: y + 3, "text-anchor": "end",
+      class: "tick-label" }, svg).textContent = fmt(t);
+  }
+  for (const t of niceTicks(xmin, xmax, 9)) {
+    const yr = Math.round(t);
+    if (yr < xmin || yr > xmax) continue;
+    const x = X(yr);
+    el("line", { x1: x, y1: m.t, x2: x, y2: m.t + ih, class: "grid-line" }, svg);
+    el("text", { x: x, y: m.t + ih + 15, "text-anchor": "middle",
+      class: "tick-label" }, svg).textContent = yr;
+  }
+  el("line", { x1: m.l, y1: m.t, x2: m.l, y2: m.t + ih, class: "axis" }, svg);
+  el("line", { x1: m.l, y1: m.t + ih, x2: m.l + iw, y2: m.t + ih,
+    class: "axis" }, svg);
+  el("text", { x: m.l + iw / 2, y: H - 6, "text-anchor": "middle",
+    class: "axis-title" }, svg).textContent = "PDG edition year";
+  el("text", { x: 13, y: m.t + ih / 2, "text-anchor": "middle",
+    class: "axis-title", transform: `rotate(-90 13 ${m.t + ih / 2})` }, svg)
+    .textContent = "mass (GeV) — log scale";
+
+  for (const d of masses) {
+    const col = MASS_COLORS[d.q.key];
+    const pts = d.pts;
+    // shaded uncertainty band
+    const top = pts.map(p => `${X(p.year)} ${Y(p.hi)}`);
+    const bot = pts.map(p => `${X(p.year)} ${Y(p.lo)}`).reverse();
+    el("polygon", { points: top.concat(bot).join(" "),
+      fill: col, "fill-opacity": 0.18, class: "global-band" }, svg);
+    // central line
+    el("path", { d: pts.map((p, i) =>
+      (i ? "L" : "M") + X(p.year) + " " + Y(p.v)).join(" "),
+      fill: "none", stroke: col, "stroke-width": 1.8 }, svg);
+    // label at the right end
+    const last = pts[pts.length - 1];
+    el("text", { x: X(last.year) + 6, y: Y(last.v) + 3,
+      fill: col, class: "global-label" }, svg).textContent = d.q.symbol;
+  }
+  return svg;
+}
+
+// ----- zoom-bar links -------------------------------------------------------
+
+function buildZoomBar() {
+  const box = document.getElementById("zoom-links");
+  box.innerHTML = "";
+  const opts = [["All editions", 0], ["Last 15", 15],
+    ["Last 10", 10], ["Last 5", 5]];
+  for (const [label, n] of opts) {
+    const a = document.createElement("a");
+    const u = new URL(location.href);
+    if (n) u.searchParams.set("recent", n);
+    else u.searchParams.delete("recent");
+    u.hash = "";
+    a.href = u.pathname + u.search;
+    a.textContent = label;
+    if (n === RECENT) a.className = "active";
+    box.appendChild(a);
+  }
+}
+
+function buildAnnotationToggle(rerender) {
+  const box = document.getElementById("annotation-toggle");
+  if (!box) return;
+  box.innerHTML = "";
+  const cb = document.createElement("input");
+  cb.type = "checkbox";
+  cb.id = "ann-cb";
+  cb.checked = annotationsEnabled;
+  cb.addEventListener("change", () => {
+    annotationsEnabled = cb.checked;
+    localStorage.setItem(ANN_STORAGE_KEY, annotationsEnabled ? "1" : "0");
+    rerender();
+  });
+  const lbl = document.createElement("label");
+  lbl.htmlFor = "ann-cb";
+  lbl.textContent = " Show reference lines (de Vries prediction, …)";
+  box.appendChild(cb);
+  box.appendChild(lbl);
+}
+
+function renderEverything(data) {
+  document.getElementById("generated").textContent =
+    "Built " + data.generated + "." +
+    (RECENT ? ` Showing the last ${RECENT} editions of each plot.` : "");
+
+  const gWrap = document.getElementById("global");
+  gWrap.innerHTML = "";
+  const gPlot = renderGlobalPlot(data.quantities);
+  if (gPlot) gWrap.appendChild(gPlot);
+  else gWrap.textContent = "no mass data";
+
+  const main = document.getElementById("plots");
+  main.innerHTML = "";
+  const nav = document.getElementById("nav");
+  nav.innerHTML = "";
+  const navTop = document.createElement("a");
+  navTop.href = "#global-section";
+  navTop.textContent = "all masses";
+  nav.appendChild(navTop);
+
+  for (const cat of data.categories) {
+    const qs = data.quantities.filter(q => q.category === cat);
+    if (!qs.length) continue;
+    const slug = cat.replace(/[^a-z]+/gi, "-");
+
+    const a = document.createElement("a");
+    a.href = "#cat-" + slug;
+    a.textContent = cat;
+    nav.appendChild(a);
+
+    const sec = document.createElement("section");
+    sec.className = "category";
+    sec.id = "cat-" + slug;
+    const h2 = document.createElement("h2");
+    h2.textContent = cat;
+    sec.appendChild(h2);
+    const grid = document.createElement("div");
+    grid.className = "grid";
+    qs.forEach(q => grid.appendChild(card(q)));
+    sec.appendChild(grid);
+    main.appendChild(sec);
+  }
+}
+
+fetch("data.json", { cache: "no-store" })
   .then(r => r.json())
   .then(data => {
-    document.getElementById("generated").textContent =
-      "Built " + data.generated + ".";
-    const main = document.getElementById("plots");
-    main.innerHTML = "";
-    const nav = document.getElementById("nav");
-
-    for (const cat of data.categories) {
-      const qs = data.quantities.filter(q => q.category === cat);
-      if (!qs.length) continue;
-      const slug = cat.replace(/[^a-z]+/gi, "-");
-
-      const a = document.createElement("a");
-      a.href = "#cat-" + slug;
-      a.textContent = cat;
-      nav.appendChild(a);
-
-      const sec = document.createElement("section");
-      sec.className = "category";
-      sec.id = "cat-" + slug;
-      const h2 = document.createElement("h2");
-      h2.textContent = cat;
-      sec.appendChild(h2);
-      const grid = document.createElement("div");
-      grid.className = "grid";
-      qs.forEach(q => grid.appendChild(card(q)));
-      sec.appendChild(grid);
-      main.appendChild(sec);
-    }
+    buildZoomBar();
+    buildAnnotationToggle(() => renderEverything(data));
+    renderEverything(data);
   })
   .catch(err => {
     document.getElementById("plots").innerHTML =
