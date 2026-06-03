@@ -5,8 +5,9 @@ chapter-by-chapter ahead of the consolidated database release. As of 2026-05-15
 the **W mass review** (review #54) and the **Standard Model / Electroweak
 review** (review #10) are already accessible at `pdg.lbl.gov/2026/reviews/`
 (the directory listing is hidden but the files are served). The Particle
-Listings, the `mass_width` file, and the `pdgall` SQLite database are not yet
-deployed for 2026.
+Listings, the `mass_width` file, and the `pdgall` SQLite database were not yet
+deployed for 2026 at that time; the 2026 API is now live at
+https://pdg.lbl.gov/2026/api/.
 
 - Source: PDG *Review of Particle Physics* 2026, review "Mass and Width of the
   W Boson" (Section 54).

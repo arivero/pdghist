@@ -6,8 +6,8 @@ source_url: https://pdg.lbl.gov/2026/reviews/rpp2026-rev-standard-model.pdf
 note: Extracted from the 2026 review PDFs (Standard Model review dated 15 Apr 2026,
   W mass review dated 1 Dec 2025) - the PDFs are copyrighted and not stored, see
   src/electroweak_review.md and src/w_mass_review.md. The 2026 pdgall SQLite DB
-  and mass_width file are not yet published; the values below come from the review
-  text only.
+  and the 2026 mass_width file are now published; the values below are kept as an
+  independent cross-check series derived from the review text and pdgLive.
 quantities:
   sin2_theta_W:
     value: 0.22342
@@ -38,17 +38,16 @@ quantities:
     error_positive: 0.0077
     error_negative: 0.0077
     unit: GeV
-    source: pdgprod.lbl.gov/pdgprod/pdgLive Viewer (S043M) - "OUR EVALUATION,
-      LHC-TeVatron MW Working Group". This is the new world average that
+    source: PDG Live (S043M) / PDG 2026 listings (rpp2026-list-w-boson.pdf) - "OUR
+      EVALUATION, LHC-TeVatron MW Working Group". This is the world average that
       includes ATLAS 2024 refined + CMS 2025 + everything else (CDF-II 2022
-      remains excluded). The static rpp2026-rev-w-mass.pdf was frozen at the
-      older value 80.3692 +- 0.0133; the pdgLive viewer carries the newer,
-      finalised combination - half the uncertainty.
+      remains excluded). The static rpp2026-rev-w-mass.pdf review PDF was frozen
+      at the older value 80.3692 +- 0.0133.
   Z_mass:
     value: 91.1879
     error_positive: 0.0020
     error_negative: 0.0020
     unit: GeV
-    source: pdgprod.lbl.gov/pdgprod/pdgLive Viewer (S044M) - "OUR AVERAGE",
-      LEP-1 combination plus CDF result. Essentially unchanged from the
-      static review (91.1880 -> 91.1879).
+    source: PDG 2026 listings (rpp2026-list-z-boson.pdf) - "OUR AVERAGE", LEP-1
+      combination plus CDF result. Essentially unchanged from the static review
+      (91.1880 -> 91.1879).
