@@ -22,7 +22,7 @@ done
 # --- 2. All-editions SQLite database (primary source) ------------------------
 # Binary, not committed to git; the YAML it produces is the traceable source.
 # Find the current URL under https://pdg.lbl.gov/<year>/api/
-SQLITE_URL="https://pdg.lbl.gov/2026/api/pdgall-2026-v0.1.0.sqlite"
+SQLITE_URL="https://pdg.lbl.gov/2026/api/pdgall-2026.0.sqlite"
 mkdir -p data/_sqlite
 echo "pdgall db   <-  $SQLITE_URL"
 curl -fsS "$SQLITE_URL" -o "data/_sqlite/$(basename "$SQLITE_URL")"
