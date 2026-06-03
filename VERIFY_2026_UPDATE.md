@@ -49,7 +49,10 @@ python3 scripts/parse.py
 # Extract from SQLite database -> data/2026/summary.yaml
 python3 scripts/extract_db.py
 
-# Re-scrape electroweak reviews (will preserve manual W/Z values in 2026)
+# Clean up the preview electroweak.yaml (remove manual W/Z entries)
+python3 scripts/cleanup_2026_preview.py
+
+# Re-scrape electroweak reviews (updates sin²θ_W and EW fit values)
 python3 scripts/scrape_reviews.py
 
 # Build the site -> docs/data.json
@@ -77,8 +80,14 @@ git diff data/2026/
 - All lepton masses (e, μ, τ)
 - W, Z, H masses and widths
 
-#### From `data/2026/electroweak.yaml` (should be preserved):
+#### From `data/2026/electroweak.yaml`:
 The scraper script is designed to preserve manual entries like `W_mass` and `Z_mass` that were added before the official files were available (see lines 167-180 in `scripts/scrape_reviews.py`).
+
+**However**, after the official database is published, these manual `W_mass` and `Z_mass` entries should be **removed** from `electroweak.yaml` because they will now come from:
+- `data/2026/summary.yaml` (from the SQLite database)
+- `data/2026/masses.yaml` (from the mass_width file)
+
+The note field in `electroweak.yaml` currently says "The 2026 pdgall SQLite DB and mass_width file are not yet published" - this should be updated to match the format used in previous years (see `data/2025/electroweak.yaml` for reference).
 
 ### 4. Compare Preview vs Official Values
 
@@ -131,7 +140,16 @@ git push
 
 - The `data/2026/src/` directory will gain a new `mass_width.mcd` file
 - The manual documentation files in `data/2026/src/` (pdglive_w_z_evaluation.md, etc.) can remain as historical record of how the preview was created
-- If the electroweak review scraper overwrites the manual W/Z values, they can be restored by checking the preserved values in the YAML or re-running with the preservation logic
+- The `cleanup_2026_preview.py` script removes the manual W/Z entries from `electroweak.yaml` so they come from the official sources instead
+
+## Key Files to Review
+
+Before committing, check these files have been properly updated:
+- `data/2026/masses.yaml` - should now exist with ~2700+ entries from mass_width file
+- `data/2026/summary.yaml` - should now exist with values from SQLite database
+- `data/2026/electroweak.yaml` - should NOT contain manual `W_mass`/`Z_mass` entries anymore
+- `data/2026/src/mass_width.mcd` - the official 2026 mass_width file
+- `docs/data.json` - should be regenerated with the new 2026 data
 
 ## Troubleshooting
 
