@@ -5,14 +5,14 @@ LHC-TeV MW Working Group 2023 combination as the world average. By
 **2026-05-15** the PDG had already moved the live pdgLive `OUR EVALUATION` for
 m_W to the next combination, which incorporates the new ATLAS 2024 refined and
 CMS 2025 Run 2 measurements. The latest values live on the staging pdgLive at
-`pdgprod.lbl.gov`, accessible through the same `DataBlock.action?node=…`
-endpoint the public pdgLive uses.
+`pdgprod.lbl.gov` during the rollout; they are now visible in the public
+pdgLive and the 2026 particle listings.
 
-- Source: pdgprod.lbl.gov staging pdgLive viewer for nodes S043M (W mass)
-  and S044M (Z mass).
+- Source: PDG Live viewer nodes S043M (W mass) and S044M (Z mass), and the PDG
+  2026 listing PDFs.
 - Retrieved on 2026-05-15.
-- The PDG database/SQLite for 2026 has not yet been published; pdgLive serves
-  the in-progress evaluation directly from the staging environment.
+- At the time of retrieval the PDG 2026 database/SQLite had not yet been
+  published; the 2026 API is now live at https://pdg.lbl.gov/2026/api/.
 
 ## Headline values
 

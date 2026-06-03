@@ -148,7 +148,7 @@ def main():
             series["review_pdf"] = review_series("sin2_theta_eff")
         # for W and Z masses the review carries the world average too -
         # useful as a third cross-check and the only source for editions
-        # whose pdgall SQLite has not yet been released (e.g. 2026 preview).
+        # whose pdgall SQLite has not yet been released (e.g. a preview year).
         if key in ("W_mass", "Z_mass"):
             rs = review_series(key)
             if rs:
