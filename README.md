@@ -103,7 +103,7 @@ python3 -m http.server -d docs 8000      # preview at http://localhost:8000
 database), do this:
 
 1. **Add the new `mass_width` file.** Edit `scripts/fetch.sh` and extend the
-   year range so the new year is included (e.g. `seq 2010 2026`). Check the
+   year range so the new year is included (e.g. `seq 2010 2027`). Check the
    exact filename/extension on `https://pdg.lbl.gov/<year>/mcdata/`.
 2. **Point at the new database.** On `https://pdg.lbl.gov/<year>/api/` find the
    new `pdgall-<year>-vX.Y.Z.sqlite` file and update `SQLITE_URL` in

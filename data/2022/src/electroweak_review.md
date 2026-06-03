@@ -7,7 +7,7 @@ review. These values were extracted from that review's "schemes" table.
 - Source: PDG *Review of Particle Physics* 2022, review "Electroweak Model and
   Constraints on New Physics".
 - Downloaded from https://pdg.lbl.gov/2022/reviews/rpp2022-rev-standard-model.pdf
-  on 2026-05-15.
+  on 2026-06-03.
 - The PDF is copyrighted and is **not** stored in this repository; only the
   extracted numeric values and the quoted lines below are kept.
 

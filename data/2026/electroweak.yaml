@@ -1,13 +1,9 @@
 edition: 2026
-source: PDG Review of Particle Physics 2026 - "Electroweak Model and Constraints
-  on New Physics" review (Section 10) and "Mass and Width of the W Boson" review
-  (Section 54)
+source: PDG Review of Particle Physics - Electroweak Model and Constraints on New
+  Physics review
 source_url: https://pdg.lbl.gov/2026/reviews/rpp2026-rev-standard-model.pdf
-note: Extracted from the 2026 review PDFs (Standard Model review dated 15 Apr 2026,
-  W mass review dated 1 Dec 2025) - the PDFs are copyrighted and not stored, see
-  src/electroweak_review.md and src/w_mass_review.md. The 2026 pdgall SQLite DB
-  and the 2026 mass_width file are now published; the values below are kept as an
-  independent cross-check series derived from the review text and pdgLive.
+note: Extracted from the review's schemes table; the PDF is copyrighted and not stored,
+  see src/electroweak_review.md
 quantities:
   sin2_theta_W:
     value: 0.22342
@@ -23,31 +19,13 @@ quantities:
     scheme: effective leptonic
   W_mass_ew_fit:
     value: 80.359
-    error_positive: 0.006
-    error_negative: 0.006
+    error_positive: 0.005
+    error_negative: 0.005
     unit: GeV
     source_column: EW review fit table, 2nd value column (SM-constrained value)
   Z_mass_ew_fit:
-    value: 91.1883
-    error_positive: 0.002
-    error_negative: 0.002
+    value: 91.1882
+    error_positive: 0.0019
+    error_negative: 0.0019
     unit: GeV
     source_column: EW review fit table, 2nd value column (SM-constrained value)
-  W_mass:
-    value: 80.3625
-    error_positive: 0.0077
-    error_negative: 0.0077
-    unit: GeV
-    source: PDG Live (S043M) / PDG 2026 listings (rpp2026-list-w-boson.pdf) - "OUR
-      EVALUATION, LHC-TeVatron MW Working Group". This is the world average that
-      includes ATLAS 2024 refined + CMS 2025 + everything else (CDF-II 2022
-      remains excluded). The static rpp2026-rev-w-mass.pdf review PDF was frozen
-      at the older value 80.3692 +- 0.0133.
-  Z_mass:
-    value: 91.1879
-    error_positive: 0.0020
-    error_negative: 0.0020
-    unit: GeV
-    source: PDG 2026 listings (rpp2026-list-z-boson.pdf) - "OUR AVERAGE", LEP-1
-      combination plus CDF result. Essentially unchanged from the static review
-      (91.1880 -> 91.1879).

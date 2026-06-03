@@ -1,6 +1,6 @@
 description: Fundamental Standard Model parameters tracked by pdghist, with their
   PDG Identifiers.
-source_file: pdgall-2025-v0.2.2.sqlite
+source_file: pdgall-2026.0.sqlite
 quantities:
 - key: d_quark_mass
   pdgid: Q001M
@@ -38,7 +38,8 @@ quantities:
   - 2023
   - 2024
   - 2025
-  n_editions: 30
+  - 2026
+  n_editions: 31
 - key: u_quark_mass
   pdgid: Q002M
   name: Up quark mass
@@ -75,7 +76,8 @@ quantities:
   - 2023
   - 2024
   - 2025
-  n_editions: 30
+  - 2026
+  n_editions: 31
 - key: s_quark_mass
   pdgid: Q003M
   name: Strange quark mass
@@ -112,7 +114,8 @@ quantities:
   - 2023
   - 2024
   - 2025
-  n_editions: 30
+  - 2026
+  n_editions: 31
 - key: c_quark_mass
   pdgid: Q004M
   name: Charm quark mass
@@ -149,7 +152,8 @@ quantities:
   - 2023
   - 2024
   - 2025
-  n_editions: 30
+  - 2026
+  n_editions: 31
 - key: b_quark_mass
   pdgid: Q005M
   name: Bottom quark mass
@@ -186,7 +190,8 @@ quantities:
   - 2023
   - 2024
   - 2025
-  n_editions: 30
+  - 2026
+  n_editions: 31
 - key: t_quark_mass
   pdgid: Q007TP
   name: Top quark mass
@@ -222,7 +227,8 @@ quantities:
   - 2023
   - 2024
   - 2025
-  n_editions: 29
+  - 2026
+  n_editions: 30
 - key: electron_mass
   pdgid: S003M
   name: Electron mass
@@ -265,7 +271,8 @@ quantities:
   - 2023
   - 2024
   - 2025
-  n_editions: 36
+  - 2026
+  n_editions: 37
 - key: muon_mass
   pdgid: S004M
   name: Muon mass
@@ -323,7 +330,8 @@ quantities:
   - 2023
   - 2024
   - 2025
-  n_editions: 51
+  - 2026
+  n_editions: 52
 - key: tau_mass
   pdgid: S035M
   name: Tau mass
@@ -367,7 +375,8 @@ quantities:
   - 2023
   - 2024
   - 2025
-  n_editions: 37
+  - 2026
+  n_editions: 38
 - key: W_mass
   pdgid: S043M
   name: W boson mass
@@ -408,7 +417,8 @@ quantities:
   - 2023
   - 2024
   - 2025
-  n_editions: 34
+  - 2026
+  n_editions: 35
 - key: Z_mass
   pdgid: S044M
   name: Z boson mass
@@ -449,7 +459,8 @@ quantities:
   - 2023
   - 2024
   - 2025
-  n_editions: 34
+  - 2026
+  n_editions: 35
 - key: H_mass
   pdgid: S126M
   name: Higgs boson mass
@@ -468,7 +479,8 @@ quantities:
   - 2023
   - 2024
   - 2025
-  n_editions: 12
+  - 2026
+  n_editions: 13
 - key: W_width
   pdgid: S043W
   name: W boson width
@@ -506,7 +518,8 @@ quantities:
   - 2023
   - 2024
   - 2025
-  n_editions: 31
+  - 2026
+  n_editions: 32
 - key: Z_width
   pdgid: S044W
   name: Z boson width
@@ -544,7 +557,8 @@ quantities:
   - 2023
   - 2024
   - 2025
-  n_editions: 31
+  - 2026
+  n_editions: 32
 - key: H_width
   pdgid: S126W
   name: Higgs boson width
@@ -561,7 +575,8 @@ quantities:
   - 2023
   - 2024
   - 2025
-  n_editions: 10
+  - 2026
+  n_editions: 11
 - key: sin2_theta_eff
   pdgid: S044SEF
   name: Effective weak mixing angle
@@ -569,7 +584,8 @@ quantities:
   category: electroweak mixing
   editions:
   - 2025
-  n_editions: 1
+  - 2026
+  n_editions: 2
 - key: sin2_theta_12
   pdgid: S067P12
   name: Neutrino mixing sin^2(theta_12)
@@ -587,7 +603,8 @@ quantities:
   - 2023
   - 2024
   - 2025
-  n_editions: 11
+  - 2026
+  n_editions: 12
 - key: sin2_theta_13
   pdgid: S067P13
   name: Neutrino mixing sin^2(theta_13)
@@ -605,7 +622,8 @@ quantities:
   - 2023
   - 2024
   - 2025
-  n_editions: 11
+  - 2026
+  n_editions: 12
 - key: sin2_theta_23
   pdgid: S067P23
   name: Neutrino mixing sin^2(theta_23)
@@ -623,7 +641,8 @@ quantities:
   - 2023
   - 2024
   - 2025
-  n_editions: 11
+  - 2026
+  n_editions: 12
 - key: dm2_21
   pdgid: S067DM3
   name: Neutrino mass-squared difference Delta(m^2_21)
@@ -650,7 +669,8 @@ quantities:
   - 2023
   - 2024
   - 2025
-  n_editions: 20
+  - 2026
+  n_editions: 21
 - key: dm2_32
   pdgid: S067DM1
   name: Neutrino mass-squared difference Delta(m^2_32)
@@ -677,4 +697,5 @@ quantities:
   - 2023
   - 2024
   - 2025
-  n_editions: 20
+  - 2026
+  n_editions: 21
