@@ -1,5 +1,5 @@
 {
- "generated": "2026-05-15 21:14:27",
+ "generated": "2026-06-03 00:12:50",
  "about": "History of PDG values for fundamental Standard Model parameters. x = PDG edition year, y = value with errors.",
  "sources": {
   "pdg_database": "PDG pdgall SQLite database (all editions)",
