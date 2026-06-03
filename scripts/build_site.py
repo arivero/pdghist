@@ -38,6 +38,29 @@ def load_yaml(path):
     with open(path) as fh:
         return yaml.safe_load(fh)
 
+def ensure_json_safe(obj, path="root"):
+    """Validate that `obj` can be serialized as strict JSON.
+
+    Python's `json` module can emit NaN/Infinity tokens by default, which are
+    not valid JSON. We fail fast instead so the generated docs/data.json is
+    always standards-compliant.
+    """
+    if obj is None or isinstance(obj, (str, int, bool)):
+        return
+    if isinstance(obj, float):
+        if math.isnan(obj) or math.isinf(obj):
+            raise ValueError(f"Non-finite float at {path}: {obj!r}")
+        return
+    if isinstance(obj, list):
+        for i, v in enumerate(obj):
+            ensure_json_safe(v, f"{path}[{i}]")
+        return
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            ensure_json_safe(v, f"{path}.{k}")
+        return
+    raise TypeError(f"Unsupported JSON type at {path}: {type(obj).__name__}")
+
 
 def normalise_units(points):
     """Convert every point (across all series of one quantity) to a single
@@ -264,8 +287,11 @@ def main():
         "categories": sorted({q["category"] for q in quantities}),
         "quantities": quantities,
     }
+
+    ensure_json_safe(out)
     with open(os.path.join(DOCS, "data.json"), "w") as fh:
-        json.dump(out, fh, indent=1)
+        json.dump(out, fh, indent=1, allow_nan=False)
+        fh.write("\n")
 
     npts = sum(len(s) for q in quantities for s in q["series"].values())
     print(f"docs/data.json: {len(quantities)} quantities, {npts} points")
