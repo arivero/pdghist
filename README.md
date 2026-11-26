@@ -161,6 +161,19 @@ Notes:
   Pages serves the site straight from `docs/` with no build step.
 - Keep one commit per PDG edition update so the history is easy to bisect.
 
+## W/Z pole comparison in two editions
+
+Run `python3 scripts/pole_covariance.py` to reproduce the comparison from the display strings in the 2025 and 2026 summary files. Both W listings use a mass-dependent-width Breit–Wigner parameter. Convert each mass with $\bar M=M/\sqrt{1+(\Gamma/M)^2}$ and compute $S=1-(\bar M_W/\bar M_Z)^2$. The direct and fitted on-shell histories on the site use their own conventions.
+
+| Edition | $S$ | Independent-input standard error | Standard error over all input correlations |
+|---|---:|---:|---:|
+| 2025 | 0.22317850 | 0.00026081 | 0.00019640–0.00031818 |
+| 2026 | 0.22330640 | 0.00015495 | 0.00008806–0.00020983 |
+
+For the four marginal uncertainties let $u_i=|\partial_i S|\sigma_i$. In the linear approximation a correlation matrix is a Gram matrix of unit vectors, so the possible standard errors are the lengths of sums of four vectors of lengths $u_i$. Their maximum is $\sum u_i$ and their minimum is $\max(0,2\max u_i-\sum u_i)$. For the 2026 edition the offset from the de Vries value $0.22310132$ spans 0.98–2.33 standard errors on those assumptions. A statistic for the change *between* editions additionally needs their shared covariance.
+
+The 2025 W record contains numeric $80.377\pm0.012$ GeV and display text $80.3692\pm0.0133$ GeV. The display agrees with the printed world average; the yearly mass-width file rounds it to 80.369 GeV. The script uses the same display convention for all four inputs and preserves the underlying source records. [2025 listing](https://pdg.lbl.gov/2025/listings/rpp2025-list-w-boson.pdf#page=1) · [2026 listing](https://pdg.lbl.gov/2026/listings/rpp2026-list-w-boson.pdf#page=1) · [Calculation](https://github.com/arivero/pdghist/issues/3#issuecomment-7192852130)
+
 ## Known gaps / future work
 
 - **The weak mixing angle** is taken from the *Electroweak Model* review, which
