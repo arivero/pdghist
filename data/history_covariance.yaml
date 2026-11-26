@@ -1,0 +1,136 @@
+# Covariance and provenance records for the history diagnostics (issue #3).
+#
+# scripts/build_site.py reads this file. For each adjacent pair of editions in
+# a listed history it chooses one of three covariance modes:
+#   known    - a covariance c between the two edition values is declared here:
+#              Var(delta) = v_t + v_u - 2c.
+#   nested   - both editions declare their input measurements, the earlier set
+#              is contained in the later one, both are inverse-variance averages
+#              of independent inputs, and the builder reproduces both published
+#              values from the inputs: Var(delta) = v_t - v_u (exact for
+#              Gaussian inputs with fixed variances).
+#   unknown  - anything else, including every pair absent from this file: the
+#              change is reported with the envelope Var(delta) in
+#              [(s_t - s_u)^2, (s_t + s_u)^2] over all correlations.
+# Two machine-readable formats of one PDG average (database row, mass_width
+# file, review table) are one observation, so the diagnostics never pair them.
+#
+# Listing excerpts were read from the PDG Particle Listings PDFs on 2026-11-26
+# (pdg.lbl.gov/<year>/listings/rpp<year>-list-{w,z}-boson.pdf, page 1). The
+# PDFs are copyrighted and are not stored; only values and short quotes are kept.
+
+measurements:
+  # one record per measurement or external combination; error is the total
+  # uncertainty (stat and syst in quadrature when both are listed)
+  LEP-SLC06_MZ:
+    quantity: Z_mass
+    value: 91.1876
+    error: 0.0021
+    estimand: Breit-Wigner mass parameter with mass-dependent width
+    source: "LEP-SLC 06 combination; PDG Z listing 2022-2026 ('The combined LEP result, 91.1876 +- 0.0021 GeV')"
+  AALTONEN22_MZ:
+    quantity: Z_mass
+    value: 91.1923
+    error: 0.0071
+    estimand: Breit-Wigner mass parameter with mass-dependent width
+    source: "CDF, AALTONEN 22; PDG Z listing 2024-2026"
+  AAIJ25AH_MZ:
+    quantity: Z_mass
+    value: 91.1857
+    stat: 0.0083
+    syst: 0.0039
+    estimand: Breit-Wigner mass parameter with mass-dependent width
+    source: "LHCb, AAIJ 25AH (91.1857 +- 0.0083 +- 0.0039); PDG Z listing 2026"
+  PDG22_MW:
+    quantity: W_mass
+    value: 80.377
+    error: 0.012
+    estimand: Breit-Wigner mass parameter with mass-dependent width
+    source: "PDG 2022 world average combining LEP-2, Tevatron and LHC (pre AALTONEN 22 CDF); PDG W listing 2022 and 2023, 'OUR FIT'"
+  AMOROSO24_MW:
+    quantity: W_mass
+    value: 80.3692
+    error: 0.0133
+    estimand: Breit-Wigner mass parameter with mass-dependent width
+    source: "LHC-TeV MW Working Group, AMOROSO 24, all measurements corrected to a common theory description and PDF set, CDF-II removed; PDG W listing 2024 and 2025, 'OUR EVALUATION'"
+  LHCTEV26_MW:
+    quantity: W_mass
+    value: 80.3625
+    error: 0.0077
+    estimand: Breit-Wigner mass parameter with mass-dependent width
+    source: "LHC-TeV MW Working Group combination of 7 May 2026, adds CMS (CHEKHOVSKY 26) and the ATLAS update AAD 24CJ, CDF-II removed; PDG W listing 2026, 'OUR EVALUATION'"
+
+histories:
+  Z_mass:
+    series: pdg_database
+    estimand: Breit-Wigner mass parameter with mass-dependent width (GeV)
+    editions:
+      2022:
+        inputs: [LEP-SLC06_MZ]
+        method: single_input
+        evidence: "PDG 2022 Z listing: '91.1876 +- 0.0021 OUR FIT' from the LEP EWWG fit"
+      2023:
+        inputs: [LEP-SLC06_MZ]
+        method: single_input
+        evidence: "PDG 2023 Z listing: '91.1876 +- 0.0021 OUR FIT'"
+      2024:
+        inputs: [LEP-SLC06_MZ, AALTONEN22_MZ]
+        method: inverse_variance_independent
+        evidence: "PDG 2024 Z listing: 'OUR AVERAGE is given by the weighted average of the combined CDF result and the combined LEP result, assuming no correlations between CDF and LEP.'"
+      2025:
+        inputs: [LEP-SLC06_MZ, AALTONEN22_MZ]
+        method: inverse_variance_independent
+        evidence: "PDG 2025 Z listing: same text and inputs as 2024; '91.1880 +- 0.0020 OUR AVERAGE'"
+      2026:
+        inputs: [LEP-SLC06_MZ, AALTONEN22_MZ, AAIJ25AH_MZ]
+        method: inverse_variance_independent
+        evidence: "PDG 2026 Z listing: '91.1879 +- 0.0020 OUR AVERAGE' over LHCb 25AH, CDF 22 and LEP-SLC 06; the explanatory text still names only CDF and LEP. The builder reproduces the database value 91.18787329722134 +- 0.00196689903262915 from the three inputs as independent."
+  W_mass:
+    series: pdg_database
+    estimand: Breit-Wigner mass parameter with mass-dependent width (GeV)
+    editions:
+      2022:
+        inputs: [PDG22_MW]
+        method: external_combination
+        evidence: "PDG 2022 W listing: '80.377 +- 0.012 OUR FIT'. The 2022 mass_width file prints 80.379 +- 0.012 for the same edition."
+      2023:
+        inputs: [PDG22_MW]
+        method: external_combination
+        evidence: "PDG 2023 W listing: '80.377 +- 0.012 OUR FIT (PDG 2022 pre AALTONEN 22 CDF)'"
+      2024:
+        inputs: [AMOROSO24_MW]
+        method: external_combination
+        evidence: "PDG 2024 W listing: '80.3692 +- 0.0133 OUR EVALUATION (AMOROSO 24)'. The database numeric column keeps 80.377 +- 0.012; the display text and the listing give 80.3692 +- 0.0133."
+      2025:
+        inputs: [AMOROSO24_MW]
+        method: external_combination
+        evidence: "PDG 2025 W listing: same evaluation as 2024; ATLAS AAD 24CJ is listed and a new combination is announced."
+      2026:
+        inputs: [LHCTEV26_MW]
+        method: external_combination
+        evidence: "PDG 2026 W listing: '80.3625 +- 0.0077 OUR EVALUATION (LHC-TeVatron MW Working Group)'"
+    pair_notes:
+      2023-2024: "Not nested: AMOROSO 24 re-corrects every measurement to a common theory description and PDF set and removes CDF-II, replacing the 2022 combination. The two combinations share experiments with unpublished correlation, and the error grows."
+      2025-2026: "Not nested: the 2026 combination adds CMS and replaces ATLAS AABOUD 18J by the superseding AAD 24CJ."
+  W_mass_ew_fit:
+    quantity: W_mass
+    series: ew_fit
+    estimand: SM-constrained global-fit value of M_W from the Electroweak review (GeV)
+    default_note: "Each edition is a global SM fit whose inputs (m_t, M_H, alpha_s, Delta alpha_had, measured M_W, Z-pole data) change between editions; the cross-edition covariance is unpublished."
+  Z_mass_ew_fit:
+    quantity: Z_mass
+    series: ew_fit
+    estimand: SM-constrained global-fit value of M_Z from the Electroweak review (GeV)
+    default_note: "Global SM fit; cross-edition covariance unpublished."
+
+within_edition:
+  # covariance of the W and Z masses inside one edition, used by derived_swsq
+  derived_direct:
+    covariance: unknown
+    rho_declared: 0.0
+    note: "The direct W and Z averages come from different measurement sets, but hadron-collider M_W calibrations use M_Z and LEP-2 shares the LEP beam-energy calibration. PDG publishes no M_W-M_Z covariance, so the plotted error declares rho = 0 and the envelope covers rho in [-1, 1]."
+  derived_fit:
+    covariance: unknown
+    rho_declared: 0.0
+    rho_from_review: true
+    note: "The fit table prints no M_W-M_Z correlation. Assuming that the review's on-shell s2_W and its uncertainty are the same fit's 1 - M_W^2/M_Z^2 propagated with the fit covariance, the printed uncertainties constrain rho; the builder computes that interval with every printed error widened by half a unit in its last digit and intersects it with [-1, 1]."

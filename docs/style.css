@@ -148,3 +148,16 @@ footer code { color: var(--accent2); }
   #zoom-bar { background: none; }
   .card, .global-wrap { break-inside: avoid; }
 }
+
+/* covariance-aware history diagnostics (issue #3) */
+.tooltip .tip-model { color: #c9d1d9; font-size: 0.72rem; white-space: normal;
+  display: inline-block; max-width: 480px; }
+.diagnostics { margin-top: 6px; font-size: 0.75rem; color: var(--muted); }
+.diagnostics summary { cursor: pointer; }
+.diagnostics .diag-head { margin: 6px 0 2px; }
+.diagnostics table { border-collapse: collapse; width: 100%; display: block;
+  max-height: 220px; overflow: auto; }
+.diagnostics th, .diagnostics td { text-align: left; padding: 1px 6px 1px 0;
+  vertical-align: top; }
+.diagnostics tr.mode-nested td, .diagnostics tr.mode-known td { color: var(--fg); font-weight: 600; }
+@media print { .diagnostics table { max-height: none; overflow: visible; } }

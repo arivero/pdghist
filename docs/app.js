@@ -107,6 +107,85 @@ function tickFormatter(ticks) {
 
 const isLimit = p => !!p.value_text && /^\s*[<>]/.test(p.value_text);
 
+// ----- covariance-aware history diagnostics (data/history_covariance.yaml) --
+// Every statistic is shown with its covariance model; "unknown" pairs show the
+// range over all correlations. The fields are optional: plots render without.
+const esc = t => String(t).replace(/[&<>"]/g,
+  c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+function innovationText(pr) {
+  const d = (pr.delta >= 0 ? "+" : "") + fmt(pr.delta);
+  if (pr.mode === "nested" || pr.mode === "known")
+    return `Δ = ${d}, σ(Δ) = ${fmt(pr.sigma)}, Z = ${pr.z.toFixed(2)}`;
+  if (pr.mode === "identical") return "no innovation (same inputs)";
+  const zr = pr.z_range || [];
+  const zhi = zr[1] === null || zr[1] === undefined ? "∞" : zr[1].toFixed(2);
+  return `Δ = ${d}, σ(Δ) ∈ [${fmt(pr.sigma_range[0])}, ${fmt(pr.sigma_range[1])}],` +
+    ` |Δ|/σ ∈ [${(zr[0] || 0).toFixed(2)}, ${zhi}]`;
+}
+
+function innovationInto(q, sk, year) {
+  const diag = q.history_diagnostics && q.history_diagnostics[sk];
+  if (!diag) return null;
+  return diag.pairs.find(pr => pr.to === year) || null;
+}
+
+function pointExtraHtml(q, sk, p) {
+  let html = "";
+  const pr = innovationInto(q, sk, p.year);
+  if (pr) {
+    html += `<br><span class="tip-model">from ${pr.from}: ${innovationText(pr)}` +
+      `<br>model: ${esc(pr.model)}` +
+      (pr.covariance_source ? `<br>source: ${esc(pr.covariance_source)}` : "") +
+      ((pr.flags || []).length ? `<br>${esc(pr.flags.join("; "))}` : "") +
+      "</span>";
+  }
+  if (p.uncertainty_model) {
+    const env = p.error_envelope || [];
+    html += `<br><span class="tip-model">uncertainty: ${esc(p.uncertainty_model)}` +
+      (env.length ? `<br>σ range: [${fmt(env[0])}, ${fmt(env[1])}]` : "") +
+      (p.inputs ? `<br>inputs: W from ${esc(p.inputs.W)}, Z from ${esc(p.inputs.Z)}` : "") +
+      ((p.provenance_notes || []).length ?
+        `<br>${esc(p.provenance_notes.join("; "))}` : "") + "</span>";
+  }
+  return html;
+}
+
+function diagnosticsBlock(q) {
+  const diags = q.history_diagnostics;
+  if (!diags) return null;
+  const det = document.createElement("details");
+  det.className = "diagnostics";
+  const sum = document.createElement("summary");
+  const chains = [];
+  for (const sk in diags)
+    for (const c of diags[sk].chains)
+      chains.push(`${(SERIES[sk] || { label: sk }).label}: χ²<sub>${c.dof}</sub> = ` +
+        `${c.chi2.toFixed(2)}, p = ${c.p_value.toFixed(2)} (${c.from}–${c.to})`);
+  sum.innerHTML = "Edition-to-edition changes and their covariance model" +
+    (chains.length ? " · " + chains.join("; ") : " · no certified nested chain");
+  det.appendChild(sum);
+  for (const sk in diags) {
+    const d = diags[sk];
+    const h = document.createElement("p");
+    h.className = "diag-head";
+    h.textContent = `${(SERIES[sk] || { label: sk }).label} — ${d.estimand || ""}. ` +
+      d.model_note;
+    det.appendChild(h);
+    const tbl = document.createElement("table");
+    tbl.innerHTML = "<tr><th>pair</th><th>model</th><th>statistic</th><th>source</th></tr>";
+    for (const pr of d.pairs.slice().reverse()) {
+      const tr = document.createElement("tr");
+      tr.className = "mode-" + pr.mode;
+      tr.innerHTML = `<td>${pr.from}→${pr.to}</td><td>${pr.mode}</td>` +
+        `<td>${innovationText(pr)}</td><td>${esc(pr.covariance_source || "")}</td>`;
+      tbl.appendChild(tr);
+    }
+    det.appendChild(tbl);
+  }
+  return det;
+}
+
 const SVGNS = "http://www.w3.org/2000/svg";
 function el(name, attrs, parent) {
   const n = document.createElementNS(SVGNS, name);
@@ -238,6 +317,14 @@ function renderPlot(q0) {
       const limit = isLimit(p);
       const ep = p.error_positive || 0, en = p.error_negative || 0;
 
+      if (!limit && p.error_envelope) {
+        // range of the propagated error over the allowed W-Z correlations
+        const yE1 = Y(p.value + p.error_envelope[1]),
+              yE0 = Y(p.value - p.error_envelope[1]);
+        el("line", { x1: cx + 4, y1: yE1, x2: cx + 4, y2: yE0,
+          stroke: cfg.color, class: "errbar envelope",
+          "stroke-dasharray": "2 2", opacity: 0.6 }, svg);
+      }
       if (!limit && (ep || en)) {
         const yHi = Y(p.value + ep), yLo = Y(p.value - en);
         el("line", { x1: cx, y1: yHi, x2: cx, y2: yLo,
@@ -279,7 +366,8 @@ function renderPlot(q0) {
       mark.addEventListener("mousemove", e => showTip(
         `<strong>${p.year}</strong> &middot; ${cfg.label}<br>` +
         `${q.symbol} = ${txt}${q.unit ? " " + q.unit : ""}` +
-        (limit ? " <em>(limit)</em>" : ""), e.clientX, e.clientY));
+        (limit ? " <em>(limit)</em>" : "") + pointExtraHtml(q0, sk, p),
+        e.clientX, e.clientY));
       mark.addEventListener("mouseleave", hideTip);
     }
   }
@@ -312,6 +400,8 @@ function card(q) {
   c.appendChild(h);
   c.appendChild(meta);
   c.appendChild(renderPlot(q));
+  const diag = diagnosticsBlock(q);
+  if (diag) c.appendChild(diag);
   return c;
 }
 

@@ -51,6 +51,7 @@ catalogue, with PDG Identifiers, is in [`data/quantities.yaml`](data/quantities.
 ```
 data/
   quantities.yaml      catalogue of tracked quantities + their PDG Identifiers
+  history_covariance.yaml  edition inputs, covariance modes and W-Z covariance for the history diagnostics
   <year>/
     summary.yaml       SM parameter values for that PDG edition  (from the database)
     masses.yaml        particle masses/widths parsed from that year's mass_width file
@@ -65,6 +66,8 @@ scripts/
   extract_db.py        pdgall SQLite     -> data/<year>/summary.yaml + quantities.yaml
   scrape_reviews.py    Electroweak review PDFs -> data/<year>/electroweak.yaml
   build_site.py        all YAML          -> docs/data.json
+  pole_covariance.py   W/Z pole-angle comparison for 2025 and 2026
+tests/                 pytest checks of the diagnostics + a node render smoke test
 docs/                  the GitHub Pages site (index.html, app.js, style.css, data.json)
 ```
 
@@ -173,6 +176,76 @@ Run `python3 scripts/pole_covariance.py` to reproduce the comparison from the di
 For the four marginal uncertainties let $u_i=|\partial_i S|\sigma_i$. In the linear approximation a correlation matrix is a Gram matrix of unit vectors, so the possible standard errors are the lengths of sums of four vectors of lengths $u_i$. Their maximum is $\sum u_i$ and their minimum is $\max(0,2\max u_i-\sum u_i)$. For the 2026 edition the offset from the de Vries value $0.22310132$ spans 0.98–2.33 standard errors on those assumptions. A statistic for the change *between* editions additionally needs their shared covariance.
 
 The 2025 W record contains numeric $80.377\pm0.012$ GeV and display text $80.3692\pm0.0133$ GeV. The display agrees with the printed world average; the yearly mass-width file rounds it to 80.369 GeV. The script uses the same display convention for all four inputs and preserves the underlying source records. [2025 listing](https://pdg.lbl.gov/2025/listings/rpp2025-list-w-boson.pdf#page=1) · [2026 listing](https://pdg.lbl.gov/2026/listings/rpp2026-list-w-boson.pdf#page=1) · [Calculation](https://github.com/arivero/pdghist/issues/3#issuecomment-7192852130)
+
+## Edition-to-edition changes and their covariance
+
+Successive PDG averages reuse measurements, so the change between two editions
+needs a covariance. `scripts/build_site.py` classifies every adjacent pair of
+editions of the W and Z mass histories (database and EW-fit series) with the
+records in [`data/history_covariance.yaml`](data/history_covariance.yaml) and
+shows the decision in each card ("Edition-to-edition changes…") and in the
+point tooltips.
+
+- **Known covariance** $c$: $\mathrm{Var}(\Delta)=v_1+v_2-2c$.
+- **Certified nested average.** If both editions are inverse-variance averages
+  of independent Gaussian inputs with fixed errors, the earlier input set is
+  contained in the later one, and the builder reproduces both published values
+  from the listed inputs, then $\mathrm{Cov}(\hat\theta_1,\hat\theta_2)=v_2$ and
+  $Z=\Delta/\sqrt{v_1-v_2}\sim N(0,1)$ exactly. Innovations along one nested
+  chain are independent, and only such a chain is combined into a $\chi^2$.
+- **Unknown covariance** (every pair without a record): the change is shown
+  with $\sigma(\Delta)\in[|\sigma_1-\sigma_2|,\sigma_1+\sigma_2]$ and the
+  corresponding range of $|\Delta|/\sigma(\Delta)$. A growing error and a
+  changed mean with unchanged error are flagged as outside the nested model.
+
+Two formats of one PDG average (database row, `mass_width` file, review table)
+count as one observation; the diagnostic pairs editions within one series.
+
+**Results from the 2022–2026 listings** (PDG W and Z listings, page 1, read on
+2026-11-26; values and short quotes in the YAML file):
+
+| Series | Pair | Decision | Statistic |
+|---|---|---|---|
+| Z mass | 2022→2023 | same input (LEP-SLC 06) | no innovation |
+| Z mass | 2023→2024 | nested: LEP + CDF 22, "assuming no correlations" | $Z=+0.635$ |
+| Z mass | 2024→2025 | same inputs | no innovation |
+| Z mass | 2025→2026 | nested: + LHCb 25AH | $Z=-0.243$ |
+| Z mass | chain 2022–2026 | one nested chain | $\chi^2_2=0.462$, $p=0.794$ |
+| W mass | 2023→2024 | AMOROSO 24 recombination, CDF-II removed: not nested, error grows | $|\Delta|/\sigma\in[0.31,6.0]$ |
+| W mass | 2025→2026 | new LHC-TeV combination with CMS, ATLAS update: not nested | $\Delta=-6.7$ MeV, $|\Delta|/\sigma\in[0.32,1.20]$ |
+| EW fit $M_W$, $M_Z$ | all pairs | global fits with changing inputs | unknown-covariance ranges |
+
+The builder reproduces the 2024 and 2026 database values of $M_Z$
+(91.18797809… and 91.18787330… GeV) from the listed inputs to $10^{-14}$, and
+each nested $Z$ equals the pull of the added measurement against the previous
+average. The Z innovation therefore follows from the listing, through the YAML
+record and `build_site.py`, to the table in the Z-mass card.
+
+**Weak-angle series.** `derived_swsq` now takes the within-edition W–Z
+covariance,
+$\sigma_q^2=4r^4[\sigma_W^2/M_W^2+\sigma_Z^2/M_Z^2-2\,\mathrm{Cov}(M_W,M_Z)/(M_WM_Z)]$,
+for both `derived_direct` and `derived_fit`. A common fractional scale error on
+both masses cancels from the ratio. PDG prints no W–Z covariance, so each point
+carries the declared $\rho$, a dashed envelope bar over the allowed
+correlations, and the input source. For the fit series the review's printed
+$s^2_W$ uncertainty, widened by half a unit in each last digit, restricts
+$\rho$ to $[0.012,0.769]$ (2018), $[0.471,1]$ (2025) and $[-0.085,0.757]$
+(2026); this assumes that the printed $s^2_W$ error is the same fit's
+propagation. In 2018 and 2025 the declared $\rho=0$ lies outside that interval,
+and the plotted error uses the nearest compatible $\rho$.
+
+**Format checks recorded on the points.** The 2022 `mass_width` file prints
+$M_W=80.379$ GeV while the listing and the database display give
+$80.377\pm0.012$ GeV; the 2024 and 2025 database numeric columns keep
+$80.377\pm0.012$ GeV while the display text and the listing give
+$80.3692\pm0.0133$ GeV. The diagnostics use the display text in those cases.
+
+Tests: `pip install pytest` and `python3 -m pytest -q tests` (the site smoke
+test also needs `node`). They cover the two-measurement example
+($Z=\sqrt2$ against the independent-release value $\sqrt{2/3}$), three nested
+releases with zero cross-innovation covariance, an identical release, a changed
+mean with unchanged variance, the common-scale cancellation, the real Z chain,
+and a render of every card with and without the diagnostic fields.
 
 ## Known gaps / future work
 

@@ -1,11 +1,18 @@
 {
- "generated": "2026-06-03 00:19:35",
+ "generated": "2026-11-26 17:21:22",
  "about": "History of PDG values for fundamental Standard Model parameters. x = PDG edition year, y = value with errors.",
  "sources": {
   "pdg_database": "PDG pdgall SQLite database (all editions)",
   "mass_width_file": "PDG yearly mass_width machine-readable files",
   "review_pdf": "PDG Electroweak review (values extracted from the review text; see scripts/scrape_reviews.py)",
-  "ew_fit": "SM-constrained best-fit value from the EW review's fit table (2nd column); ~2x more precise than direct m_W"
+  "ew_fit": "SM-constrained best-fit value from the EW review's fit table (2nd column); ~2x more precise than direct m_W",
+  "history_covariance": "data/history_covariance.yaml (edition inputs, covariance modes, W-Z covariance)"
+ },
+ "covariance_models": {
+  "known": "declared covariance: Var(\u0394) = v\u2081 + v\u2082 \u2212 2c",
+  "nested": "certified nested inverse-variance average: Var(\u0394) = v\u2081 \u2212 v\u2082",
+  "identical": "same declared inputs in both editions: no innovation",
+  "unknown": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
  },
  "categories": [
   "boson mass",
@@ -5032,6 +5039,922 @@
       "scheme": null
      }
     ]
+   },
+   "history_diagnostics": {
+    "pdg_database": {
+     "estimand": "Breit-Wigner mass parameter with mass-dependent width (GeV)",
+     "pairs": [
+      {
+       "from": 1984,
+       "to": 1986,
+       "delta": 1.0,
+       "sigma_from": 2.7,
+       "sigma_to": 1.5,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        1.2000000000000002,
+        4.2
+       ],
+       "z_range": [
+        0.23809523809523808,
+        0.8333333333333333
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 1986,
+       "to": 1988,
+       "delta": -0.7999999999999972,
+       "sigma_from": 1.5,
+       "sigma_to": 1.3,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.19999999999999996,
+        2.8
+       ],
+       "z_range": [
+        0.2857142857142847,
+        3.9999999999999867
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 1988,
+       "to": 1990,
+       "delta": -0.37796383119041366,
+       "sigma_from": 1.3,
+       "sigma_to": 0.4354954118128567,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.8645045881871434,
+        1.7354954118128567
+       ],
+       "z_range": [
+        0.21778440243503827,
+        0.43720280534658545
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 1990,
+       "to": 1992,
+       "delta": -0.40448170827363583,
+       "sigma_from": 0.4354954118128567,
+       "sigma_to": 0.2567118075122953,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.17878360430056145,
+        0.6922072193251521
+       ],
+       "z_range": [
+        0.5843361597239247,
+        2.2624094074848315
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 1992,
+       "to": 1994,
+       "delta": 0.006241324387843861,
+       "sigma_from": 0.2567118075122953,
+       "sigma_to": 0.256605661344473,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.00010614616782228525,
+        0.5133174688567683
+       ],
+       "z_range": [
+        0.012158799897740059,
+        58.79933789313402
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 1994,
+       "to": 1996,
+       "delta": 0.1089481601155029,
+       "sigma_from": 0.256605661344473,
+       "sigma_to": 0.149869515382266,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.10673614596220699,
+        0.406475176726739
+       ],
+       "z_range": [
+        0.2680315216118239,
+        1.0207241336414672
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 1996,
+       "to": 1997,
+       "delta": 0.02422463082289994,
+       "sigma_from": 0.149869515382266,
+       "sigma_to": 0.116555453741772,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.03331406164049401,
+        0.266424969124038
+       ],
+       "z_range": [
+        0.09092477669246463,
+        0.727159332425991
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 1997,
+       "to": 1998,
+       "delta": 0.050305816424298655,
+       "sigma_from": 0.116555453741772,
+       "sigma_to": 0.0966754013567042,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.019880052385067792,
+        0.2132308550984762
+       ],
+       "z_range": [
+        0.235921843492425,
+        2.5304669952521914
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 1998,
+       "to": 2000,
+       "delta": 0.011725607713501063,
+       "sigma_from": 0.0966754013567042,
+       "sigma_to": 0.056,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0406754013567042,
+        0.1526754013567042
+       ],
+       "z_range": [
+        0.07680089660354558,
+        0.2882726985450735
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2000,
+       "to": 2002,
+       "delta": 0.0040000000000048885,
+       "sigma_from": 0.056,
+       "sigma_to": 0.039,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.017,
+        0.095
+       ],
+       "z_range": [
+        0.042105263157946195,
+        0.23529411764734637
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2002,
+       "to": 2003,
+       "delta": 0.001999999999995339,
+       "sigma_from": 0.039,
+       "sigma_to": 0.038,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0010000000000000009,
+        0.077
+       ],
+       "z_range": [
+        0.02597402597396544,
+        1.999999999995337
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2003,
+       "to": 2004,
+       "delta": 0.0,
+       "sigma_from": 0.038,
+       "sigma_to": 0.038,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.076
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2004,
+       "to": 2005,
+       "delta": 0.0,
+       "sigma_from": 0.038,
+       "sigma_to": 0.038,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.076
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2005,
+       "to": 2006,
+       "delta": -0.02199999999999136,
+       "sigma_from": 0.038,
+       "sigma_to": 0.029,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.008999999999999998,
+        0.067
+       ],
+       "z_range": [
+        0.3283582089550949,
+        2.444444444443485
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2006,
+       "to": 2007,
+       "delta": 0.0,
+       "sigma_from": 0.029,
+       "sigma_to": 0.029,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.058
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2007,
+       "to": 2008,
+       "delta": -0.005000000000009663,
+       "sigma_from": 0.029,
+       "sigma_to": 0.025,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.004,
+        0.054000000000000006
+       ],
+       "z_range": [
+        0.09259259259277153,
+        1.2500000000024158
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2008,
+       "to": 2009,
+       "delta": 0.0,
+       "sigma_from": 0.025,
+       "sigma_to": 0.025,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.05
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2009,
+       "to": 2010,
+       "delta": 0.0010000000000047748,
+       "sigma_from": 0.025,
+       "sigma_to": 0.023,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0020000000000000018,
+        0.048
+       ],
+       "z_range": [
+        0.020833333333432808,
+        0.500000000002387
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2010,
+       "to": 2011,
+       "delta": 0.0,
+       "sigma_from": 0.023,
+       "sigma_to": 0.023,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.046
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2011,
+       "to": 2012,
+       "delta": -0.013999999999995794,
+       "sigma_from": 0.023,
+       "sigma_to": 0.015,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.008,
+        0.038
+       ],
+       "z_range": [
+        0.36842105263146824,
+        1.7499999999994742
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2012,
+       "to": 2013,
+       "delta": 0.0,
+       "sigma_from": 0.015,
+       "sigma_to": 0.015,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.03
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2013,
+       "to": 2014,
+       "delta": 0.0,
+       "sigma_from": 0.015,
+       "sigma_to": 0.015,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.03
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2014,
+       "to": 2015,
+       "delta": 0.0,
+       "sigma_from": 0.015,
+       "sigma_to": 0.015,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.03
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2015,
+       "to": 2016,
+       "delta": 0.0,
+       "sigma_from": 0.015,
+       "sigma_to": 0.015,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.03
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2016,
+       "to": 2017,
+       "delta": 0.0,
+       "sigma_from": 0.015,
+       "sigma_to": 0.015,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.03
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2017,
+       "to": 2018,
+       "delta": -0.006000000000000227,
+       "sigma_from": 0.015,
+       "sigma_to": 0.012,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.002999999999999999,
+        0.027
+       ],
+       "z_range": [
+        0.22222222222223065,
+        2.0000000000000764
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2018,
+       "to": 2019,
+       "delta": 0.0,
+       "sigma_from": 0.012,
+       "sigma_to": 0.012,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.024
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2019,
+       "to": 2020,
+       "delta": 0.0,
+       "sigma_from": 0.012,
+       "sigma_to": 0.012,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.024
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2020,
+       "to": 2021,
+       "delta": 0.0,
+       "sigma_from": 0.012,
+       "sigma_to": 0.012,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.024
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2021,
+       "to": 2022,
+       "delta": -0.0020000000000095497,
+       "sigma_from": 0.012,
+       "sigma_to": 0.012,
+       "value_source": "2021: numeric column; 2022: display text (numeric column disagrees)",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.024
+       ],
+       "z_range": [
+        0.08333333333373123,
+        null
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [
+        "changed mean with unchanged variance: model change"
+       ],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2022,
+       "to": 2023,
+       "delta": 0.0,
+       "sigma_from": 0.012,
+       "sigma_to": 0.012,
+       "value_source": "2022: display text (numeric column disagrees); 2023: numeric column",
+       "mode": "identical",
+       "sigma": 0.0,
+       "z": null,
+       "covariance_source": "declared inputs ['PDG22_MW']",
+       "model": "same declared inputs in both editions: no innovation"
+      },
+      {
+       "from": 2023,
+       "to": 2024,
+       "delta": -0.007799999999988927,
+       "sigma_from": 0.012,
+       "sigma_to": 0.0133,
+       "value_source": "2023: numeric column; 2024: display text (numeric column disagrees)",
+       "mode": "unknown",
+       "sigma_range": [
+        0.001299999999999999,
+        0.0253
+       ],
+       "z_range": [
+        0.30830039525647934,
+        5.999999999991487
+       ],
+       "covariance_source": "Not nested: AMOROSO 24 re-corrects every measurement to a common theory description and PDF set and removes CDF-II, replacing the 2022 combination. The two combinations share experiments with unpublished correlation, and the error grows.",
+       "flags": [
+        "variance increased: outside the nested theorem"
+       ],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2024,
+       "to": 2025,
+       "delta": 0.0,
+       "sigma_from": 0.0133,
+       "sigma_to": 0.0133,
+       "value_source": "display text (numeric column disagrees)",
+       "mode": "identical",
+       "sigma": 0.0,
+       "z": null,
+       "covariance_source": "declared inputs ['AMOROSO24_MW']",
+       "model": "same declared inputs in both editions: no innovation"
+      },
+      {
+       "from": 2025,
+       "to": 2026,
+       "delta": -0.006700000000009254,
+       "sigma_from": 0.0133,
+       "sigma_to": 0.0077,
+       "value_source": "2025: display text (numeric column disagrees); 2026: numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.005599999999999999,
+        0.020999999999999998
+       ],
+       "z_range": [
+        0.3190476190480597,
+        1.196428571430224
+       ],
+       "covariance_source": "Not nested: the 2026 combination adds CMS and replaces ATLAS AABOUD 18J by the superseding AAD 24CJ.",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      }
+     ],
+     "chains": [],
+     "model_note": "\u0394 uses one value per edition; repeated formats of one PDG average are not separate observations."
+    },
+    "ew_fit": {
+     "estimand": "SM-constrained global-fit value of M_W from the Electroweak review (GeV)",
+     "pairs": [
+      {
+       "from": 2008,
+       "to": 2010,
+       "delta": 0.009000000000000341,
+       "sigma_from": 0.015,
+       "sigma_to": 0.014,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0009999999999999992,
+        0.028999999999999998
+       ],
+       "z_range": [
+        0.3103448275862187,
+        9.000000000000348
+       ],
+       "covariance_source": "Each edition is a global SM fit whose inputs (m_t, M_H, alpha_s, Delta alpha_had, measured M_W, Z-pole data) change between editions; the cross-edition covariance is unpublished.",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2010,
+       "to": 2012,
+       "delta": -0.0030000000000001137,
+       "sigma_from": 0.014,
+       "sigma_to": 0.014,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.028
+       ],
+       "z_range": [
+        0.1071428571428612,
+        null
+       ],
+       "covariance_source": "Each edition is a global SM fit whose inputs (m_t, M_H, alpha_s, Delta alpha_had, measured M_W, Z-pole data) change between editions; the cross-edition covariance is unpublished.",
+       "flags": [
+        "changed mean with unchanged variance: model change"
+       ],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2012,
+       "to": 2014,
+       "delta": -0.018000000000000682,
+       "sigma_from": 0.014,
+       "sigma_to": 0.006,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.008,
+        0.02
+       ],
+       "z_range": [
+        0.9000000000000341,
+        2.2500000000000853
+       ],
+       "covariance_source": "Each edition is a global SM fit whose inputs (m_t, M_H, alpha_s, Delta alpha_had, measured M_W, Z-pole data) change between editions; the cross-edition covariance is unpublished.",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2014,
+       "to": 2016,
+       "delta": -0.001999999999995339,
+       "sigma_from": 0.006,
+       "sigma_to": 0.006,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.012
+       ],
+       "z_range": [
+        0.16666666666627825,
+        null
+       ],
+       "covariance_source": "Each edition is a global SM fit whose inputs (m_t, M_H, alpha_s, Delta alpha_had, measured M_W, Z-pole data) change between editions; the cross-edition covariance is unpublished.",
+       "flags": [
+        "changed mean with unchanged variance: model change"
+       ],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2016,
+       "to": 2018,
+       "delta": -0.0030000000000001137,
+       "sigma_from": 0.006,
+       "sigma_to": 0.004,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.002,
+        0.01
+       ],
+       "z_range": [
+        0.30000000000001137,
+        1.5000000000000568
+       ],
+       "covariance_source": "Each edition is a global SM fit whose inputs (m_t, M_H, alpha_s, Delta alpha_had, measured M_W, Z-pole data) change between editions; the cross-edition covariance is unpublished.",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2018,
+       "to": 2020,
+       "delta": 0.0030000000000001137,
+       "sigma_from": 0.004,
+       "sigma_to": 0.006,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.002,
+        0.01
+       ],
+       "z_range": [
+        0.30000000000001137,
+        1.5000000000000568
+       ],
+       "covariance_source": "Each edition is a global SM fit whose inputs (m_t, M_H, alpha_s, Delta alpha_had, measured M_W, Z-pole data) change between editions; the cross-edition covariance is unpublished.",
+       "flags": [
+        "variance increased: outside the nested theorem"
+       ],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2020,
+       "to": 2022,
+       "delta": -0.0010000000000047748,
+       "sigma_from": 0.006,
+       "sigma_to": 0.006,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.012
+       ],
+       "z_range": [
+        0.08333333333373123,
+        null
+       ],
+       "covariance_source": "Each edition is a global SM fit whose inputs (m_t, M_H, alpha_s, Delta alpha_had, measured M_W, Z-pole data) change between editions; the cross-edition covariance is unpublished.",
+       "flags": [
+        "changed mean with unchanged variance: model change"
+       ],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2022,
+       "to": 2023,
+       "delta": 0.0,
+       "sigma_from": 0.006,
+       "sigma_to": 0.006,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.012
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "Each edition is a global SM fit whose inputs (m_t, M_H, alpha_s, Delta alpha_had, measured M_W, Z-pole data) change between editions; the cross-edition covariance is unpublished.",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2023,
+       "to": 2024,
+       "delta": -0.0040000000000048885,
+       "sigma_from": 0.006,
+       "sigma_to": 0.005,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.001,
+        0.011
+       ],
+       "z_range": [
+        0.36363636363680807,
+        4.0000000000048885
+       ],
+       "covariance_source": "Each edition is a global SM fit whose inputs (m_t, M_H, alpha_s, Delta alpha_had, measured M_W, Z-pole data) change between editions; the cross-edition covariance is unpublished.",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2024,
+       "to": 2025,
+       "delta": 0.0030000000000001137,
+       "sigma_from": 0.005,
+       "sigma_to": 0.006,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.001,
+        0.011
+       ],
+       "z_range": [
+        0.2727272727272831,
+        3.0000000000001137
+       ],
+       "covariance_source": "Each edition is a global SM fit whose inputs (m_t, M_H, alpha_s, Delta alpha_had, measured M_W, Z-pole data) change between editions; the cross-edition covariance is unpublished.",
+       "flags": [
+        "variance increased: outside the nested theorem"
+       ],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2025,
+       "to": 2026,
+       "delta": 0.0,
+       "sigma_from": 0.006,
+       "sigma_to": 0.005,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.001,
+        0.011
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "Each edition is a global SM fit whose inputs (m_t, M_H, alpha_s, Delta alpha_had, measured M_W, Z-pole data) change between editions; the cross-edition covariance is unpublished.",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      }
+     ],
+     "chains": [],
+     "model_note": "\u0394 uses one value per edition; repeated formats of one PDG average are not separate observations."
+    }
    }
   },
   {
@@ -5634,6 +6557,928 @@
       "scheme": null
      }
     ]
+   },
+   "history_diagnostics": {
+    "pdg_database": {
+     "estimand": "Breit-Wigner mass parameter with mass-dependent width (GeV)",
+     "pairs": [
+      {
+       "from": 1984,
+       "to": 1986,
+       "delta": -0.30000000000001137,
+       "sigma_from": 1.6,
+       "sigma_to": 1.7,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.09999999999999987,
+        3.3
+       ],
+       "z_range": [
+        0.09090909090909435,
+        3.0000000000001177
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [
+        "variance increased: outside the nested theorem"
+       ],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 1986,
+       "to": 1988,
+       "delta": -0.19999999999998863,
+       "sigma_from": 1.7,
+       "sigma_to": 1.8,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.10000000000000009,
+        3.5
+       ],
+       "z_range": [
+        0.057142857142853894,
+        1.9999999999998845
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [
+        "variance increased: outside the nested theorem"
+       ],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 1988,
+       "to": 1990,
+       "delta": -1.23919048960326,
+       "sigma_from": 1.8,
+       "sigma_to": 0.031294733596343625,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        1.7687052664036564,
+        1.8312947335963436
+       ],
+       "z_range": [
+        0.6766745226038552,
+        0.7006201163876956
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 1990,
+       "to": 1992,
+       "delta": 0.01175747332071353,
+       "sigma_from": 0.031294733596343625,
+       "sigma_to": 0.020244665148205825,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.011050068448137801,
+        0.05153939874454945
+       ],
+       "z_range": [
+        0.2281259309792965,
+        1.0640181439504968
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 1992,
+       "to": 1994,
+       "delta": 0.014433016282538347,
+       "sigma_from": 0.020244665148205825,
+       "sigma_to": 0.007,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.013244665148205825,
+        0.027244665148205824
+       ],
+       "z_range": [
+        0.5297556862609788,
+        1.0897230032647145
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 1994,
+       "to": 1996,
+       "delta": 0.0,
+       "sigma_from": 0.007,
+       "sigma_to": 0.007,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.014
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 1996,
+       "to": 1997,
+       "delta": 0.0,
+       "sigma_from": 0.007,
+       "sigma_to": 0.007,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.014
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 1997,
+       "to": 1998,
+       "delta": 0.0,
+       "sigma_from": 0.007,
+       "sigma_to": 0.007,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.014
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 1998,
+       "to": 2000,
+       "delta": 0.0011999999999972033,
+       "sigma_from": 0.007,
+       "sigma_to": 0.0022,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0048000000000000004,
+        0.0092
+       ],
+       "z_range": [
+        0.13043478260839167,
+        0.24999999999941733
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2000,
+       "to": 2002,
+       "delta": -0.0005999999999914962,
+       "sigma_from": 0.0022,
+       "sigma_to": 0.0021,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.00010000000000000026,
+        0.0043
+       ],
+       "z_range": [
+        0.13953488371895262,
+        5.999999999914946
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2002,
+       "to": 2003,
+       "delta": 0.0,
+       "sigma_from": 0.0021,
+       "sigma_to": 0.0021,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.0042
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2003,
+       "to": 2004,
+       "delta": 0.0,
+       "sigma_from": 0.0021,
+       "sigma_to": 0.0021,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.0042
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2004,
+       "to": 2005,
+       "delta": 0.0,
+       "sigma_from": 0.0021,
+       "sigma_to": 0.0021,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.0042
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2005,
+       "to": 2006,
+       "delta": 0.0,
+       "sigma_from": 0.0021,
+       "sigma_to": 0.0021,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.0042
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2006,
+       "to": 2007,
+       "delta": 0.0,
+       "sigma_from": 0.0021,
+       "sigma_to": 0.0021,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.0042
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2007,
+       "to": 2008,
+       "delta": 0.0,
+       "sigma_from": 0.0021,
+       "sigma_to": 0.0021,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.0042
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2008,
+       "to": 2009,
+       "delta": 0.0,
+       "sigma_from": 0.0021,
+       "sigma_to": 0.0021,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.0042
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2009,
+       "to": 2010,
+       "delta": 0.0,
+       "sigma_from": 0.0021,
+       "sigma_to": 0.0021,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.0042
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2010,
+       "to": 2011,
+       "delta": 0.0,
+       "sigma_from": 0.0021,
+       "sigma_to": 0.0021,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.0042
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2011,
+       "to": 2012,
+       "delta": 0.0,
+       "sigma_from": 0.0021,
+       "sigma_to": 0.0021,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.0042
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2012,
+       "to": 2013,
+       "delta": 0.0,
+       "sigma_from": 0.0021,
+       "sigma_to": 0.0021,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.0042
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2013,
+       "to": 2014,
+       "delta": 0.0,
+       "sigma_from": 0.0021,
+       "sigma_to": 0.0021,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.0042
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2014,
+       "to": 2015,
+       "delta": 0.0,
+       "sigma_from": 0.0021,
+       "sigma_to": 0.0021,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.0042
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2015,
+       "to": 2016,
+       "delta": 0.0,
+       "sigma_from": 0.0021,
+       "sigma_to": 0.0021,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.0042
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2016,
+       "to": 2017,
+       "delta": 0.0,
+       "sigma_from": 0.0021,
+       "sigma_to": 0.0021,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.0042
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2017,
+       "to": 2018,
+       "delta": 0.0,
+       "sigma_from": 0.0021,
+       "sigma_to": 0.0021,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.0042
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2018,
+       "to": 2019,
+       "delta": 0.0,
+       "sigma_from": 0.0021,
+       "sigma_to": 0.0021,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.0042
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2019,
+       "to": 2020,
+       "delta": 0.0,
+       "sigma_from": 0.0021,
+       "sigma_to": 0.0021,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.0042
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2020,
+       "to": 2021,
+       "delta": 0.0,
+       "sigma_from": 0.0021,
+       "sigma_to": 0.0021,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.0042
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2021,
+       "to": 2022,
+       "delta": 0.0,
+       "sigma_from": 0.0021,
+       "sigma_to": 0.0021,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.0042
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "no provenance record for this pair",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2022,
+       "to": 2023,
+       "delta": 0.0,
+       "sigma_from": 0.0021,
+       "sigma_to": 0.0021,
+       "value_source": "numeric column",
+       "mode": "identical",
+       "sigma": 0.0,
+       "z": null,
+       "covariance_source": "declared inputs ['LEP-SLC06_MZ']",
+       "model": "same declared inputs in both editions: no innovation"
+      },
+      {
+       "from": 2023,
+       "to": 2024,
+       "delta": 0.0003780919372502467,
+       "sigma_from": 0.0021,
+       "sigma_to": 0.002013761937203607,
+       "value_source": "numeric column",
+       "mode": "nested",
+       "sigma": 0.0005956197279052926,
+       "z": 0.634787465092417,
+       "covariance_source": "nested inputs LEP-SLC06_MZ + AALTONEN22_MZ; PDG 2024 Z listing: 'OUR AVERAGE is given by the weighted average of the combined CDF result and the combined LEP result, assuming no correlations between CDF and LEP.'",
+       "added_inputs": [
+        "AALTONEN22_MZ"
+       ],
+       "inputs": [
+        "AALTONEN22_MZ",
+        "LEP-SLC06_MZ"
+       ],
+       "model": "certified nested inverse-variance average: Var(\u0394) = v\u2081 \u2212 v\u2082"
+      },
+      {
+       "from": 2024,
+       "to": 2025,
+       "delta": 0.0,
+       "sigma_from": 0.002013761937203607,
+       "sigma_to": 0.002013761937203607,
+       "value_source": "numeric column",
+       "mode": "identical",
+       "sigma": 0.0,
+       "z": null,
+       "covariance_source": "declared inputs ['AALTONEN22_MZ', 'LEP-SLC06_MZ']",
+       "model": "same declared inputs in both editions: no innovation"
+      },
+      {
+       "from": 2025,
+       "to": 2026,
+       "delta": -0.00010479471590940648,
+       "sigma_from": 0.002013761937203607,
+       "sigma_to": 0.00196689903262915,
+       "value_source": "numeric column",
+       "mode": "nested",
+       "sigma": 0.0004319089431495257,
+       "z": -0.24263150270802988,
+       "covariance_source": "nested inputs AALTONEN22_MZ, LEP-SLC06_MZ + AAIJ25AH_MZ; PDG 2026 Z listing: '91.1879 +- 0.0020 OUR AVERAGE' over LHCb 25AH, CDF 22 and LEP-SLC 06; the explanatory text still names only CDF and LEP. The builder reproduces the database value 91.18787329722134 +- 0.00196689903262915 from the three inputs as independent.",
+       "added_inputs": [
+        "AAIJ25AH_MZ"
+       ],
+       "inputs": [
+        "AAIJ25AH_MZ",
+        "AALTONEN22_MZ",
+        "LEP-SLC06_MZ"
+       ],
+       "model": "certified nested inverse-variance average: Var(\u0394) = v\u2081 \u2212 v\u2082"
+      }
+     ],
+     "chains": [
+      {
+       "from": 2022,
+       "to": 2026,
+       "chi2": 0.46182517194481326,
+       "dof": 2,
+       "p_value": 0.7938088530314829,
+       "justification": "innovations of one nested input chain with fixed weights are independent N(0,1)"
+      }
+     ],
+     "model_note": "\u0394 uses one value per edition; repeated formats of one PDG average are not separate observations."
+    },
+    "ew_fit": {
+     "estimand": "SM-constrained global-fit value of M_Z from the Electroweak review (GeV)",
+     "pairs": [
+      {
+       "from": 2008,
+       "to": 2010,
+       "delta": 0.0,
+       "sigma_from": 0.0021,
+       "sigma_to": 0.0021,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.0042
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "Global SM fit; cross-edition covariance unpublished.",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2010,
+       "to": 2012,
+       "delta": 0.0,
+       "sigma_from": 0.0021,
+       "sigma_to": 0.0021,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.0042
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "Global SM fit; cross-edition covariance unpublished.",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2012,
+       "to": 2014,
+       "delta": 0.0006000000000057071,
+       "sigma_from": 0.0021,
+       "sigma_to": 0.002,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        9.999999999999983e-05,
+        0.0040999999999999995
+       ],
+       "z_range": [
+        0.14634146341602614,
+        6.0000000000570815
+       ],
+       "covariance_source": "Global SM fit; cross-edition covariance unpublished.",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2014,
+       "to": 2016,
+       "delta": 0.0,
+       "sigma_from": 0.002,
+       "sigma_to": 0.002,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.004
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "Global SM fit; cross-edition covariance unpublished.",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2016,
+       "to": 2018,
+       "delta": 0.00039999999999906777,
+       "sigma_from": 0.002,
+       "sigma_to": 0.002,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.004
+       ],
+       "z_range": [
+        0.09999999999976694,
+        null
+       ],
+       "covariance_source": "Global SM fit; cross-edition covariance unpublished.",
+       "flags": [
+        "changed mean with unchanged variance: model change"
+       ],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2018,
+       "to": 2020,
+       "delta": -0.0002000000000066393,
+       "sigma_from": 0.002,
+       "sigma_to": 0.002,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.004
+       ],
+       "z_range": [
+        0.05000000000165983,
+        null
+       ],
+       "covariance_source": "Global SM fit; cross-edition covariance unpublished.",
+       "flags": [
+        "changed mean with unchanged variance: model change"
+       ],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2020,
+       "to": 2022,
+       "delta": 0.0,
+       "sigma_from": 0.002,
+       "sigma_to": 0.002,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.004
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "Global SM fit; cross-edition covariance unpublished.",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2022,
+       "to": 2023,
+       "delta": 0.0,
+       "sigma_from": 0.002,
+       "sigma_to": 0.002,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.0,
+        0.004
+       ],
+       "z_range": [
+        0.0,
+        0.0
+       ],
+       "covariance_source": "Global SM fit; cross-edition covariance unpublished.",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2023,
+       "to": 2024,
+       "delta": 0.0002000000000066393,
+       "sigma_from": 0.002,
+       "sigma_to": 0.0019,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.00010000000000000005,
+        0.0039
+       ],
+       "z_range": [
+        0.05128205128375367,
+        2.0000000000663922
+       ],
+       "covariance_source": "Global SM fit; cross-edition covariance unpublished.",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2024,
+       "to": 2025,
+       "delta": -0.00010000000000331966,
+       "sigma_from": 0.0019,
+       "sigma_to": 0.002,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.00010000000000000005,
+        0.0039
+       ],
+       "z_range": [
+        0.025641025641876834,
+        1.0000000000331961
+       ],
+       "covariance_source": "Global SM fit; cross-edition covariance unpublished.",
+       "flags": [
+        "variance increased: outside the nested theorem"
+       ],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      },
+      {
+       "from": 2025,
+       "to": 2026,
+       "delta": -0.00010000000000331966,
+       "sigma_from": 0.002,
+       "sigma_to": 0.0019,
+       "value_source": "numeric column",
+       "mode": "unknown",
+       "sigma_range": [
+        0.00010000000000000005,
+        0.0039
+       ],
+       "z_range": [
+        0.025641025641876834,
+        1.0000000000331961
+       ],
+       "covariance_source": "Global SM fit; cross-edition covariance unpublished.",
+       "flags": [],
+       "model": "covariance unknown: Var(\u0394) \u2208 [(\u03c3\u2081\u2212\u03c3\u2082)\u00b2, (\u03c3\u2081+\u03c3\u2082)\u00b2]"
+      }
+     ],
+     "chains": [],
+     "model_note": "\u0394 uses one value per edition; repeated formats of one PDG average are not separate observations."
+    }
    }
   },
   {
@@ -8073,333 +9918,1040 @@
      {
       "year": 1984,
       "value": 0.2435307244962871,
-      "error_positive": 0.056876107351216613,
-      "error_negative": 0.056876107351216613,
-      "unit": ""
+      "error_positive": 0.05687610735121661,
+      "error_negative": 0.05687610735121661,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.02449904625368391,
+       0.07661318364037673
+      ],
+      "inputs": {
+       "W": "pdg_database",
+       "Z": "pdg_database"
+      },
+      "provenance_notes": []
      },
      {
       "year": 1986,
       "value": 0.21965862601402264,
-      "error_positive": 0.04049652111512654,
-      "error_negative": 0.04049652111512654,
-      "unit": ""
+      "error_positive": 0.040496521115126534,
+      "error_negative": 0.040496521115126534,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       3.296630876315455e-05,
+       0.0572707199018684
+      ],
+      "inputs": {
+       "W": "pdg_database",
+       "Z": "pdg_database"
+      },
+      "provenance_notes": []
      },
      {
       "year": 1988,
       "value": 0.2315314555574297,
-      "error_positive": 0.03879277088484721,
-      "error_negative": 0.03879277088484721,
-      "unit": ""
+      "error_positive": 0.038792770884847214,
+      "error_negative": 0.038792770884847214,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.005273441350351457,
+       0.054607224450368315
+      ],
+      "inputs": {
+       "W": "pdg_database",
+       "Z": "pdg_database"
+      },
+      "provenance_notes": []
      },
      {
       "year": 1990,
       "value": 0.21784796674030305,
-      "error_positive": 0.008466935906685675,
-      "error_negative": 0.008466935906685675,
-      "unit": ""
+      "error_positive": 0.008466935906685671,
+      "error_negative": 0.008466935906685671,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.007912876506257528,
+       0.008986901172960783
+      ],
+      "inputs": {
+       "W": "pdg_database",
+       "Z": "pdg_database"
+      },
+      "provenance_notes": []
      },
      {
       "year": 1992,
       "value": 0.22587610991304097,
-      "error_positive": 0.004966607187602735,
-      "error_negative": 0.004966607187602735,
-      "unit": ""
+      "error_positive": 0.004966607187602734,
+      "error_negative": 0.004966607187602734,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.004610909661217694,
+       0.005298479593995207
+      ],
+      "inputs": {
+       "W": "pdg_database",
+       "Z": "pdg_database"
+      },
+      "provenance_notes": []
      },
      {
       "year": 1994,
       "value": 0.22600071819787237,
-      "error_positive": 0.00495288923755141,
-      "error_negative": 0.00495288923755141,
-      "unit": ""
+      "error_positive": 0.004952889237551411,
+      "error_negative": 0.004952889237551411,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.004832630863386043,
+       0.005070296099554133
+      ],
+      "inputs": {
+       "W": "pdg_database",
+       "Z": "pdg_database"
+      },
+      "provenance_notes": []
      },
      {
       "year": 1996,
       "value": 0.22389702673562417,
       "error_positive": 0.0028982603183557573,
       "error_negative": 0.0028982603183557573,
-      "unit": ""
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.0027766542730186445,
+       0.0030149654714504664
+      ],
+      "inputs": {
+       "W": "pdg_database",
+       "Z": "pdg_database"
+      },
+      "provenance_notes": []
      },
      {
       "year": 1997,
       "value": 0.2234288828179526,
       "error_positive": 0.0022559406083967567,
       "error_negative": 0.0022559406083967567,
-      "unit": ""
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.0021335603188634422,
+       0.0023720152661815615
+      ],
+      "inputs": {
+       "W": "pdg_database",
+       "Z": "pdg_database"
+      },
+      "provenance_notes": []
      },
      {
       "year": 1998,
       "value": 0.22245626593112955,
-      "error_positive": 0.0018735223091231401,
-      "error_negative": 0.0018735223091231401,
-      "unit": ""
+      "error_positive": 0.0018735223091231404,
+      "error_negative": 0.0018735223091231404,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.0017503384247691562,
+       0.001989092025106138
+      ],
+      "inputs": {
+       "W": "pdg_database",
+       "Z": "pdg_database"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2000,
       "value": 0.22224994472998416,
       "error_positive": 0.0010838268411010198,
       "error_negative": 0.0010838268411010198,
-      "unit": ""
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.0010456490536005056,
+       0.0011207048227282672
+      ],
+      "inputs": {
+       "W": "pdg_database",
+       "Z": "pdg_database"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2002,
       "value": 0.22216233702770505,
-      "error_positive": 0.0007552530280408378,
-      "error_negative": 0.0007552530280408378,
-      "unit": ""
+      "error_positive": 0.0007552530280408377,
+      "error_negative": 0.0007552530280408377,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.0007185764740591129,
+       0.0007902291589523141
+      ],
+      "inputs": {
+       "W": "pdg_database",
+       "Z": "pdg_database"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2003,
       "value": 0.22212364922273364,
-      "error_positive": 0.0007359500587763843,
-      "error_negative": 0.0007359500587763843,
-      "unit": ""
+      "error_positive": 0.0007359500587763846,
+      "error_negative": 0.0007359500587763846,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.0006992493100042136,
+       0.0007709055587324293
+      ],
+      "inputs": {
+       "W": "pdg_database",
+       "Z": "pdg_database"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2004,
       "value": 0.22222036693123204,
       "error_positive": 0.0007745465021397826,
       "error_negative": 0.0007745465021397826,
-      "unit": ""
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.0007378939459335097,
+       0.0008095412852403633
+      ],
+      "inputs": {
+       "W": "mass_width_file",
+       "Z": "mass_width_file"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2005,
       "value": 0.22212364922273364,
-      "error_positive": 0.0007359500587763843,
-      "error_negative": 0.0007359500587763843,
-      "unit": ""
+      "error_positive": 0.0007359500587763846,
+      "error_negative": 0.0007359500587763846,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.0006992493100042136,
+       0.0007709055587324293
+      ],
+      "inputs": {
+       "W": "pdg_database",
+       "Z": "pdg_database"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2006,
       "value": 0.22254916216213794,
       "error_positive": 0.0005619687091443095,
       "error_negative": 0.0005619687091443095,
-      "unit": ""
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.0005250181672578827,
+       0.0005966352186753786
+      ],
+      "inputs": {
+       "W": "mass_width_file",
+       "Z": "mass_width_file"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2007,
       "value": 0.22254916216213794,
       "error_positive": 0.0005619687091443095,
       "error_negative": 0.0005619687091443095,
-      "unit": ""
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.0005250181672578827,
+       0.0005966352186753786
+      ],
+      "inputs": {
+       "W": "pdg_database",
+       "Z": "pdg_database"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2008,
       "value": 0.22264585341299603,
-      "error_positive": 0.00048476524862154795,
-      "error_negative": 0.00048476524862154795,
-      "unit": ""
+      "error_positive": 0.0004847652486215479,
+      "error_negative": 0.0004847652486215479,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.0004476371493230409,
+       0.000519245293756394
+      ],
+      "inputs": {
+       "W": "mass_width_file",
+       "Z": "mass_width_file"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2009,
       "value": 0.22264585341299603,
-      "error_positive": 0.00048476524862154795,
-      "error_negative": 0.00048476524862154795,
-      "unit": ""
+      "error_positive": 0.0004847652486215479,
+      "error_negative": 0.0004847652486215479,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.0004476371493230409,
+       0.000519245293756394
+      ],
+      "inputs": {
+       "W": "pdg_database",
+       "Z": "pdg_database"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2010,
       "value": 0.22262651564387248,
-      "error_positive": 0.00044621031288313346,
-      "error_negative": 0.00044621031288313346,
-      "unit": ""
+      "error_positive": 0.00044621031288313335,
+      "error_negative": 0.00044621031288313335,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.00040896649297569426,
+       0.00048057641876156283
+      ],
+      "inputs": {
+       "W": "mass_width_file",
+       "Z": "mass_width_file"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2011,
       "value": 0.22262651564387248,
-      "error_positive": 0.00044621031288313346,
-      "error_negative": 0.00044621031288313346,
-      "unit": ""
+      "error_positive": 0.00044621031288313335,
+      "error_negative": 0.00044621031288313335,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.00040896649297569426,
+       0.00048057641876156283
+      ],
+      "inputs": {
+       "W": "mass_width_file",
+       "Z": "mass_width_file"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2012,
       "value": 0.2228972225239183,
-      "error_positive": 0.00029221814592302444,
-      "error_negative": 0.00029221814592302444,
-      "unit": ""
+      "error_positive": 0.0002922181459230244,
+      "error_negative": 0.0002922181459230244,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.0002542253363096309,
+       0.0003258103251765282
+      ],
+      "inputs": {
+       "W": "mass_width_file",
+       "Z": "mass_width_file"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2013,
       "value": 0.2228972225239183,
-      "error_positive": 0.00029221814592302444,
-      "error_negative": 0.00029221814592302444,
-      "unit": ""
+      "error_positive": 0.0002922181459230244,
+      "error_negative": 0.0002922181459230244,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.0002542253363096309,
+       0.0003258103251765282
+      ],
+      "inputs": {
+       "W": "mass_width_file",
+       "Z": "mass_width_file"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2014,
       "value": 0.2228972225239183,
-      "error_positive": 0.00029221814592302444,
-      "error_negative": 0.00029221814592302444,
-      "unit": ""
+      "error_positive": 0.0002922181459230244,
+      "error_negative": 0.0002922181459230244,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.0002542253363096309,
+       0.0003258103251765282
+      ],
+      "inputs": {
+       "W": "mass_width_file",
+       "Z": "mass_width_file"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2015,
       "value": 0.2228972225239183,
-      "error_positive": 0.00029221814592302444,
-      "error_negative": 0.00029221814592302444,
-      "unit": ""
+      "error_positive": 0.0002922181459230244,
+      "error_negative": 0.0002922181459230244,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.0002542253363096309,
+       0.0003258103251765282
+      ],
+      "inputs": {
+       "W": "mass_width_file",
+       "Z": "mass_width_file"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2016,
       "value": 0.2228972225239183,
-      "error_positive": 0.00029221814592302444,
-      "error_negative": 0.00029221814592302444,
-      "unit": ""
+      "error_positive": 0.0002922181459230244,
+      "error_negative": 0.0002922181459230244,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.0002542253363096309,
+       0.0003258103251765282
+      ],
+      "inputs": {
+       "W": "mass_width_file",
+       "Z": "mass_width_file"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2017,
       "value": 0.2228972225239183,
-      "error_positive": 0.00029221814592302444,
-      "error_negative": 0.00029221814592302444,
-      "unit": ""
+      "error_positive": 0.0002922181459230244,
+      "error_negative": 0.0002922181459230244,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.0002542253363096309,
+       0.0003258103251765282
+      ],
+      "inputs": {
+       "W": "mass_width_file",
+       "Z": "mass_width_file"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2018,
       "value": 0.22301322532678336,
-      "error_positive": 0.0002347409286122865,
-      "error_negative": 0.0002347409286122865,
-      "unit": ""
+      "error_positive": 0.00023474092861228653,
+      "error_negative": 0.00023474092861228653,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.00019620979539353544,
+       0.0002677840983388374
+      ],
+      "inputs": {
+       "W": "mass_width_file",
+       "Z": "mass_width_file"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2019,
       "value": 0.22301322532678336,
-      "error_positive": 0.0002347409286122865,
-      "error_negative": 0.0002347409286122865,
-      "unit": ""
+      "error_positive": 0.00023474092861228653,
+      "error_negative": 0.00023474092861228653,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.00019620979539353544,
+       0.0002677840983388374
+      ],
+      "inputs": {
+       "W": "mass_width_file",
+       "Z": "mass_width_file"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2020,
       "value": 0.22301322532678336,
-      "error_positive": 0.0002347409286122865,
-      "error_negative": 0.0002347409286122865,
-      "unit": ""
+      "error_positive": 0.00023474092861228653,
+      "error_negative": 0.00023474092861228653,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.00019620979539353544,
+       0.0002677840983388374
+      ],
+      "inputs": {
+       "W": "mass_width_file",
+       "Z": "mass_width_file"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2021,
       "value": 0.22301322532678336,
-      "error_positive": 0.0002347409286122865,
-      "error_negative": 0.0002347409286122865,
-      "unit": ""
+      "error_positive": 0.00023474092861228653,
+      "error_negative": 0.00023474092861228653,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.00019620979539353544,
+       0.0002677840983388374
+      ],
+      "inputs": {
+       "W": "mass_width_file",
+       "Z": "mass_width_file"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2022,
       "value": 0.22301322532678336,
-      "error_positive": 0.0002347409286122865,
-      "error_negative": 0.0002347409286122865,
-      "unit": ""
+      "error_positive": 0.00023474092861228653,
+      "error_negative": 0.00023474092861228653,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.00019620979539353544,
+       0.0002677840983388374
+      ],
+      "inputs": {
+       "W": "mass_width_file",
+       "Z": "mass_width_file"
+      },
+      "provenance_notes": [
+       "W_mass 2022: mass_width file 80.379 vs database display 80.377 +-0.012"
+      ]
      },
      {
       "year": 2023,
       "value": 0.2230518910035465,
-      "error_positive": 0.00023473495201107125,
-      "error_negative": 0.00023473495201107125,
-      "unit": ""
+      "error_positive": 0.00023473495201107127,
+      "error_negative": 0.00023473495201107127,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.00019620580371574939,
+       0.00026777654486443857
+      ],
+      "inputs": {
+       "W": "mass_width_file",
+       "Z": "mass_width_file"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2024,
       "value": 0.22321335894906902,
       "error_positive": 0.00025359613560251736,
       "error_negative": 0.00025359613560251736,
-      "unit": ""
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.00021722248004045307,
+       0.00028537062594131117
+      ],
+      "inputs": {
+       "W": "mass_width_file",
+       "Z": "mass_width_file"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2025,
       "value": 0.22321335894906902,
       "error_positive": 0.00025359613560251736,
       "error_negative": 0.00025359613560251736,
-      "unit": ""
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.00021722248004045307,
+       0.00028537062594131117
+      ],
+      "inputs": {
+       "W": "mass_width_file",
+       "Z": "mass_width_file"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2026,
       "value": 0.22334696317513303,
       "error_positive": 0.00015833938756840891,
       "error_negative": 0.00015833938756840891,
-      "unit": ""
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.0001205626528257475,
+       0.00018869915223629358
+      ],
+      "inputs": {
+       "W": "mass_width_file",
+       "Z": "mass_width_file"
+      },
+      "provenance_notes": []
      }
     ],
     "derived_fit": [
      {
       "year": 2008,
       "value": 0.22308714774607563,
-      "error_positive": 0.00029218253960558476,
-      "error_negative": 0.00029218253960558476,
-      "unit": ""
+      "error_positive": 0.0002921825396055848,
+      "error_negative": 0.0002921825396055848,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.00025419919899767694,
+       0.0003257668493411779
+      ],
+      "inputs": {
+       "W": "ew_fit",
+       "Z": "ew_fit"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2010,
       "value": 0.22291314819030905,
-      "error_positive": 0.00027303723044950974,
-      "error_negative": 0.00027303723044950974,
-      "unit": ""
+      "error_positive": 0.0002730372304495098,
+      "error_negative": 0.0002730372304495098,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.0002348892892991389,
+       0.0003064729681319755
+      ],
+      "inputs": {
+       "W": "ew_fit",
+       "Z": "ew_fit"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2012,
       "value": 0.2229711502069568,
-      "error_positive": 0.00027302686537033653,
-      "error_negative": 0.00027302686537033653,
-      "unit": ""
+      "error_positive": 0.00027302686537033664,
+      "error_negative": 0.00027302686537033664,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       0.00023488185876125827,
+       0.00030646019456490617
+      ],
+      "inputs": {
+       "W": "ew_fit",
+       "Z": "ew_fit"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2014,
       "value": 0.22332933764413232,
-      "error_positive": 0.00012087493232718055,
-      "error_negative": 0.00012087493232718055,
-      "unit": ""
+      "error_positive": 0.00012087493232718054,
+      "error_negative": 0.00012087493232718054,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over all correlations in [-1, 1]",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       8.190538017300038e-05,
+       0.0001500433511653123
+      ],
+      "inputs": {
+       "W": "ew_fit",
+       "Z": "ew_fit"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2016,
       "value": 0.22336799528497808,
       "error_positive": 0.0001208716851354216,
       "error_negative": 0.0001208716851354216,
-      "unit": ""
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over correlations compatible with the review's printed s2_W uncertainty \u00b10.0001 (rounding-widened)",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       8.190418964396205e-05,
+       0.00015003876916890147
+      ],
+      "inputs": {
+       "W": "ew_fit",
+       "Z": "ew_fit"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2018,
       "value": 0.22343279284675321,
-      "error_positive": 8.448271567551613e-05,
-      "error_negative": 8.448271567551613e-05,
-      "unit": ""
+      "error_positive": 8.41046827605787e-05,
+      "error_negative": 8.41046827605787e-05,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0.0121 (declared \u03c1 = 0 lies outside the compatible interval); envelope over correlations compatible with the review's printed s2_W uncertainty \u00b17e-05 (rounding-widened)",
+      "rho_interval": [
+       0.0121,
+       0.7689
+      ],
+      "error_envelope": [
+       5.556506698203891e-05,
+       8.41046827605787e-05
+      ],
+      "inputs": {
+       "W": "ew_fit",
+       "Z": "ew_fit"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2020,
       "value": 0.22337140200274652,
-      "error_positive": 0.00012087113386934171,
-      "error_negative": 0.00012087113386934171,
-      "unit": ""
+      "error_positive": 0.00012087113386934172,
+      "error_negative": 0.00012087113386934172,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over correlations compatible with the review's printed s2_W uncertainty \u00b10.0001 (rounding-widened)",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       8.190390508727747e-05,
+       0.00015003803630138224
+      ],
+      "inputs": {
+       "W": "ew_fit",
+       "Z": "ew_fit"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2022,
       "value": 0.22339073037760182,
-      "error_positive": 0.00012086951028786308,
-      "error_negative": 0.00012086951028786308,
-      "unit": ""
+      "error_positive": 0.00012086951028786307,
+      "error_negative": 0.00012086951028786307,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over correlations compatible with the review's printed s2_W uncertainty \u00b10.0001 (rounding-widened)",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       8.190330980768407e-05,
+       0.0001500357453309117
+      ],
+      "inputs": {
+       "W": "ew_fit",
+       "Z": "ew_fit"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2023,
       "value": 0.22339073037760182,
-      "error_positive": 0.00012086951028786308,
-      "error_negative": 0.00012086951028786308,
-      "unit": ""
+      "error_positive": 0.00012086951028786307,
+      "error_negative": 0.00012086951028786307,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over correlations compatible with the review's printed s2_W uncertainty \u00b10.0001 (rounding-widened)",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       8.190330980768407e-05,
+       0.0001500357453309117
+      ],
+      "inputs": {
+       "W": "ew_fit",
+       "Z": "ew_fit"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2024,
       "value": 0.22347144774325722,
-      "error_positive": 0.00010191005549834926,
-      "error_negative": 0.00010191005549834926,
-      "unit": ""
+      "error_positive": 0.00010191005549834928,
+      "error_negative": 0.00010191005549834928,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over correlations compatible with the review's printed s2_W uncertainty \u00b10.0001 (rounding-widened)",
+      "rho_interval": [
+       -1.0,
+       1.0
+      ],
+      "error_envelope": [
+       6.427656641823952e-05,
+       0.00012899551090187172
+      ],
+      "inputs": {
+       "W": "ew_fit",
+       "Z": "ew_fit"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2025,
       "value": 0.2234117617776309,
-      "error_positive": 0.00012086761108700207,
-      "error_negative": 0.00012086761108700207,
-      "unit": ""
+      "error_positive": 0.00010435139222067844,
+      "error_negative": 0.00010435139222067844,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0.471 (declared \u03c1 = 0 lies outside the compatible interval); envelope over correlations compatible with the review's printed s2_W uncertainty \u00b19e-05 (rounding-widened)",
+      "rho_interval": [
+       0.4708,
+       1.0
+      ],
+      "error_envelope": [
+       8.190257224046732e-05,
+       0.00010435139222067844
+      ],
+      "inputs": {
+       "W": "ew_fit",
+       "Z": "ew_fit"
+      },
+      "provenance_notes": []
      },
      {
       "year": 2026,
       "value": 0.2234100585119364,
-      "error_positive": 0.00010191471341348214,
-      "error_negative": 0.00010191471341348214,
-      "unit": ""
+      "error_positive": 0.00010191471341348215,
+      "error_negative": 0.00010191471341348215,
+      "unit": "",
+      "covariance_mode": "unknown",
+      "uncertainty_model": "first-order propagation, plotted with \u03c1 = 0; envelope over correlations compatible with the review's printed s2_W uncertainty \u00b19e-05 (rounding-widened)",
+      "rho_interval": [
+       -0.0852,
+       0.7565
+      ],
+      "error_envelope": [
+       7.519799190095619e-05,
+       0.0001044965582188304
+      ],
+      "inputs": {
+       "W": "ew_fit",
+       "Z": "ew_fit"
+      },
+      "provenance_notes": []
      }
     ]
    }
